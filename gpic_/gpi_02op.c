@@ -31,7 +31,8 @@ int main()
 	system("chcp 866");
 	
 	printf(" =Галанин П.И.=     =gpi_02op= \n");
-	printf(" Упражнение 2 (fio_02op). Объявление переменных \n\n");
+	printf(" Упражнение 2 (fio_02op). Объявление переменных \n");
+    printf(" \n");
 
 	gpi__set_gpi_n(gpi_n);
 	gpi__set_gpi_c(&gpi_c);

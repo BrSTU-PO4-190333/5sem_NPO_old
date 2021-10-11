@@ -30,7 +30,8 @@ int main()
 	system("chcp 866");
 	
 	printf(" =Галанин П.И.=     =gpi_06s= \n");
-	printf(" Упражнение 6 (fio_06s). Объявление структур \n\n");
+	printf(" Упражнение 6 (fio_06s). Объявление структур \n");
+    printf(" \n");
 
 	gpi__set_gpi_n(&gpi_struct);
 	gpi__set_gpi_c(&gpi_struct);

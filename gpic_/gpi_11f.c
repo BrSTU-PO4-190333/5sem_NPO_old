@@ -28,8 +28,9 @@ int main()
 	
 	system("chcp 866");
 	
-	printf(" =Галанин П.И.=     =gpi_07ms= \n");
-	printf(" Упражнение 7 (fio_07ms). Работа с массивом структур в цикле. \n\n");
+	printf(" =Галанин П.И.=     =gpi_11f= \n");
+	printf(" Упражнение 11 (fio_11f). Фильтр по условию. \n");
+    printf(" \n");
 
     int gpi_i = 0;
     while(gpi_i < gpi_length)

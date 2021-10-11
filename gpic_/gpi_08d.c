@@ -33,8 +33,9 @@ int main()
 	
 	system("chcp 866");
 	
-	printf(" =Галанин П.И.=     =gpi_07ms= \n");
-	printf(" Упражнение 8 (fio_08d). Использование #define. \n\n");
+	printf(" =Галанин П.И.=     =gpi_08d= \n");
+	printf(" Упражнение 8 (fio_08d). Использование #define. \n");
+    printf(" \n");
 
     int gpi_i = 0;
     while(gpi_i < gpi_length)

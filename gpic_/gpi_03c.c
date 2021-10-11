@@ -26,7 +26,8 @@ int main()
 	system("chcp 866");
 	
 	printf(" =Галанин П.И.=     =gpi_03c= \n");
-	printf(" Упражнение 3 (fio_03c). Работа в цикле \n \n");
+	printf(" Упражнение 3 (fio_03c). Работа в цикле \n");
+    printf(" \n");
 
 	while(1)
 		{
