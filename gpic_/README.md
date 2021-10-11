@@ -1,17 +1,7 @@
 ## Task
 
-**БК** (BD) - Базовый Каталог (Base Directory).
-
-```conf
-BD=U:/VT&PM/EU_EI/PIN
-```
-
-```yml
-volumes:
-    - ./../fioc_/ikgMtc.c:${BD}/ikgMtc.TXL  # task
-```
-
-Read [the task](ikgMtc.c) (in the encoding `CP 866`).
+- Read [the task (cp866)](ikgMtc_cp866.txt).
+- Read [the task (utf8)](ikgMtc_utf8.txt).
 
 - [x] [gpi_01h.c](gpi_01h.c) - Создание простейшей программы.
 - [x] [gpi_02op.c](gpi_02op.c) - Объявление переменных.
@@ -30,7 +20,7 @@ Read [the task](ikgMtc.c) (in the encoding `CP 866`).
 - [ ] [gpi_15fp.c](gpi_15fp.c) - Позиционирование в файле.
 - [ ] [gpi_16fp.c](gpi_16fp.c) - Реализация проекта.
 
-## How to install
+## Installing programs
 
 1. Download the compiler [MinGW](https://sourceforge.net/projects/mingw/)
 1. In the installer (MinGW), select the items:
@@ -42,6 +32,7 @@ Read [the task](ikgMtc.c) (in the encoding `CP 866`).
     - [ ] mingw32-gcc-objc
     - [x] msys-base
 1. Download the program [Geany](https://geany.org/)
+1. Copy `U:/VT&PM/EU_EI/PIN/ikg_/ikgMtc.TXL` to `r:/gpic_/ikgMtc_cp866.txt`.
 
 ## Opening the project
 
