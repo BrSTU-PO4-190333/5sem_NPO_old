@@ -18,7 +18,7 @@ void gpi__print_info(struct gpi_Struct* gpi_struct);
 void gpi__print_table_head();
 void gpi__print_element(const int gpi_i, struct gpi_Struct* gpi_arr);
 void gpi__print_table(const int gpi_length, struct gpi_Struct* gpi_arr);
-void gpi_print_if_more_than(const int gpi_length, struct gpi_Struct* gpi_arr);
+void gpi__print_if_c_more_than_50(const int gpi_length, struct gpi_Struct* gpi_arr);
 
 int main()
 	{
@@ -53,7 +53,7 @@ int main()
         }
         
     gpi__print_table(gpi_i, gpi_arr);
-    gpi_print_if_more_than(gpi_i, gpi_arr);
+    gpi__print_if_c_more_than_50(gpi_i, gpi_arr);
 	
 	printf(" \n press any key \n");
 	getch();
@@ -138,7 +138,7 @@ void gpi__print_table(const int gpi_length, struct gpi_Struct* gpi_arr)
     }
 
 
-void gpi_print_if_more_than(const int gpi_length, struct gpi_Struct* gpi_arr)
+void gpi__print_if_c_more_than_50(const int gpi_length, struct gpi_Struct* gpi_arr)
     {
     int gpi_number = 50;
     int gpi_counter = 0;
