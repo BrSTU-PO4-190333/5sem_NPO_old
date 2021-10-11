@@ -31,7 +31,8 @@ int main()
 	system("chcp 866");
 	
 	printf(" =Галанин П.И.=     =gpi_02op= \n");
-	printf(" Упражнение 2 (fio_02op). Объявление переменных \n\n");
+	printf(" Упражнение 2 (fio_02op). Объявление переменных \n");
+    printf(" \n");
 
 	gpi__set_gpi_n(gpi_n);
 	gpi__set_gpi_c(&gpi_c);
@@ -70,7 +71,7 @@ void gpi__set_gpi_s(int* gpi_s, int gpi_c, int gpi_k)
 	
 void gpi__print_info(const char* gpi_n, int gpi_c, int gpi_k, int gpi_s)
 	{
-	printf("\n Материал \"%s\" стоимость = цена * количество = %d * %d = %d \n",
+	printf(" Материал \"%s\" стоимость = цена * количество = %d * %d = %d \n",
 		gpi_n, gpi_c, gpi_k, gpi_s
 		);
 	}

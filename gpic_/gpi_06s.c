@@ -30,7 +30,8 @@ int main()
 	system("chcp 866");
 	
 	printf(" =Галанин П.И.=     =gpi_06s= \n");
-	printf(" Упражнение 6 (fio_06s). Объявление структур \n\n");
+	printf(" Упражнение 6 (fio_06s). Объявление структур \n");
+    printf(" \n");
 
 	gpi__set_gpi_n(&gpi_struct);
 	gpi__set_gpi_c(&gpi_struct);
@@ -69,7 +70,7 @@ void gpi__set_gpi_s(struct gpi_Struct* gpi_struct)
 	
 void gpi__print_info(struct gpi_Struct* gpi_struct)
 	{
-	printf("\n Материал \"%s\" стоимость = цена * количество = %d * %d = %d \n",
+	printf(" Материал \"%s\" стоимость = цена * количество = %d * %d = %d \n",
 		gpi_struct->gpi_n,
 		gpi_struct->gpi_c,
 		gpi_struct->gpi_k,

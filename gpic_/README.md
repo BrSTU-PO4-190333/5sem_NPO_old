@@ -1,36 +1,26 @@
 ## Task
 
-**БК** (BD) - Базовый Каталог (Base Directory).
+- Read [the task (cp866)](ikgMtc_cp866.txt).
+- Read [the task (utf8)](ikgMtc_utf8.txt).
 
-```conf
-BD=U:/VT&PM/EU_EI/PIN
-```
+- [x] [gpi_01h.c](gpi_01h.c) - Создание простейшей программы.
+- [x] [gpi_02op.c](gpi_02op.c) - Объявление переменных.
+- [x] [gpi_03c.c](gpi_03c.c) - Работа в цикле.
+- [x] [gpi_04m.c](gpi_04m.c) - Работа с массивами в цикле.
+- [x] [gpi_05m3.c](gpi_05m3.c) - Работа с массивами в нескольких циклах.
+- [x] [gpi_06s.c](gpi_06s.c) - Объявление структур.
+- [x] [gpi_07ms.c](gpi_07ms.c) - Работа с массивом структур в цикле.
+- [x] [gpi_08d.c](gpi_08d.c) - Использование `#define`.
+- [x] [gpi_09i.c](gpi_09i.c), [gpi_09i.h](gpi_09i.h) - Использование `#include` пользователя.
+- [x] [gpi_10fn.c](gpi_10fn.c) - Использование функции пользователя.
+- [x] [gpi_11f.c](gpi_11f.c) - Фильтр по условию.
+- [x] [gpi_12fw.c](gpi_12fw.c), [gpi_12xx.csv](gpi_12xx.csv) - Вывод в файл.
+- [ ] [gpi_13fr.c](gpi_13fr.c) - Чтение файла.
+- [ ] [gpi_14fc.c](gpi_14fr.c) - Копирование файла.
+- [ ] [gpi_15fp.c](gpi_15fp.c) - Позиционирование в файле.
+- [ ] [gpi_16fp.c](gpi_16fp.c) - Реализация проекта.
 
-```yml
-volumes:
-    - ./../fioc_/ikgMtc.c:${BD}/ikgMtc.TXL  # task
-```
-
-Read [the task](ikgMtc.c) (in the encoding `CP 866`).
-
-- [x] [gpi_01h](gpi_01h.c) - Создание простейшей программы.
-- [x] [gpi_02op](gpi_02op.c) - Объявление переменных.
-- [x] [gpi_03c](gpi_03c.c) - Работа в цикле.
-- [x] [gpi_04m](gpi_04m.c) - Работа с массивами в цикле.
-- [ ] [gpi_05m3](gpi_05m3.c) - Работа с массивами в нескольких циклах.
-- [x] [gpi_06s](gpi_06s.c) - Объявление структур.
-- [ ] [gpi_07ms](gpi_07ms.c) - Работа с массивом структур в цикле.
-- [ ] [gpi_08d](gpi_08d.c) - Использование #define.
-- [ ] [gpi_09i](gpi_09i.c) - Использование #include пользователя.
-- [ ] [gpi_10fn](gpi_10fn.c) - Использование функции пользователя.
-- [ ] [gpi_11f](gpi_11f.c) - Фильтр по условию.
-- [ ] [gpi_12fw](gpi_12fw.c) - Вывод в файл.
-- [ ] [gpi_13fr](gpi_13fr.c) - Чтение файла.
-- [ ] [gpi_14fc](gpi_14fr.c) - Копирование файла.
-- [ ] [gpi_15fp](gpi_15fp.c) - Позиционирование в файле.
-- [ ] [gpi_16fp](gpi_16fp.c) - Реализация проекта.
-
-## How to install
+## Installing programs
 
 1. Download the compiler [MinGW](https://sourceforge.net/projects/mingw/)
 1. In the installer (MinGW), select the items:
@@ -42,6 +32,7 @@ Read [the task](ikgMtc.c) (in the encoding `CP 866`).
     - [ ] mingw32-gcc-objc
     - [x] msys-base
 1. Download the program [Geany](https://geany.org/)
+1. Copy `U:/VT&PM/EU_EI/PIN/ikg_/ikgMtc.TXL` to `r:/gpic_/ikgMtc_cp866.txt`.
 
 ## Opening the project
 

@@ -26,7 +26,8 @@ int main()
 	system("chcp 866");
 	
 	printf(" =Галанин П.И.=     =gpi_03c= \n");
-	printf(" Упражнение 3 (fio_03c). Работа в цикле \n \n");
+	printf(" Упражнение 3 (fio_03c). Работа в цикле \n");
+    printf(" \n");
 
 	while(1)
 		{
@@ -80,7 +81,7 @@ void gpi__set_gpi_s(int* gpi_s, int gpi_c, int gpi_k)
 	
 void gpi__print_info(const char* gpi_n, int gpi_c, int gpi_k, int gpi_s)
 	{
-	printf("\n Материал \"%s\" стоимость = цена * количество = %d * %d = %d \n",
+	printf(" Материал \"%s\" стоимость = цена * количество = %d * %d = %d \n",
 		gpi_n, gpi_c, gpi_k, gpi_s
 		);
 	}

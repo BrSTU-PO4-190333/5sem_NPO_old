@@ -1,8 +1,7 @@
 /*
-     Упражнение 4 (fio_04m). Работа с массивами в цикле
-     Для вышеуказанных переменных объявить массивы на 100 элементов и отработать 
-за один проход ввод с консоли в массив, вычисление стоимости и вывод на консоль 
-из массива пока не будет введена в названии материала первая *
+     Упражнение 5 (fio_05m3). Работа с массивами в нескольких циклах
+     Аналогично упражнению 4, но за 3 прохода по массиву (ввести, рассчитать 
+стоимость, вывод на консоль).
 */
 
 #include <stdio.h>
@@ -34,13 +33,13 @@ int main()
 	
 	system("chcp 866");
 	
-	printf(" =Галанин П.И.=     =gpi_04m= \n");
-	printf(" Упражнение 4 (fio_04m). Работа с массивами в цикле \n");
+	printf(" =Галанин П.И.=     =gpi_05m3= \n");
+	printf(" Упражнение 5 (fio_05m3). Работа с массивами в нескольких циклах \n");
     printf(" \n");
 
 	int gpi_i = 0;
 	while(gpi_i < gpi_arr_length)
-		{
+		{ /* cycle 1 */
 		printf(" { id %d \n", gpi_i);
 		
 		gpi__set_gpi_n(gpi_n[gpi_i]);
@@ -54,15 +53,22 @@ int main()
 			
 		gpi__set_gpi_c(&gpi_c[gpi_i]);
 		gpi__set_gpi_k(&(gpi_k[gpi_i]));
-		gpi__set_gpi_s(&(gpi_s[gpi_i]), gpi_c[gpi_i], gpi_k[gpi_i]);
-		gpi__print_info(gpi_n[gpi_i], gpi_c[gpi_i], gpi_k[gpi_i], gpi_s[gpi_i]);
-			
+        
 		++gpi_i;
-		
 		printf(" } \n \n");
-		}
-		
-	gpi__print_table(gpi_i, gpi_n, gpi_c, gpi_k, gpi_s);
+		} /* end cycle 1 */
+
+    int gpi_j = 0;
+    while (gpi_j < gpi_i)
+        { /* cycle 2 */
+        gpi__set_gpi_s(&(gpi_s[gpi_j]), gpi_c[gpi_j], gpi_k[gpi_j]);
+        printf("%d : ", gpi_j);
+		gpi__print_info(gpi_n[gpi_j], gpi_c[gpi_j], gpi_k[gpi_j], gpi_s[gpi_j]);
+        ++gpi_j;
+        } /* end cycle 2 */
+    printf(" \n");
+    
+	gpi__print_table(gpi_i, gpi_n, gpi_c, gpi_k, gpi_s); /* cycle 3 */
 
 	printf(" \n press any key \n");
 	getch();
