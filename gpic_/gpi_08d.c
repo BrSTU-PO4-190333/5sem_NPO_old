@@ -90,7 +90,7 @@ void gpi__set_gpi_s(struct gpi_Struct* gpi_struct)
 	
 void gpi__print_info(struct gpi_Struct* gpi_struct)
 	{
-	printf(" \n Материал \"%s\" стоимость = цена * количество = %d * %d = %d \n",
+	printf(" Материал \"%s\" стоимость = цена * количество = %d * %d = %d \n",
 		gpi_struct->gpi_n,
 		gpi_struct->gpi_c,
 		gpi_struct->gpi_k,

@@ -39,7 +39,7 @@ int main()
 
 	int gpi_i = 0;
 	while(gpi_i < gpi_arr_length)
-		{
+		{ /* cycle 1 */
 		printf(" { id %d \n", gpi_i);
 		
 		gpi__set_gpi_n(gpi_n[gpi_i]);
@@ -53,15 +53,22 @@ int main()
 			
 		gpi__set_gpi_c(&gpi_c[gpi_i]);
 		gpi__set_gpi_k(&(gpi_k[gpi_i]));
-		gpi__set_gpi_s(&(gpi_s[gpi_i]), gpi_c[gpi_i], gpi_k[gpi_i]);
-		gpi__print_info(gpi_n[gpi_i], gpi_c[gpi_i], gpi_k[gpi_i], gpi_s[gpi_i]);
-			
+        
 		++gpi_i;
-		
 		printf(" } \n \n");
-		}
-		
-	gpi__print_table(gpi_i, gpi_n, gpi_c, gpi_k, gpi_s);
+		} /* end cycle 1 */
+
+    int gpi_j = 0;
+    while (gpi_j < gpi_i)
+        { /* cycle 2 */
+        gpi__set_gpi_s(&(gpi_s[gpi_j]), gpi_c[gpi_j], gpi_k[gpi_j]);
+        printf("%d : ", gpi_j);
+		gpi__print_info(gpi_n[gpi_j], gpi_c[gpi_j], gpi_k[gpi_j], gpi_s[gpi_j]);
+        ++gpi_j;
+        } /* end cycle 2 */
+    printf(" \n");
+    
+	gpi__print_table(gpi_i, gpi_n, gpi_c, gpi_k, gpi_s); /* cycle 3 */
 
 	printf(" \n press any key \n");
 	getch();
