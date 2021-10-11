@@ -34,7 +34,7 @@
 1. Download the program [Geany](https://geany.org/)
 1. Copy `U:/VT&PM/EU_EI/PIN/ikg_/ikgMtc.TXL` to `r:/gpic_/ikgMtc_cp866.txt`.
 
-## Opening the project
+## Opening a project in the `Geany` program
 
 1. Press the button `File`.
 1. Press the button `Open`.
@@ -42,19 +42,16 @@
 1. Press the keys `Ctrl` + `A`.
 1. Press the button `Open`.
 
-> ## Read the task through the program Geany
->
-> 1. Opening the file `ikgMtc.c`.
-> 1. Press the button `File`.
-> 1. Press the button `Reload As`.
-> 1. Press the button `East European`.
-> 1. Press the button `Cyrillic/Russian (CP866)`.
-> 1. Read the file `ikgMtc.c`, and we do laboratory work.
+## Open the file in Russian encoding in the `Geany` program
 
-## How to compile a project
+1. Press the button `File`.
+1. Press the button `Reload As`.
+1. Press the button `East European`.
+1. Press the button `Cyrillic/Russian (CP866)`.
 
-1. Open the project in `Geany`.
-1. Open the file `*.c`.
+## How to compile a file in the `Geany` program
+
+1. Open the file that we are going to compile.
 1. Press the button `Compile`.
 1. Press the button `Build`.
 1. Press the button `Execute`.
