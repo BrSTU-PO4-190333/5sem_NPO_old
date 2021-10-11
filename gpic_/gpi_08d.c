@@ -34,7 +34,7 @@ int main()
 	system("chcp 866");
 	
 	printf(" =Галанин П.И.=     =gpi_07ms= \n");
-	printf(" Упражнение 7 (fio_07ms). Работа с массивом структур в цикле. \n\n");
+	printf(" Упражнение 8 (fio_08d). Использование #define. \n\n");
 
     int gpi_i = 0;
     while(gpi_i < gpi_length)
