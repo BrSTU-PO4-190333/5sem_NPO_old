@@ -23,8 +23,8 @@ Read [the task](ikgMtc.c) (in the encoding `CP 866`).
 - [x] [gpi_08d.c](gpi_08d.c) - Использование `#define`.
 - [x] [gpi_09i.c](gpi_09i.c), [gpi_09i.h](gpi_09i.h) - Использование `#include` пользователя.
 - [x] [gpi_10fn.c](gpi_10fn.c) - Использование функции пользователя.
-- [ ] [gpi_11f.c](gpi_11f.c) - Фильтр по условию.
-- [ ] [gpi_12fw.c](gpi_12fw.c) - Вывод в файл.
+- [x] [gpi_11f.c](gpi_11f.c) - Фильтр по условию.
+- [x] [gpi_12fw.c](gpi_12fw.c), [gpi_12xx.csv](gpi_12xx.csv) - Вывод в файл.
 - [ ] [gpi_13fr.c](gpi_13fr.c) - Чтение файла.
 - [ ] [gpi_14fc.c](gpi_14fr.c) - Копирование файла.
 - [ ] [gpi_15fp.c](gpi_15fp.c) - Позиционирование в файле.
