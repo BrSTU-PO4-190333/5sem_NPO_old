@@ -176,25 +176,18 @@ void gpi__print_csv_file(const int gpi_length, struct gpi_Struct* gpi_arr)
         printf(" Файл %s не был открыт для записи \n", gpi_path);
         return;
         }
-    fprintf(gpi_file_pointer,
-        "%s, %s, %s, %s, %s \n",
-        "ID",
-        "Наименование",
-        "Цена",
-        "Количество",
-        "Стоимость"
-        );
     int gpi_i = 0;
     while(gpi_i < gpi_length)
         {
-        fprintf(gpi_file_pointer,
-            "%d, %s, %d, %d, %d \n",
-            gpi_i,
-            gpi_arr[gpi_i].gpi_n,
-            gpi_arr[gpi_i].gpi_c,
-            gpi_arr[gpi_i].gpi_k,
-            gpi_arr[gpi_i].gpi_s
-            );
+        fprintf(gpi_file_pointer, "%s", gpi_arr[gpi_i].gpi_n);
+        fprintf(gpi_file_pointer, ",");
+        
+        fprintf(gpi_file_pointer, "%d", gpi_arr[gpi_i].gpi_c);
+        fprintf(gpi_file_pointer, ",");
+        
+        fprintf(gpi_file_pointer, "%d", gpi_arr[gpi_i].gpi_k);
+        fprintf(gpi_file_pointer, "\n");
+                
         ++gpi_i;
         }
     fclose(gpi_file_pointer);
