@@ -3,7 +3,8 @@
 - Read [the task (cp866)](ikgMtc_cp866.txt).
 - Read [the task (utf8)](ikgMtc_utf8.txt).
 
-- [x] [gpi_01h.c](gpi_01h.c) - Создание простейшей программы.
+- [x] [gpi_01h.c](gpic_geany/gpi_01h.c) -
+    Создание простейшей программы.
 - [x] [gpi_02op.c](gpi_02op.c) - Объявление переменных.
 - [x] [gpi_03c.c](gpi_03c.c) - Работа в цикле.
 - [x] [gpi_04m.c](gpi_04m.c) - Работа с массивами в цикле.
