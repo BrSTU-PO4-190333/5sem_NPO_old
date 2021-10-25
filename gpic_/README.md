@@ -23,7 +23,8 @@
     Использование `#include` пользователя.
 - [x] [gpi_10fn.c](gpic_geany/gpi_10fn.c) -
     Использование функции пользователя.
-- [x] [gpi_11f.c](gpi_11f.c) - Фильтр по условию.
+- [x] [gpi_11f.c](gpic_geany/gpi_11f.c) -
+    Фильтр по условию.
 - [x] [gpi_12fw.c](gpi_12fw.c), [gpi_12xx.csv](gpi_12xx.csv) - Вывод в файл.
 - [x] [gpi_13fr.c](gpi_13fr.c) - Чтение файла.
 - [x] [gpi_14fc.c](gpi_14fr.c) - Копирование файла.
