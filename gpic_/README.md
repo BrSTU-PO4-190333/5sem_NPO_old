@@ -27,7 +27,8 @@
     Фильтр по условию.
 - [x] [gpi_12fw.c](gpic_geany/gpi_12fw.c), [gpi_12xx](gpic_geany/gpi_12xx.csv) -
     Вывод в файл.
-- [x] [gpi_13fr.c](gpi_13fr.c) - Чтение файла.
+- [x] [gpi_13fr.c](gpic_geany/gpi_13fr.c) -
+    Чтение файла.
 - [x] [gpi_14fc.c](gpi_14fr.c) - Копирование файла.
 - [ ] [gpi_15fp.c](gpi_15fp.c) - Позиционирование в файле.
 - [ ] [gpi_16fp.c](gpi_16fp.c) - Реализация проекта.
