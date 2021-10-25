@@ -11,23 +11,37 @@
 (редактирование связей, линковка)
 */
 
-#include <stdio.h>
-#include <conio.h>
-#include <stdlib.h>
+#include <stdio.h>  /* printf() */
+#include <conio.h>  /* getch() */
+#include <stdlib.h> /* system() */
+
+void gpi__press_any_key();
 
 int main()
 	{
 	system("chcp 866");
 	
-	printf(" =Галанин П.И.=     =gpi_01h= \n");
-	printf(" Упражнение 1 (fio_01h). Создание простейшей программы \n");
-    printf(" \n");
+    printf(" %-32s %32s \n",
+        "=Галанин П. И.=",
+        "=gpi_01h="
+        );
+    printf(" %s \n \n",
+        "Упражнение 1 (fio_01h). Создание простейшей программы"
+        );
 
-
+    printf(" Hello, World! \n");
 	printf(" Привет, Мир! \n");
+    printf(" HELLO \n");
 	
-	printf(" \n press any key \n");
-	getch();
+	gpi__press_any_key();
 
 	return(0);
 	}
+
+void gpi__press_any_key()
+    {
+    printf(" \n %s \n",
+        "Press any key..."
+        );
+    getch();
+    }
