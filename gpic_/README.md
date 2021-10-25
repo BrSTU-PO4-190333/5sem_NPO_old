@@ -21,7 +21,8 @@
     Использование `#define`.
 - [x] [gpi_09i.c](gpic_geany/gpi_09i.c), [gpi_09i.h](gpic_geany/gpi_09i.h) -
     Использование `#include` пользователя.
-- [x] [gpi_10fn.c](gpi_10fn.c) - Использование функции пользователя.
+- [x] [gpi_10fn.c](gpic_geany/gpi_10fn.c) -
+    Использование функции пользователя.
 - [x] [gpi_11f.c](gpi_11f.c) - Фильтр по условию.
 - [x] [gpi_12fw.c](gpi_12fw.c), [gpi_12xx.csv](gpi_12xx.csv) - Вывод в файл.
 - [x] [gpi_13fr.c](gpi_13fr.c) - Чтение файла.
