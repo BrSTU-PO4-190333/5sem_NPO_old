@@ -52,7 +52,7 @@
 
 1. Press the button `File`.
 1. Press the button `Open`.
-1. Go to the `fioc_` folder.
+1. Go to the `gpic_/gpic_geany` folder.
 1. Press the keys `Ctrl` + `A`.
 1. Press the button `Open`.
 
