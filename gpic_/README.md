@@ -15,21 +15,21 @@
     Работа с массивами в нескольких циклах.
 - [x] [gpi_06s.c](gpic_geany/gpi_06s.c) -
     Объявление структур.
-- [x] [gpi_07ms.c](gpic_geany/gpi_07ms.c) -
+- [ ] [gpi_07ms.c](gpic_geany/gpi_07ms.c) -
     Работа с массивом структур в цикле.
-- [x] [gpi_08d.c](gpic_geany/gpi_08d.c) -
+- [ ] [gpi_08d.c](gpic_geany/gpi_08d.c) -
     Использование `#define`.
-- [x] [gpi_09i.c](gpic_geany/gpi_09i.c), [gpi_09i.h](gpic_geany/gpi_09i.h) -
+- [ ] [gpi_09i.c](gpic_geany/gpi_09i.c), [gpi_09i.h](gpic_geany/gpi_09i.h) -
     Использование `#include` пользователя.
-- [x] [gpi_10fn.c](gpic_geany/gpi_10fn.c) -
+- [ ] [gpi_10fn.c](gpic_geany/gpi_10fn.c) -
     Использование функции пользователя.
-- [x] [gpi_11f.c](gpic_geany/gpi_11f.c) -
+- [ ] [gpi_11f.c](gpic_geany/gpi_11f.c) -
     Фильтр по условию.
-- [x] [gpi_12fw.c](gpic_geany/gpi_12fw.c), [gpi_12xx](gpic_geany/gpi_12xx.csv) -
+- [ ] [gpi_12fw.c](gpic_geany/gpi_12fw.c), [gpi_12xx](gpic_geany/gpi_12xx) -
     Вывод в файл.
-- [x] [gpi_13fr.c](gpic_geany/gpi_13fr.c) -
+- [ ] [gpi_13fr.c](gpic_geany/gpi_13fr.c) -
     Чтение файла.
-- [x] [gpi_14fc.c](gpic_geany/gpi_14fc.c), [gpi_14xx](gpic_geany/gpi_14xx.csv) -
+- [ ] [gpi_14fc.c](gpic_geany/gpi_14fc.c), [gpi_14xx](gpic_geany/gpi_14xx) -
     Копирование файла.
 - [ ] [gpi_15fp.c](gpi_15fp.c) - Позиционирование в файле.
 - [ ] [gpi_16fp.c](gpi_16fp.c) - Реализация проекта.

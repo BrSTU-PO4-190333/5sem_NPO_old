@@ -4,114 +4,88 @@
 стоимость, вывод на консоль).
 */
 
-#include <stdio.h>  /* printf() */
-#include <conio.h>  /* getch() */
-#include <stdlib.h> /* system() */
-
-void gpi__press_any_key();
-void gpi__set_n(char* gpi_n);
-void gpi__set_c(int* gpi_c);
-void gpi__set_k(int* gpi_k);
-void gpi__set_s(int* gpi_s, const int gpi_c, const int gpi_k);
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
 
 int main()
-	{
-	char	gpi_n[10][100];     /* Наименование */
-	int		gpi_c[100];			/* Цена */
-	int		gpi_k[100];			/* Количество */
-	int		gpi_s[100];			/* Стоимость */
+{
+char	gpi_n[10][100];     /* Наименование */
+int		gpi_c[100];			/* Цена */
+int		gpi_k[100];			/* Количество */
+int		gpi_s[100];			/* Стоимость */
 
-	/* ------------------------------------------------ */	
+int     gpi_i;
+
+/* ------------------------------------------------ */	
 	
-	system("chcp 866");
+	system ("chcp 866");
 	
-    printf(" %-32s %32s \n",
-        "=Галанин П. И.=",
-        "=gpi_05m3="
-        );
-    printf(" %s \n \n",
-        "Упражнение 5 (fio_05m3). Работа с массивами в нескольких циклах"
-        );
+    printf (" =Галанин П. И.=          =gpi_05m3= \n");
+    printf (" Упражнение 5 (fio_05m3). Работа с массивами в нескольких циклах \n \n");
 
     /* Первый цикл */
-    int i = 0;
-    while(i < 100)
+    gpi_i = 0;
+    while (gpi_i < 100)
         {
-        printf(" { \n");
-        gpi__set_n(gpi_n[i]);
-        if (gpi_n[i][0] == '*')
+        printf (" gpi_04m Название материала ");
+        scanf ("%s", gpi_n[gpi_i]);
+        
+        if (gpi_n[gpi_i][0] == '*')
             {
+            printf (" \n");
             break;
             }
-        gpi__set_c(&gpi_c[i]);
-        gpi__set_k(&gpi_k[i]);
-        printf(" } \n");
-        ++i;
+        
+        printf (" gpi_04m Цена ");
+        scanf ("%d", &gpi_c[gpi_i]);
+        
+        printf (" gpi_04m Количество ");
+        scanf ("%d", &gpi_k[gpi_i]);
+    
+        printf(" \n");
+        ++gpi_i;
         }
     
     /* Второй цикл */
-    int gpi_len = i;
-    i = 0;
-    while (i < gpi_len)
+    gpi_i = 0;
+    while (1 == 1)
         {
-        gpi__set_s(&gpi_s[i], gpi_c[i], gpi_k[i]);
-        ++i;    
+        if (gpi_n[gpi_i][0] == '*')
+            break;
+
+        gpi_s[gpi_i] = gpi_c[gpi_i] * gpi_k[gpi_i];
+        ++gpi_i;    
         }
         
     /* Третий цикл */
-    printf(" \n | %10s | %10s | %10s | %10s | \n",
+    printf (" \n gpi_04m | %10s | %10s | %10s | %10s | \n",
         " Название ",
         "   Цена   ",
         "Количество",
         "Стоимость "
         );
-    printf(" | %10s | %10s | %10s | %10s | \n",
+    printf (" gpi_04m | %10s | %10s | %10s | %10s | \n",
         "----------",
         "----------",
         "----------",
         "----------"
         );
-    i = 0;
-    while (i < gpi_len)
+    gpi_i = 0;
+    while (1 == 1)
         {
-        printf(" | %10s | %10d | %10d | %10d | \n",
-            gpi_n[i], gpi_c[i], gpi_k[i], gpi_s[i]
+        if (gpi_n[gpi_i][0] == '*')
+            break;
+            
+        printf (" gpi_04m | %10s | %10d | %10d | %10d | \n",
+            gpi_n[gpi_i], gpi_c[gpi_i], gpi_k[gpi_i], gpi_s[gpi_i]
             );
-        ++i;
+        ++gpi_i;
         }
+    printf(" \n");
 
-	gpi__press_any_key();
+    printf (" Нажмите любую кнопку... \n");
+    getch ();
 
-	return(0);
-	}
-
-void gpi__press_any_key()
-    {
-    printf(" \n %s \n",
-        "Press any key..."
-        );
-    getch();
-    }
-
-void gpi__set_n(char* gpi_n)
-	{
-	printf(" gpi_02op Название материала ");
-	scanf("%s", gpi_n);
-	}
-	
-void gpi__set_c(int* gpi_c)
-	{
-	printf(" gpi_02op Цена ");
-	scanf("%d", gpi_c);
-	}
-	
-void gpi__set_k(int* gpi_k)
-	{
-	printf(" gpi_02op Количество ");
-	scanf("%d", gpi_k);
-	}
-	
-void gpi__set_s(int* gpi_s, const int gpi_c, const int gpi_k)
-	{
-	(*gpi_s) = gpi_c * gpi_k;
+	return (0);
 	}
