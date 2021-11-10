@@ -1,37 +1,72 @@
-## Installing programs
+## Установка программ
 
-1. Installing [DOSBox](https://www.dosbox.com/).
-1. Copy `U:/VT&PM/EU_EI/PIN/arm_f26/F.ARJ/*` to `r:/FPD26`.
+1. Устанавливаем [DOSBox](https://www.dosbox.com/).
+1. Копируем `U:/VT&PM/EU_EI/PIN/arm_f26/F.ARJ/*` в `r:/fiof_/foxpro`.
+    У меня в репозитории другой foxpro, который рабочий.
 
-## Russification of DOSBOX on Windows
+---
 
-1. Open start.
-1. Open `DOSBox@`/`DOSBox @ Options` (where `@` - version).
-1. Change the line in the file `dosbox@.conf` (where `@` - version):
-```conf
-[dos]
-#keyboardlayout=auto
-keyboardlayout=ru
-```
+## Руссификация DOSBOX на Windows
 
-## Automatic launch of FoxPro when opening DOSBox
+1. Открываем пуск.
+1. Открываем папку `DOSBox@`, затем папку `DOSBox @ Options` (где значок `@` - это версия).
+1. Меняем строку в файле `dosbox@.conf` (где значок `@` - это версия):
+    ```conf
+    [dos]
+    #keyboardlayout=auto
+    keyboardlayout=ru
+    ```
 
-1. Open start.
-1. Open `DOSBox-@`/`DOSBox @ Options` (where `@` - version).
-1. Change the line in the file `dosbox-@.conf` (where `@` - version):
-```conf
-[autoexec]
-mount r: r:\
-r:
-cd FPD26
-foxpro
-```
+Теперь в проекте `ASBF0422` отображается русский текст вместо кракозябр.
+Но покачто русский ввод не доступен (не работает `Alt` + `Shift`), так как нужно установить драйвера.
 
-## Opening a project in FoxPro
+---
 
-1. Copy `U:/VT&PM/EU_EI/PIN/bbd/ASBF0422.ARJ/*` to `r:/gpif_/`.
-1. Click on `Program`.
-1. Click on `Do... ^D`.
-1. Click on `[..]`.
-1. Click on `GPIF_`.
-1. Click on `ASBF_MEN.MPR`.
+## Автоматический старт foxpro, когда открываем DOSBOX
+
+1. Открываем пуск.
+1. Открываем папку `DOSBox@`, затем папку `DOSBox @ Options` (где значок `@` - это версия).
+1. Меняем строку в файле `dosbox@.conf` (где значок `@` - это версия):
+    ```conf
+    [autoexec]
+    mount r: r:\
+    r:
+    cd FPD26
+    foxpro
+    ```
+
+---
+
+## Переименование проекта `ASBF0422`
+
+### Переименовываем файлы `ASBF_*` на `GPIF_*`.
+
+1. Разархивируем `ASBF0422.ARJ` в папку `GPIF_`.
+1. В папке `r:/gpif_/GPIF_` запускаем команду `python3 ../gpi_autorename.py`.
+Этот скрипт переименует автоматически файлы
+
+### Переименование переменных в файлах через notepad++
+
+1. Скачиваем и устанавливаем [notepad++](https://notepad-plus-plus.org/)
+1. Жмем `Files` > `Find in Files`
+1. Выбираем `Directory: \/ ...` нашу папку `r:/gpif_/GPIF_`
+1. Заполняю поле `Find what:` значение `ASB`
+1. Заполняю поле `Replace with:` значением `GPI`
+1. Ставлю галочку `Match case`
+1. Кликаем на кнопку `Replace in files`
+1. Заполняю поле `Find what:` значение `Asb`
+1. Заполняю поле `Replace with:` значением `Gpi`
+1. Кликаем на кнопку `Replace in files`
+1. Заполняю поле `Find what:` значение `Asb`
+1. Заполняю поле `Replace with:` значением `Gpi`
+1. Кликаем на кнопку `Replace in files`
+
+### Переименовываем русские символы `=Фамилия И. О.=`, используя foxpro скрины
+
+...
+
+---
+
+## Установка драйвера для ввода русских букв
+
+...
