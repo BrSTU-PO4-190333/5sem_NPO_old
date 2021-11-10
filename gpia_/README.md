@@ -1,5 +1,16 @@
-## Task
+## Установка программы
 
-1. Copy `U:/VT&PM/EU_EI/PIN/bbd/SAEA_.mdb` to `r:/gpia_/gpia_.mdb`.
-1. Install `Microsoft Acess`.
-1. Open `r:/gpia_/gpia_.mdb`.
+- Устанавливаем `Microsoft Access`
+
+---
+
+## Где взять
+
+- `*.mdb` - старый формат базы
+- `*.accdb` - новый формат базы
+
+На диске универа есть `U:/VT&PM/EU_EI/PIN/bbd/SAEA_.mdb`. 
+
+Я брал файл с диска ПО-3 `gria.accdb`.
+На диске ПО-3 файл от заочников.
+Там очень-очень много лишнего.
