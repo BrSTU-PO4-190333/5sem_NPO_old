@@ -1,7 +1,27 @@
-## Task
+## Установка программ
 
-- Read [the task (cp866)](ikgMtc_cp866.txt).
-- Read [the task (utf8)](ikgMtc_utf8.txt).
+1. Скачиваем компилятор [MinGW](https://sourceforge.net/projects/mingw/)
+1. В компиляторе (MinGW) выбираем галочки при установке:
+    - [x] mingw-developer-toolkit
+    - [x] mingw32-base
+    - [ ] mingw32-gcc-ada
+    - [ ] mingw32-gcc-fortan
+    - [x] mingw32-gcc-g++
+    - [ ] mingw32-gcc-objc
+    - [x] msys-base
+1. Скачиваем редактор кода [Geany](https://geany.org/)
+1. Здание скопировал из `U:/VT&PM/EU_EI/PIN/ikg_/ikgMtc.TXL` в файл `r:/gpic_/ikgMtc_cp866.txt`.
+
+---
+
+## Задание
+
+- Прочесть [задание (в кодировке cp866)](ikgMtc_cp866.txt).
+- прочесть [задание (в кодировке utf8)](ikgMtc_utf8.txt).
+
+---
+
+## Что надо
 
 - [x] [gpi_01h.c](gpi_/gpi_01h.c) -
     Создание простейшей программы.
@@ -34,38 +54,29 @@
 - [ ] [gpi_15fp.c](gpi_/gpi_15fp.c) - Позиционирование в файле.
 - [ ] [gpi_16fp.c](gpi_/gpi_16fp.c) - Реализация проекта.
 
-## Installing programs
+---
 
-1. Download the compiler [MinGW](https://sourceforge.net/projects/mingw/)
-1. In the installer (MinGW), select the items:
-    - [x] mingw-developer-toolkit
-    - [x] mingw32-base
-    - [ ] mingw32-gcc-ada
-    - [ ] mingw32-gcc-fortan
-    - [x] mingw32-gcc-g++
-    - [ ] mingw32-gcc-objc
-    - [x] msys-base
-1. Download the program [Geany](https://geany.org/)
-1. Copy `U:/VT&PM/EU_EI/PIN/ikg_/ikgMtc.TXL` to `r:/gpic_/ikgMtc_cp866.txt`.
+## Отрываем проект в `Geany`
 
-## Opening a project in the `Geany` program
+1. Жмем `File` > `Open`.
+1. Выбираем `r:/gpic_/gpi_`.
+1. Зажимаем `Ctrl` + `A`, для того, чтобы выбрать все файлы.
+1. Жмем кнопку `Open`.
 
-1. Press the button `File`.
-1. Press the button `Open`.
-1. Go to the `gpic_/gpic_geany` folder.
-1. Press the keys `Ctrl` + `A`.
-1. Press the button `Open`.
+---
 
-## Open the file in Russian encoding in the `Geany` program
+## Открываем файл в русской кодировке в `Geany`
 
-1. Press the button `File`.
-1. Press the button `Reload As`.
-1. Press the button `East European`.
-1. Press the button `Cyrillic/Russian (CP866)`.
+1. Жмем `File`.
+1. Жмем `Reload As`.
+1. Жмем `East European`.
+1. Жмем `Cyrillic/Russian (CP866)`.
 
-## How to compile a file in the `Geany` program
+---
 
-1. Open the file that we are going to compile.
-1. Press the button `Compile`.
-1. Press the button `Build`.
-1. Press the button `Execute`.
+## Компилируем файл `*.c` в `Geany`
+
+1. Нужно, чтобы файл `*.c` был открыт для редактирования в `Geany`.
+1. Жмем `Compile`.
+1. Жмем `Build`.
+1. Жмем `Execute`.
