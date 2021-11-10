@@ -3,36 +3,36 @@
 - Read [the task (cp866)](ikgMtc_cp866.txt).
 - Read [the task (utf8)](ikgMtc_utf8.txt).
 
-- [x] [gpi_01h.c](gpic_geany/gpi_01h.c) -
+- [x] [gpi_01h.c](gpi_/gpi_01h.c) -
     Создание простейшей программы.
-- [x] [gpi_02op.c](gpic_geany/gpi_02op.c) -
+- [x] [gpi_02op.c](gpi_/gpi_02op.c) -
     Объявление переменных.
-- [x] [gpi_03c.c](gpic_geany/gpi_03c.c) -
+- [x] [gpi_03c.c](gpi_/gpi_03c.c) -
     Работа в цикле.
-- [x] [gpi_04m.c](gpic_geany/gpi_04m.c) -
+- [x] [gpi_04m.c](gpi_/gpi_04m.c) -
     Работа с массивами в цикле.
-- [x] [gpi_05m3.c](gpic_geany/gpi_05m3.c) -
+- [x] [gpi_05m3.c](gpi_/gpi_05m3.c) -
     Работа с массивами в нескольких циклах.
-- [x] [gpi_06s.c](gpic_geany/gpi_06s.c) -
+- [x] [gpi_06s.c](gpi_/gpi_06s.c) -
     Объявление структур.
-- [ ] [gpi_07ms.c](gpic_geany/gpi_07ms.c) -
+- [ ] [gpi_07ms.c](gpi_/gpi_07ms.c) -
     Работа с массивом структур в цикле.
-- [ ] [gpi_08d.c](gpic_geany/gpi_08d.c) -
+- [ ] [gpi_08d.c](gpi_/gpi_08d.c) -
     Использование `#define`.
-- [ ] [gpi_09i.c](gpic_geany/gpi_09i.c), [gpi_09i.h](gpic_geany/gpi_09i.h) -
+- [ ] [gpi_09i.c](gpi_/gpi_09i.c), [gpi_09i.h](gpi_/gpi_09i.h) -
     Использование `#include` пользователя.
-- [ ] [gpi_10fn.c](gpic_geany/gpi_10fn.c) -
+- [ ] [gpi_10fn.c](gpi_/gpi_10fn.c) -
     Использование функции пользователя.
-- [ ] [gpi_11f.c](gpic_geany/gpi_11f.c) -
+- [ ] [gpi_11f.c](gpi_/gpi_11f.c) -
     Фильтр по условию.
-- [ ] [gpi_12fw.c](gpic_geany/gpi_12fw.c), [gpi_12xx](gpic_geany/gpi_12xx) -
+- [ ] [gpi_12fw.c](gpi_/gpi_12fw.c), [gpi_12xx](gpi_/gpi_12xx) -
     Вывод в файл.
-- [ ] [gpi_13fr.c](gpic_geany/gpi_13fr.c) -
+- [ ] [gpi_13fr.c](gpi_/gpi_13fr.c) -
     Чтение файла.
-- [ ] [gpi_14fc.c](gpic_geany/gpi_14fc.c), [gpi_14xx](gpic_geany/gpi_14xx) -
+- [ ] [gpi_14fc.c](gpi_/gpi_14fc.c), [gpi_14xx](gpi_/gpi_14xx) -
     Копирование файла.
-- [ ] [gpi_15fp.c](gpi_15fp.c) - Позиционирование в файле.
-- [ ] [gpi_16fp.c](gpi_16fp.c) - Реализация проекта.
+- [ ] [gpi_15fp.c](gpi_/gpi_15fp.c) - Позиционирование в файле.
+- [ ] [gpi_16fp.c](gpi_/gpi_16fp.c) - Реализация проекта.
 
 ## Installing programs
 
