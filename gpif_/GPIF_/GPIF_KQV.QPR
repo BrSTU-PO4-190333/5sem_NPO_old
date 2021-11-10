@@ -1,0 +1,10 @@
+SELECT gpif_C.*, gpif_K.*;
+ FROM gpif_K, gpif_C;
+ WHERE gpif_C.gpif_C0 = gpif_K.gpif_K0;
+   AND gpif_K.gpif_KS = gpif_C.gpif_CS;
+   AND gpif_K.gpif_KDATA >= gpif_C.gpif_CDATS;
+   AND gpif_K.gpif_KDATA < gpif_C.gpif_CDATD;
+   AND gpif_K.gpif_KKR = 0;
+ ORDER BY gpif_K.gpif_KKS;
+ INTO CURSOR gpif_KQV
+REPORT FORM gpif_KRV.FRX TO FILE gpif_kfV.TXT NOCONSOLE
