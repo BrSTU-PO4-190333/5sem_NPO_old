@@ -79,7 +79,7 @@
     mount r: r:\
     r:
     cd gpif_\foxprox
-    foxpro
+    foxprox
     ```
 
 ---
