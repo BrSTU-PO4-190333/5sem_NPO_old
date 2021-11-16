@@ -5,30 +5,31 @@
 Устанавливаем [DOSBox](https://www.dosbox.com/).
 
 ### Установка foxprox
-1. Копируем `U:/VT&PM/EU_EI/PIN/arm_f26/ARJ.EXE` в `r:/gpif_/`.
-1. Копируем `U:/VT&PM/EU_EI/PIN/arm_f26/А.ARJ` в `r:/gpif_/`.
-1. Копируем `U:/VT&PM/EU_EI/PIN/arm_f26/А.A01` в `r:/gpif_/`.
-1. Копируем `U:/VT&PM/EU_EI/PIN/arm_f26/А.A02` в `r:/gpif_/`.
-1. Открываем DOSBox
-    ```
+1. Нам нужны `ARJ.EXE`, `F.ARJ`, `F.A01`, `F.A02`.
+    Копируем `U:/VT&PM/EU_EI/PIN/arm_f26` в `r:/gpif_/arm_f26`.
+1. Создаю папку `r:/gpif_/foxprox`.
+1. Открываем DOSBox и разархивирую `F.ARJ`.
+    ```bash
     mount r: r:\
     r:
-    cd gpif_
+    cd gpif_\foxpro
 
-    arj x f -v
-    n
-    n
-    y
-    y
+    ..\arm_f26\arj x ..\arm_f26\F -v
+    # n # нужен был n, чтобы не заменять файлы
+    # n # нужен был n, чтобы не заменять файлы
+    y # OK to process next volume (1)? # Тут вводим `y`
+    y # OK to process next volume (2)? # Тут вводим `y`
     ```
 1. Закрываем DOSBox и отрываем DOSBox
     ```
     mount r: r:\
     r:
-    cd gpif_
+    cd gpif_\foxprox
 
     foxprox
     ```
+1. Жмем `< Cancel >` - и работаем в foxprox.
+
 ---
 
 ## Задание
@@ -147,6 +148,6 @@
 1. Жмем `о   Yes   п`.
 1. Жмем `о Generate п`.
 1. Жмем `<   Yes   >`.
-1. Проверяем. Жмём `Program`
-1. Жмём `Do...`
-1. Жмём на переменованный `GPIF_*.SPR`
+1. Проверяем. Жмём `Program`.
+1. Жмём `Do...`.
+1. Жмём на переименованный `GPIF_*.SPR`.
