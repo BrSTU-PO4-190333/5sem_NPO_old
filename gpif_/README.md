@@ -31,6 +31,27 @@
     ```
 ---
 
+## Задание
+
+- `BUXMKS.TXT`
+    [cp866](arm_f26/BUXMKS.TXT)
+    /
+    [utf8](docs/gpi_BUXMKS_utf8.txt)
+- `ITXMDB1.TXL`
+    [cp866](arm_f26/ITXMDB1.TXL)
+    /
+    [utf8](docs/gpi_ITXMDB1_utf8.txt)
+- `ITXMDB2.TXL`
+    [cp866](arm_f26/ITXMDB2.TXL)
+    /
+    [utf8](docs/gpi_ITXMDB2_utf8.txt)
+- `ITXMDB3.TXL`
+    [cp866](arm_f26/ITXMDB3.TXL)
+    /
+    [utf8](docs/gpi_ITXMDB3_utf8.txt)
+
+---
+
 ## Руссификация DOSBOX на Windows
 
 1. Открываем пуск.
