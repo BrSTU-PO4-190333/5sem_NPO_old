@@ -1,9 +1,34 @@
 ## Установка программ
 
-1. Устанавливаем [DOSBox](https://www.dosbox.com/).
-1. Копируем `U:/VT&PM/EU_EI/PIN/arm_f26/F.ARJ/*` в `r:/fiof_/foxpro`.
-    У меня в репозитории другой foxpro, который рабочий.
+### Установка DOSBox
 
+Устанавливаем [DOSBox](https://www.dosbox.com/).
+
+### Установка foxprox
+1. Копируем `U:/VT&PM/EU_EI/PIN/arm_f26/ARJ.EXE` в `r:/gpif_/`.
+1. Копируем `U:/VT&PM/EU_EI/PIN/arm_f26/А.ARJ` в `r:/gpif_/`.
+1. Копируем `U:/VT&PM/EU_EI/PIN/arm_f26/А.A01` в `r:/gpif_/`.
+1. Копируем `U:/VT&PM/EU_EI/PIN/arm_f26/А.A02` в `r:/gpif_/`.
+1. Открываем DOSBox
+    ```
+    mount r: r:\
+    r:
+    cd gpif_
+
+    arj x f -v
+    n
+    n
+    y
+    y
+    ```
+1. Закрываем DOSBox и отрываем DOSBox
+    ```
+    mount r: r:\
+    r:
+    cd gpif_
+
+    foxprox
+    ```
 ---
 
 ## Руссификация DOSBOX на Windows
