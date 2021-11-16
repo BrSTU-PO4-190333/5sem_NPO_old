@@ -77,7 +77,7 @@
     [autoexec]
     mount r: r:\
     r:
-    cd FPD26
+    cd gpif_\foxprox
     foxpro
     ```
 
@@ -85,11 +85,25 @@
 
 ## Переименование проекта `ASBF0422`
 
-### Переименовываем файлы `ASBF_*` на `GPIF_*`.
-
-1. Разархивируем `ASBF0422.ARJ` в папку `GPIF_`.
-1. В папке `r:/gpif_/GPIF_` запускаем команду `python3 ../gpi_autorename.py`.
-Этот скрипт переименует автоматически файлы
+### Переименовываем файлы
+1. Открываем DOSBox
+    ```
+    mount r: r:\
+    r:
+    cd gpif_\FIOF_
+    ```
+1. Разархивируем `ASBF0422.ARJ`
+    ```
+    ..\arm_f26\arj x ASBF0422 -v
+    ```
+1. Запускаем python скрипт,
+    который переменует `ASBF_*` файлы на `FIOF_*`
+    (поменять `FIOF_` можно в коде python)
+    ```
+    r:
+    cd r:\gpif_\FIOF_
+    python gpi_autorename.py
+    ```
 
 ### Переименование переменных в файлах через notepad++
 

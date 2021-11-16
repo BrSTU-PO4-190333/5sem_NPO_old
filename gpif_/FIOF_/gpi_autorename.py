@@ -1,9 +1,13 @@
+gpi_path = "FIOF_" # Тут меняем FIOF_ на своё
+
+# = = = = = = = = = = = = = = = =
+
 print(" %-32s %32s" % ("=Галанин П. И.=", "=gpi_autorename="))
 
 import os
 for root, dirs, files in os.walk("."):  
-    for filename in files:
-        s = filename
-        s = s.replace("ASBF_", "GPIF_")
-        os.rename(filename, s)
-        print(" gpi_autorename Rename: %s => %s" % (filename, s))
+    for gpi_filename in files:
+        gpi_s = gpi_filename
+        gpi_s = gpi_s.replace("ASBF_", gpi_path)
+        os.rename(gpi_filename, gpi_s)
+        print(" gpi_autorename Rename: %s => %s" % (gpi_filename, gpi_s))
