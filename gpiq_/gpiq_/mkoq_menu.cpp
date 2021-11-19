@@ -8,7 +8,7 @@ mkoq_menu::mkoq_menu(QWidget *parent) :
     ui->setupUi(this);
     db = QSqlDatabase::addDatabase("QSQLITE");
     qDebug() << QApplication::applicationDirPath();
-    db.setDatabaseName("D:/3-Kypc-ProgII/NPO/mkoq_/mkoq_data.sqlite");
+    db.setDatabaseName("R:/gpi_npo5/gpiq_/gpiq_/mkoq_data.sqlite");
     if (!db.open()) {
         qDebug() << db.lastError().text();
     } else {
