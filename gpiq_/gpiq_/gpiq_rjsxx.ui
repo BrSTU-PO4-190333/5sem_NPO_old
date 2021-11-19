@@ -37,7 +37,7 @@
    <item row="3" column="1">
     <widget class="QPushButton" name="gpiq_rjsxx_exit_c">
      <property name="text">
-      <string>vixod</string>
+      <string>Выход</string>
      </property>
     </widget>
    </item>
@@ -274,21 +274,21 @@
      <item>
       <widget class="QPushButton" name="gpiq_rjsxx_grid_c">
        <property name="text">
-        <string>vibrat</string>
+        <string>Выбрать</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="gpiq_rjsxx_back_c">
        <property name="text">
-        <string>nazad</string>
+        <string>Назад</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="gpiq_rjsxx_next_c">
        <property name="text">
-        <string>vpered</string>
+        <string>Вперёд</string>
        </property>
       </widget>
      </item>

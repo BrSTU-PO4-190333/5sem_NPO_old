@@ -51,7 +51,7 @@
    <item>
     <widget class="QLabel" name="gpiq_cdsff_xxtitle_l">
      <property name="text">
-      <string>gpi opredelenie otchetnix form</string>
+      <string>gpi определение отчётных форм</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -215,7 +215,7 @@
      <item>
       <widget class="QPushButton" name="gpiq_cdsff_exit_c">
        <property name="text">
-        <string>vixod</string>
+        <string>Выход</string>
        </property>
       </widget>
      </item>

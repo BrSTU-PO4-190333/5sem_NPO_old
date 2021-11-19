@@ -24,7 +24,7 @@ gpiq_ksroo::gpiq_ksroo(QWidget *parent) :
     FILE* file;
     file = fopen("gpiq_otchet.txt", "w");
     fprintf(file, "%85s\n", "");
-    fprintf(file, "%4s%-20.20s%8s%s%13s%s%2s\n", "", "=Mialik K.O.=", "", "oborotno-saldovaa vedomost", "", "=gpiq_krsoo=", "");
+    fprintf(file, "%4s%-20.20s%8s%s%13s%s%2s\n", "", "=Galanin P. I.=", "", "оборотно-сальдова ведомость", "", "=gpiq_krsoo=", "");
     fprintf(file, "%8s%s%4s%4s%13s%s%4s%10s%s%10s     \n", "", "schet", "", gpiq_cd_s.toLocal8Bit().data(), "", "interval s", "", gpiq_cd_datas.toLocal8Bit().data(), "      do    ", gpiq_cd_datad.toLocal8Bit().data());
     fprintf(file, "%85s\n", "");
     fprintf(file, "  %s  \n", "---------------------------------------------------------------------------------");

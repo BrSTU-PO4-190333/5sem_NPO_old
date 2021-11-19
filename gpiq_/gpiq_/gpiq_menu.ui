@@ -124,7 +124,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>=gpi_ vvod i raznoska pervixnix dokumentov =</string>
+           <string>=gpi_ ввод и разноска первичных документов =</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -156,7 +156,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>gpi_vvod tekuchey dati </string>
+           <string>gpi_ ввод текущей даты </string>
           </property>
          </widget>
         </item>
@@ -176,7 +176,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>gpi_vvod i raznoska pervixnogo dokumenta (KPD) </string>
+           <string>gpi_ ввод и разноска первичного документа (КПД) </string>
           </property>
          </widget>
         </item>
@@ -224,7 +224,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>=gpi_ rabota c regjurnalom i knigoi cchev =</string>
+           <string>=gpi_ работа с регистрационным журналом и книгой счетов =</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -256,7 +256,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>gpi_registracionnii jurnal (RJ) </string>
+           <string>gpi_ регистрационный журнал (РЖ) </string>
           </property>
          </widget>
         </item>
@@ -269,7 +269,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>gpi_formirovanie knigi schetov iz reg jurnala </string>
+           <string>gpi_ формирование книги счетов из регистрационного журнала </string>
           </property>
          </widget>
         </item>
@@ -282,7 +282,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>gpi_kniga schetov (KS) </string>
+           <string>gpi_ книга счетов (КС) </string>
           </property>
          </widget>
         </item>
@@ -330,7 +330,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>=gpi_ formivrovanie balansovoi otchetnosti =</string>
+           <string>=gpi_ формирование балансовой отчётности =</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -362,7 +362,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>gpi_ opredelenie otchetnix form </string>
+           <string>gpi_ определение отчётных форм </string>
           </property>
          </widget>
         </item>
@@ -382,7 +382,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>gpi_ oborotno-saldovaa vedomost </string>
+           <string>gpi_ оборотно-сальдова ведомость </string>
           </property>
          </widget>
         </item>
@@ -395,7 +395,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>gpi_ balansovaa vedomost </string>
+           <string>gpi_ балансовая ведомость </string>
           </property>
          </widget>
         </item>
@@ -456,7 +456,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>=gpi_ soprovojdenie kartotek(spravochnikov) =</string>
+           <string>=gpi_ сопровождение картотек (справочников) =</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -488,7 +488,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>gpi_ tipovie operacii (TXO) </string>
+           <string>gpi_ типовые операции (ТХО) </string>
           </property>
          </widget>
         </item>
@@ -508,7 +508,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>gpi_ nastroika ARMa </string>
+           <string>gpi_ настройка АРМ'a </string>
           </property>
          </widget>
         </item>
@@ -556,7 +556,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>=gpi_ vedenie arxivov =</string>
+           <string>=gpi_ ведение архивов =</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -588,7 +588,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>gpi_soxranenie sistemi </string>
+           <string>gpi_ сохранение системы </string>
           </property>
          </widget>
         </item>
@@ -601,7 +601,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>gpi_vosstanovlenie sistemi </string>
+           <string>gpi_ восстановление системы </string>
           </property>
          </widget>
         </item>
@@ -622,7 +622,7 @@
       </widget>
       <widget class="QWidget" name="gpiq_menu_end_p">
        <attribute name="title">
-        <string>vixod</string>
+        <string>Выход</string>
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_7">
         <property name="spacing">
@@ -649,7 +649,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>=gpi_ vixod iz sistemi =</string>
+           <string>=gpi_ выход из системы =</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -681,7 +681,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>gpi_ vixod iz sistemi </string>
+           <string>gpi_ выход из системы </string>
           </property>
          </widget>
         </item>

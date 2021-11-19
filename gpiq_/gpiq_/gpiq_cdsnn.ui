@@ -120,7 +120,7 @@
      <item>
       <widget class="QPushButton" name="gpiq_cdsnn_exit_c">
        <property name="text">
-        <string>vixod</string>
+        <string>Выход</string>
        </property>
       </widget>
      </item>

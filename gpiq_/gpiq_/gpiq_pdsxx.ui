@@ -27,7 +27,7 @@
    <item row="3" column="1">
     <widget class="QPushButton" name="gpiq_pdsxx_del_c">
      <property name="text">
-      <string>udalit</string>
+      <string>Удалить</string>
      </property>
     </widget>
    </item>
@@ -118,7 +118,7 @@
    <item row="8" column="1">
     <widget class="QPushButton" name="gpiq_pdsxx_exit_c">
      <property name="text">
-      <string>vixod</string>
+      <string>Выход</string>
      </property>
     </widget>
    </item>
@@ -137,21 +137,21 @@
      <item>
       <widget class="QPushButton" name="gpiq_pdsxx_grid_c">
        <property name="text">
-        <string>vibrat</string>
+        <string>Выбрать</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="gpiq_pdsxx_back_c">
        <property name="text">
-        <string>nazad</string>
+        <string>Назад</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="gpiq_pdsxx_next_c">
        <property name="text">
-        <string>vpered</string>
+        <string>Вперёд</string>
        </property>
       </widget>
      </item>
@@ -171,7 +171,7 @@
      <item>
       <widget class="QPushButton" name="gpiq_pdsxx_add_c">
        <property name="text">
-        <string>dobavit</string>
+        <string>Добавить</string>
        </property>
       </widget>
      </item>
