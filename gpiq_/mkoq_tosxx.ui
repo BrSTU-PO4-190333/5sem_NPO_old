@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mkoq_tosxx</class>
+ <widget class="QDialog" name="mkoq_tosxx">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>634</width>
+    <height>432</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>mkoq_tosxx</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="6" column="4">
+    <widget class="QPushButton" name="mkoq_tosxx_exit_c">
+     <property name="text">
+      <string>vixod</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QFrame" name="mkoq_tosxx_b1">
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="midLineWidth">
+      <number>1</number>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="mkoq_tosxx_dokk_e"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="mkoq_tosxx_k_l">
+        <property name="text">
+         <string>mko_operacia</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="mkoq_tosxx_n_e"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="mkoq_tosxx_k_e"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="mkoq_tosxx_dokk_l">
+        <property name="text">
+         <string>mko_kod dokumenta</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QPushButton" name="mkoq_tosxx_grid_c">
+       <property name="text">
+        <string>vibrat</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mkoq_tosxx_back_c">
+       <property name="text">
+        <string>nazad</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mkoq_tosxx_next_c">
+       <property name="text">
+        <string>vpered</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mkoq_tosxx_add_c">
+       <property name="text">
+        <string>dobavit</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="2">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="mkoq_tosxx_xxsma_l">
+       <property name="text">
+        <string>=Мялик К.О.=</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="2">
+    <widget class="QFrame" name="mkoq_tosxx_b2">
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="midLineWidth">
+      <number>1</number>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="mkoq_tosxx_kr_l">
+          <property name="text">
+           <string>mko_Kr</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="mkoq_tosxx_kr_e"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="mkoq_tosxx_krn_e"/>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="mkoq_tosxx_db_l">
+          <property name="text">
+           <string>mko_Db</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="mkoq_tosxx_db_e"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="mkoq_tosxx_dbn_e"/>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_4"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="QLabel" name="mkoq_tosxx_xxprg_l">
+     <property name="text">
+      <string>=mkoq_tosxx=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QLabel" name="mkoq_tosxx_xxtitle_l">
+     <property name="text">
+      <string>mkoq_tiprovie_operacii</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <widget class="QPushButton" name="mkoq_tosxx_del_c">
+     <property name="text">
+      <string>udalit</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>mkoq_tosxx_dokk_e</tabstop>
+  <tabstop>mkoq_tosxx_k_e</tabstop>
+  <tabstop>mkoq_tosxx_n_e</tabstop>
+  <tabstop>mkoq_tosxx_db_e</tabstop>
+  <tabstop>mkoq_tosxx_dbn_e</tabstop>
+  <tabstop>mkoq_tosxx_kr_e</tabstop>
+  <tabstop>mkoq_tosxx_krn_e</tabstop>
+  <tabstop>mkoq_tosxx_grid_c</tabstop>
+  <tabstop>mkoq_tosxx_back_c</tabstop>
+  <tabstop>mkoq_tosxx_next_c</tabstop>
+  <tabstop>mkoq_tosxx_add_c</tabstop>
+  <tabstop>mkoq_tosxx_del_c</tabstop>
+  <tabstop>mkoq_tosxx_exit_c</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
