@@ -17,16 +17,18 @@
 
 1. Запускаем `notepad++`.
 
-2. Жмём `Search` > `Find in files...`
+2. Жмём `Search` > `Find in files...`.
 
 3. Заменяем `Mko` на `Gpi`
     
     ![](_assets/gpi_mko.png)
 
-4. Заменяем `mko` на `gpi`
+4. Заменяем `mko` на `gpi`.
     
     ![](_assets/gpi_mko2.png)
 
-5. Заменяем `Мялик К. О.` на `Галанин П. И.`
+5. Заменяем `Мялик К. О.` на `Галанин П. И.`.
     
     ![](_assets/gpi_mko3.png)
+
+6. Заменяем `D:/3-Kypc-ProgII/NPO` на `R:/gpi_npo5/gpiq_`.
