@@ -12,15 +12,15 @@ close data
 
 sele 1
 *use  rj_
-use  asbf_j
+use  gpif_j
 
 sele 2
 *use  ks_
-use  asbf_k
+use  gpif_k
 zap
 
 
-sele asbf_j
+sele gpif_j
 goto top
 
 LOCATE  for .T.
@@ -35,7 +35,7 @@ do while .T.
 
 do recxx
 
-sele asbf_j
+sele gpif_j
 skip
 
 enddo
@@ -53,47 +53,47 @@ return
 **************************************************
 proc recxx
 
-sele asbf_j
+sele gpif_j
 scat memvar 
 
-sele asbf_k
+sele gpif_k
 
 **
 
 append blank
 
-repl asbf_kdata   with m.asbf_jdata
-repl asbf_kdokk   with m.asbf_jdokk
-repl asbf_kdokn   with m.asbf_jdokn
-repl asbf_kdokd   with m.asbf_jdokd
-repl asbf_kto    with m.asbf_jto
+repl gpif_kdata   with m.gpif_jdata
+repl gpif_kdokk   with m.gpif_jdokk
+repl gpif_kdokn   with m.gpif_jdokn
+repl gpif_kdokd   with m.gpif_jdokd
+repl gpif_kto    with m.gpif_jto
 
-repl asbf_ks     with m.asbf_jdb
-repl asbf_ksn    with m.asbf_jdbn
-repl asbf_kks    with m.asbf_jkr
-repl asbf_kksn   with m.asbf_jkrn
+repl gpif_ks     with m.gpif_jdb
+repl gpif_ksn    with m.gpif_jdbn
+repl gpif_kks    with m.gpif_jkr
+repl gpif_kksn   with m.gpif_jkrn
 
-repl asbf_kdb   with m.asbf_jrub
-repl asbf_kkr   with 0
+repl gpif_kdb   with m.gpif_jrub
+repl gpif_kkr   with 0
 
 ******
 append blank
 
-repl asbf_kdata   with m.asbf_jdata
-repl asbf_kdokk   with m.asbf_jdokk
-repl asbf_kdokn   with m.asbf_jdokn
-repl asbf_kdokd   with m.asbf_jdokd
-repl asbf_kto     with m.asbf_jto
+repl gpif_kdata   with m.gpif_jdata
+repl gpif_kdokk   with m.gpif_jdokk
+repl gpif_kdokn   with m.gpif_jdokn
+repl gpif_kdokd   with m.gpif_jdokd
+repl gpif_kto     with m.gpif_jto
 
 
-repl asbf_ks     with m.asbf_jkr
-repl asbf_ksn    with m.asbf_jkrn
-repl asbf_kks    with m.asbf_jdb
-repl asbf_kksn   with m.asbf_jdbn
+repl gpif_ks     with m.gpif_jkr
+repl gpif_ksn    with m.gpif_jkrn
+repl gpif_kks    with m.gpif_jdb
+repl gpif_kksn   with m.gpif_jdbn
 
-repl asbf_kkr   with m.asbf_jrub
+repl gpif_kkr   with m.gpif_jrub
 
-repl asbf_kdb   with 0
+repl gpif_kdb   with 0
 
 
 return

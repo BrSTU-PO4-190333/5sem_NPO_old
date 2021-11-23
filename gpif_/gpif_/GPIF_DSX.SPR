@@ -1,12 +1,12 @@
 *       ╓─────────────────────────────────────────────────────────╖
 *       ║                                                         ║
-*       ║ 03/11/09            ASBF_DSX.SPR               14:07:43 ║
+*       ║ 11/23/21            GPIF_DSX.SPR               09:08:11 ║
 *       ║                                                         ║
 *       ╟─────────────────────────────────────────────────────────╢
 *       ║                                                         ║
 *       ║ Author's Name                                           ║
 *       ║                                                         ║
-*       ║ Copyright (c) 2009 Company Name                         ║
+*       ║ Copyright (c) 2021 Company Name                         ║
 *       ║ Address                                                 ║
 *       ║ City,     Zip                                           ║
 *       ║                                                         ║
@@ -41,7 +41,7 @@ m.currarea = SELECT()
 
 *       ╓─────────────────────────────────────────────────────────╖
 *       ║                                                         ║
-*       ║         ASBF_DSX/MS-DOS Setup Code - SECTION 2          ║
+*       ║         GPIF_DSX/MS-DOS Setup Code - SECTION 2          ║
 *       ║                                                         ║
 *       ╙─────────────────────────────────────────────────────────╜
 *
@@ -51,14 +51,14 @@ close all
 clear
 
 select 1
-use asbf_v
+use gpif_v
 
 select 2
-use asbf_d
+use gpif_d
 
 *       ╓─────────────────────────────────────────────────────────╖
 *       ║                                                         ║
-*       ║              ASBF_DSX/MS-DOS Screen Layout              ║
+*       ║              GPIF_DSX/MS-DOS Screen Layout              ║
 *       ║                                                         ║
 *       ╙─────────────────────────────────────────────────────────╜
 *
@@ -68,92 +68,92 @@ use asbf_d
 	PICTURE "@*HN Выход" ;
 	SIZE 1,7,1 ;
 	DEFAULT 1 ;
-	VALID _2lp0ua6oo()
+	VALID _6760jkz1k()
 @ 18,53 GET m.end ;
 	PICTURE "@*HN Добавить" ;
 	SIZE 1,10,1 ;
 	DEFAULT 1 ;
-	VALID _2lp0ua6ot()
+	VALID _6760jkz28()
 @ 18,36 GET m.end ;
 	PICTURE "@*HN Вперед" ;
 	SIZE 1,10,1 ;
 	DEFAULT 1 ;
-	VALID _2lp0ua6oy()
+	VALID _6760jkz2p()
 @ 18,20 GET m.end ;
 	PICTURE "@*HN Назад" ;
 	SIZE 1,10,1 ;
 	DEFAULT 1 ;
-	VALID _2lp0ua6p2()
+	VALID _6760jkz35()
 @ 18,4 GET m.end ;
 	PICTURE "@*HN Выбрать" ;
 	SIZE 1,10,1 ;
 	DEFAULT 1 ;
-	VALID _2lp0ua6p7()
+	VALID _6760jkz3l()
 @ 4,2 TO 6,37 DOUBLE
 @ 8,2 TO 16,75
 @ 11,8 GET m.end ;
-	PICTURE "@*HN asb_вид аналитики1" ;
+	PICTURE "@*HN gpi_вид аналитики1" ;
 	SIZE 1,20,1 ;
 	DEFAULT 1 ;
-	VALID _2lp0ua6pf()
-@ 11,30 SAY asbf_dav1 ;
+	VALID _6760jkz4g()
+@ 11,30 SAY gpif_dav1 ;
 	SIZE 1,3
 @ 13,8 GET m.end ;
-	PICTURE "@*HN asb_вид аналитики2" ;
+	PICTURE "@*HN gpi_вид аналитики2" ;
 	SIZE 1,20,1 ;
 	DEFAULT 1 ;
-	VALID _2lp0ua6po()
-@ 13,30 SAY asbf_dav2 ;
+	VALID _6760jkz5j()
+@ 13,30 SAY gpif_dav2 ;
 	SIZE 1,3
-@ 5,23 GET asbf_dk ;
+@ 5,23 GET gpif_dk ;
 	SIZE 1,3 ;
 	DEFAULT " "
-@ 9,31 GET asbf_dn ;
+@ 9,31 GET gpif_dn ;
 	SIZE 1,10 ;
 	DEFAULT " "
 @ 11,35 SAY "проходит по " ;
 	SIZE 1,12, 0
-@ 11,48 GET asbf_davt1 ;
+@ 11,48 GET gpif_davt1 ;
 	SIZE 1,1 ;
 	DEFAULT " "
 @ 11,50 SAY "(д-дебету,к-кредит,х-д+к)" ;
 	SIZE 1,25, 0
 @ 13,35 SAY "проходит по " ;
 	SIZE 1,12, 0
-@ 13,48 GET asbf_davt2 ;
+@ 13,48 GET gpif_davt2 ;
 	SIZE 1,1 ;
 	DEFAULT " "
 @ 13,50 SAY "(д-дебету,к-кредит,х-д+к)" ;
 	SIZE 1,25, 0
 @ 15,8 GET m.end ;
-	PICTURE "@*HN asb_вид аналитики3" ;
+	PICTURE "@*HN gpi_вид аналитики3" ;
 	SIZE 1,20,1 ;
 	DEFAULT 1 ;
-	VALID _2lp0ua6q3()
-@ 15,30 SAY asbf_dav3 ;
+	VALID _6760jkz74()
+@ 15,30 SAY gpif_dav3 ;
 	SIZE 1,3
 @ 15,35 SAY "проходит по " ;
 	SIZE 1,12, 0
-@ 15,48 GET asbf_davt3 ;
+@ 15,48 GET gpif_davt3 ;
 	SIZE 1,1 ;
 	DEFAULT " "
 @ 15,50 SAY "(д-дебету,к-кредит,х-д+к)" ;
 	SIZE 1,25, 0
-@ 5,4 SAY "asb_код документа" ;
+@ 5,4 SAY "gpi_код документа" ;
 	SIZE 1,17, 0
-@ 9,5 SAY "asb_название документа" ;
+@ 9,5 SAY "gpi_название документа" ;
 	SIZE 1,22, 0
-@ 2,7 SAY "= Абдулрахман С.Б. =" ;
-	SIZE 1,20, 0
-@ 3,22 SAY "asb_определение первичных документов(ОПД)" ;
+@ 3,22 SAY "gpi_определение первичных документов(ОПД)" ;
 	SIZE 1,41, 0
-@ 2,67 SAY "=asbf_dsx=" ;
+@ 2,67 SAY "=gpif_dsx=" ;
 	SIZE 1,10, 0
+@ 2,7 SAY "=Галанин П. И.=" ;
+	SIZE 1,15, 0
 
 
 
 READ CYCLE ;
-	SHOW _2lp0ua6qi()
+	SHOW _6760jkz8n()
 
 SELECT (m.currarea)
 
@@ -169,12 +169,12 @@ ENDIF
 
 *       ╓─────────────────────────────────────────────────────────╖
 *       ║                                                         ║
-*       ║ _2LP0UA6OO           m.end VALID                        ║
+*       ║ _6760JKZ1K           m.end VALID                        ║
 *       ║                                                         ║
 *       ║ Function Origin:                                        ║
 *       ║                                                         ║
 *       ║ From Platform:       MS-DOS                             ║
-*       ║ From Screen:         ASBF_DSX,     Record Number:    2  ║
+*       ║ From Screen:         GPIF_DSX,     Record Number:    2  ║
 *       ║ Variable:            m.end                              ║
 *       ║ Called By:           VALID Clause                       ║
 *       ║ Object Type:         Push Button                        ║
@@ -182,19 +182,19 @@ ENDIF
 *       ║                                                         ║
 *       ╙─────────────────────────────────────────────────────────╜
 *
-FUNCTION _2lp0ua6oo     &&  m.end VALID
+FUNCTION _6760jkz1k     &&  m.end VALID
 #REGION 1
 clear
 cancel
 
 *       ╓─────────────────────────────────────────────────────────╖
 *       ║                                                         ║
-*       ║ _2LP0UA6OT           m.end VALID                        ║
+*       ║ _6760JKZ28           m.end VALID                        ║
 *       ║                                                         ║
 *       ║ Function Origin:                                        ║
 *       ║                                                         ║
 *       ║ From Platform:       MS-DOS                             ║
-*       ║ From Screen:         ASBF_DSX,     Record Number:    3  ║
+*       ║ From Screen:         GPIF_DSX,     Record Number:    3  ║
 *       ║ Variable:            m.end                              ║
 *       ║ Called By:           VALID Clause                       ║
 *       ║ Object Type:         Push Button                        ║
@@ -202,19 +202,19 @@ cancel
 *       ║                                                         ║
 *       ╙─────────────────────────────────────────────────────────╜
 *
-FUNCTION _2lp0ua6ot     &&  m.end VALID
+FUNCTION _6760jkz28     &&  m.end VALID
 #REGION 1
 append
 show gets
 
 *       ╓─────────────────────────────────────────────────────────╖
 *       ║                                                         ║
-*       ║ _2LP0UA6OY           m.end VALID                        ║
+*       ║ _6760JKZ2P           m.end VALID                        ║
 *       ║                                                         ║
 *       ║ Function Origin:                                        ║
 *       ║                                                         ║
 *       ║ From Platform:       MS-DOS                             ║
-*       ║ From Screen:         ASBF_DSX,     Record Number:    4  ║
+*       ║ From Screen:         GPIF_DSX,     Record Number:    4  ║
 *       ║ Variable:            m.end                              ║
 *       ║ Called By:           VALID Clause                       ║
 *       ║ Object Type:         Push Button                        ║
@@ -222,19 +222,19 @@ show gets
 *       ║                                                         ║
 *       ╙─────────────────────────────────────────────────────────╜
 *
-FUNCTION _2lp0ua6oy     &&  m.end VALID
+FUNCTION _6760jkz2p     &&  m.end VALID
 #REGION 1
 skip
 show gets
 
 *       ╓─────────────────────────────────────────────────────────╖
 *       ║                                                         ║
-*       ║ _2LP0UA6P2           m.end VALID                        ║
+*       ║ _6760JKZ35           m.end VALID                        ║
 *       ║                                                         ║
 *       ║ Function Origin:                                        ║
 *       ║                                                         ║
 *       ║ From Platform:       MS-DOS                             ║
-*       ║ From Screen:         ASBF_DSX,     Record Number:    5  ║
+*       ║ From Screen:         GPIF_DSX,     Record Number:    5  ║
 *       ║ Variable:            m.end                              ║
 *       ║ Called By:           VALID Clause                       ║
 *       ║ Object Type:         Push Button                        ║
@@ -242,19 +242,19 @@ show gets
 *       ║                                                         ║
 *       ╙─────────────────────────────────────────────────────────╜
 *
-FUNCTION _2lp0ua6p2     &&  m.end VALID
+FUNCTION _6760jkz35     &&  m.end VALID
 #REGION 1
 skip -1
 show gets
 
 *       ╓─────────────────────────────────────────────────────────╖
 *       ║                                                         ║
-*       ║ _2LP0UA6P7           m.end VALID                        ║
+*       ║ _6760JKZ3L           m.end VALID                        ║
 *       ║                                                         ║
 *       ║ Function Origin:                                        ║
 *       ║                                                         ║
 *       ║ From Platform:       MS-DOS                             ║
-*       ║ From Screen:         ASBF_DSX,     Record Number:    6  ║
+*       ║ From Screen:         GPIF_DSX,     Record Number:    6  ║
 *       ║ Variable:            m.end                              ║
 *       ║ Called By:           VALID Clause                       ║
 *       ║ Object Type:         Push Button                        ║
@@ -263,7 +263,7 @@ show gets
 *       ╙─────────────────────────────────────────────────────────╜
 *
 
-FUNCTION _2lp0ua6p7     &&  m.end VALID
+FUNCTION _6760jkz3l     &&  m.end VALID
 #REGION 1
   define window browse_xx ;
 	from 0,1 to 24,79 ;
@@ -274,7 +274,7 @@ FUNCTION _2lp0ua6p7     &&  m.end VALID
   browse normal  ledit;
      noappend nomenu ;
      window browse_xx ;
-     title "asbf_ картотека опр перв документов "
+     title "gpif_ картотека опр перв документов "
 
   release window browse_xx
 
@@ -282,12 +282,12 @@ FUNCTION _2lp0ua6p7     &&  m.end VALID
 
 *       ╓─────────────────────────────────────────────────────────╖
 *       ║                                                         ║
-*       ║ _2LP0UA6PF           m.end VALID                        ║
+*       ║ _6760JKZ4G           m.end VALID                        ║
 *       ║                                                         ║
 *       ║ Function Origin:                                        ║
 *       ║                                                         ║
 *       ║ From Platform:       MS-DOS                             ║
-*       ║ From Screen:         ASBF_DSX,     Record Number:    9  ║
+*       ║ From Screen:         GPIF_DSX,     Record Number:    9  ║
 *       ║ Variable:            m.end                              ║
 *       ║ Called By:           VALID Clause                       ║
 *       ║ Object Type:         Push Button                        ║
@@ -295,13 +295,13 @@ FUNCTION _2lp0ua6p7     &&  m.end VALID
 *       ║                                                         ║
 *       ╙─────────────────────────────────────────────────────────╜
 *
-FUNCTION _2lp0ua6pf     &&  m.end VALID
+FUNCTION _6760jkz4g     &&  m.end VALID
 #REGION 1
-sele asbf_d
+sele gpif_d
 scat memvar
 * фильтр не будем делать
 
-sele asbf_v
+sele gpif_v
 
   define window browse_xx ;
 	from 0,1 to 24,79 ;
@@ -312,16 +312,16 @@ sele asbf_v
   browse normal  ledit;
      noappend nomenu ;
      window browse_xx ;
-     title "Asb выбери вид аналитики "
+     title "Gpi выбери вид аналитики "
 
   release window browse_xx
 
 scat memvar
 
-sele asbf_d
+sele gpif_d
 
-repl asbf_dav1    with  m.asbf_vk
-repl asbf_davt1    with  'х'
+repl gpif_dav1    with  m.gpif_vk
+repl gpif_davt1    with  'х'
 
 show gets
 
@@ -331,12 +331,12 @@ show gets
 
 *       ╓─────────────────────────────────────────────────────────╖
 *       ║                                                         ║
-*       ║ _2LP0UA6PO           m.end VALID                        ║
+*       ║ _6760JKZ5J           m.end VALID                        ║
 *       ║                                                         ║
 *       ║ Function Origin:                                        ║
 *       ║                                                         ║
 *       ║ From Platform:       MS-DOS                             ║
-*       ║ From Screen:         ASBF_DSX,     Record Number:   11  ║
+*       ║ From Screen:         GPIF_DSX,     Record Number:   11  ║
 *       ║ Variable:            m.end                              ║
 *       ║ Called By:           VALID Clause                       ║
 *       ║ Object Type:         Push Button                        ║
@@ -344,13 +344,13 @@ show gets
 *       ║                                                         ║
 *       ╙─────────────────────────────────────────────────────────╜
 *
-FUNCTION _2lp0ua6po     &&  m.end VALID
+FUNCTION _6760jkz5j     &&  m.end VALID
 #REGION 1
-sele asbf_d
+sele gpif_d
 scat memvar
 * фильтр не будем делать
 
-sele asbf_v
+sele gpif_v
 
   define window browse_xx ;
 	from 0,1 to 24,79 ;
@@ -361,16 +361,16 @@ sele asbf_v
   browse normal  ledit;
      noappend nomenu ;
      window browse_xx ;
-     title "Asb выбери вид аналитики "
+     title "Gpi выбери вид аналитики "
 
   release window browse_xx
 
 scat memvar
 
-sele asbf_d
+sele gpif_d
 
-repl asbf_dav2    with  m.asbf_vk
-repl asbf_davt2    with 'х'
+repl gpif_dav2    with  m.gpif_vk
+repl gpif_davt2    with 'х'
 
 show gets
 
@@ -380,12 +380,12 @@ show gets
 
 *       ╓─────────────────────────────────────────────────────────╖
 *       ║                                                         ║
-*       ║ _2LP0UA6Q3           m.end VALID                        ║
+*       ║ _6760JKZ74           m.end VALID                        ║
 *       ║                                                         ║
 *       ║ Function Origin:                                        ║
 *       ║                                                         ║
 *       ║ From Platform:       MS-DOS                             ║
-*       ║ From Screen:         ASBF_DSX,     Record Number:   21  ║
+*       ║ From Screen:         GPIF_DSX,     Record Number:   21  ║
 *       ║ Variable:            m.end                              ║
 *       ║ Called By:           VALID Clause                       ║
 *       ║ Object Type:         Push Button                        ║
@@ -393,13 +393,13 @@ show gets
 *       ║                                                         ║
 *       ╙─────────────────────────────────────────────────────────╜
 *
-FUNCTION _2lp0ua6q3     &&  m.end VALID
+FUNCTION _6760jkz74     &&  m.end VALID
 #REGION 1
-sele asbf_d
+sele gpif_d
 scat memvar
 * фильтр не будем делать
 
-sele asbf_v
+sele gpif_v
 
   define window browse_xx ;
 	from 0,1 to 24,79 ;
@@ -410,16 +410,16 @@ sele asbf_v
   browse normal  ledit;
      noappend nomenu ;
      window browse_xx ;
-     title "Asb выбери вид аналитики "
+     title "Gpi выбери вид аналитики "
 
   release window browse_xx
 
 scat memvar
 
-sele asbf_d
+sele gpif_d
 
-repl asbf_dav3    with  m.asbf_vk
-repl asbf_davt3    with 'х'
+repl gpif_dav3    with  m.gpif_vk
+repl gpif_davt3    with 'х'
 
 show gets
 
@@ -429,32 +429,32 @@ show gets
 
 *       ╓─────────────────────────────────────────────────────────╖
 *       ║                                                         ║
-*       ║ _2LP0UA6QI           Read Level Show                    ║
+*       ║ _6760JKZ8N           Read Level Show                    ║
 *       ║                                                         ║
 *       ║ Function Origin:                                        ║
 *       ║                                                         ║
 *       ║                                                         ║
 *       ║ From Platform:       MS-DOS                             ║
-*       ║ From Screen:         ASBF_DSX                           ║
+*       ║ From Screen:         GPIF_DSX                           ║
 *       ║ Called By:           READ Statement                     ║
 *       ║ Snippet Number:      9                                  ║
 *       ║                                                         ║
 *       ╙─────────────────────────────────────────────────────────╜
 *
-FUNCTION _2lp0ua6qi     && Read Level Show
+FUNCTION _6760jkz8n     && Read Level Show
 PRIVATE currwind
 STORE WOUTPUT() TO currwind
 *
-* Show Code from screen: ASBF_DSX
+* Show Code from screen: GPIF_DSX
 *
 #REGION 1
 IF SYS(2016) = "" OR SYS(2016) = "*"
 	ACTIVATE SCREEN
-	@ 11,30 SAY asbf_dav1 ;
+	@ 11,30 SAY gpif_dav1 ;
 		SIZE 1,3, 0
-	@ 13,30 SAY asbf_dav2 ;
+	@ 13,30 SAY gpif_dav2 ;
 		SIZE 1,3, 0
-	@ 15,30 SAY asbf_dav3 ;
+	@ 15,30 SAY gpif_dav3 ;
 		SIZE 1,3, 0
 ENDIF
 IF NOT EMPTY(currwind)

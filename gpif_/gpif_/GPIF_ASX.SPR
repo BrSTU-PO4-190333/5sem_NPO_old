@@ -1,12 +1,12 @@
 *       ÖÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
 *       º                                                         º
-*       º 02/25/09            ASBF_ASX.SPR               13:49:04 º
+*       º 11/23/21            GPIF_ASX.SPR               09:02:41 º
 *       º                                                         º
 *       ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
 *       º                                                         º
 *       º Author's Name                                           º
 *       º                                                         º
-*       º Copyright (c) 2009 Company Name                         º
+*       º Copyright (c) 2021 Company Name                         º
 *       º Address                                                 º
 *       º City,     Zip                                           º
 *       º                                                         º
@@ -41,7 +41,7 @@ m.currarea = SELECT()
 
 *       ÖÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
 *       º                                                         º
-*       º         ASBF_ASX/MS-DOS Setup Code - SECTION 2          º
+*       º         GPIF_ASX/MS-DOS Setup Code - SECTION 2          º
 *       º                                                         º
 *       ÓÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ½
 *
@@ -51,68 +51,68 @@ close all
 clear
 
 select 1
-use asbf_v
+use gpif_v
 
 select 2
-use asbf_a
+use gpif_a
 
 *       ÖÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
 *       º                                                         º
-*       º              ASBF_ASX/MS-DOS Screen Layout              º
+*       º              GPIF_ASX/MS-DOS Screen Layout              º
 *       º                                                         º
 *       ÓÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ½
 *
 
 #REGION 1
-@ 4,8 SAY "=€¡¤ã«à å¬ ­ ‘..=" ;
-	SIZE 1,18, 0
 @ 18,65 GET m.end ;
 	PICTURE "@*HN ¢ëå®¤" ;
 	SIZE 1,7,1 ;
 	DEFAULT 1 ;
-	VALID _2lb0tm7ds()
+	VALID _6760jdx10()
 @ 18,28 GET m.end ;
 	PICTURE "@*HN ¢¯¥à¥¤" ;
 	SIZE 1,8,1 ;
 	DEFAULT 1 ;
-	VALID _2lb0tm7dx()
+	VALID _6760jdx1o()
 @ 18,20 GET m.end ;
 	PICTURE "@*HN ­ § ¤" ;
 	SIZE 1,7,1 ;
 	DEFAULT 1 ;
-	VALID _2lb0tm7e1()
+	VALID _6760jdx28()
 @ 18,43 GET m.end ;
 	PICTURE "@*HN ¤®¡ ¢¨âì" ;
 	SIZE 1,10,1 ;
 	DEFAULT 1 ;
-	VALID _2lb0tm7e6()
+	VALID _6760jdx2t()
 @ 18,5 GET m.end ;
 	PICTURE "@*HN ¢ë¡à âì" ;
 	SIZE 1,9,1 ;
 	DEFAULT 1 ;
-	VALID _2lb0tm7eb()
-@ 9,33 SAY asbf_av ;
+	VALID _6760jdx3e()
+@ 9,33 SAY gpif_av ;
 	SIZE 1,3
-@ 12,41 GET asbf_ak ;
+@ 12,41 GET gpif_ak ;
 	SIZE 1,10 ;
 	DEFAULT " "
-@ 12,11 SAY "asb_ª®¤  ­ «¨â¨ª¨" ;
+@ 12,11 SAY "gpi_ª®¤  ­ «¨â¨ª¨" ;
 	SIZE 1,17, 0
 @ 9,11 GET m.end ;
-	PICTURE "@*HN asbf_¢¨¤  ­ «¨â¨ª¨" ;
+	PICTURE "@*HN gpif_¢¨¤  ­ «¨â¨ª¨" ;
 	SIZE 1,20,1 ;
 	DEFAULT 1 ;
-	VALID _2lb0tm7ej()
+	VALID _6760jdx4l()
 @ 8,8 TO 13,70 DOUBLE
-@ 4,60 SAY "=asbf_asx=" ;
+@ 4,60 SAY "=gpif_asx=" ;
 	SIZE 1,10, 0
-@ 6,25 SAY "asb_ª®¤ë  ­ «¨â¨ç¥áª®£® ãçñâ  (Š€“)" ;
+@ 6,25 SAY "gpi_ª®¤ë  ­ «¨â¨ç¥áª®£® ãçñâ  (Š€“)" ;
 	SIZE 1,35, 0
+@ 4,8 SAY "=ƒ « ­¨­ . ˆ.=" ;
+	SIZE 1,15, 0
 
 
 
 READ CYCLE ;
-	SHOW _2lb0tm7eu()
+	SHOW _6760jdx66()
 
 SELECT (m.currarea)
 
@@ -128,12 +128,12 @@ ENDIF
 
 *       ÖÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
 *       º                                                         º
-*       º _2LB0TM7DS           m.end VALID                        º
+*       º _6760JDX10           m.end VALID                        º
 *       º                                                         º
 *       º Function Origin:                                        º
 *       º                                                         º
 *       º From Platform:       MS-DOS                             º
-*       º From Screen:         ASBF_ASX,     Record Number:    3  º
+*       º From Screen:         GPIF_ASX,     Record Number:    2  º
 *       º Variable:            m.end                              º
 *       º Called By:           VALID Clause                       º
 *       º Object Type:         Push Button                        º
@@ -141,19 +141,19 @@ ENDIF
 *       º                                                         º
 *       ÓÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ½
 *
-FUNCTION _2lb0tm7ds     &&  m.end VALID
+FUNCTION _6760jdx10     &&  m.end VALID
 #REGION 1
 clear
 cancel
 
 *       ÖÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
 *       º                                                         º
-*       º _2LB0TM7DX           m.end VALID                        º
+*       º _6760JDX1O           m.end VALID                        º
 *       º                                                         º
 *       º Function Origin:                                        º
 *       º                                                         º
 *       º From Platform:       MS-DOS                             º
-*       º From Screen:         ASBF_ASX,     Record Number:    4  º
+*       º From Screen:         GPIF_ASX,     Record Number:    3  º
 *       º Variable:            m.end                              º
 *       º Called By:           VALID Clause                       º
 *       º Object Type:         Push Button                        º
@@ -161,19 +161,19 @@ cancel
 *       º                                                         º
 *       ÓÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ½
 *
-FUNCTION _2lb0tm7dx     &&  m.end VALID
+FUNCTION _6760jdx1o     &&  m.end VALID
 #REGION 1
 skip
 show gets
 
 *       ÖÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
 *       º                                                         º
-*       º _2LB0TM7E1           m.end VALID                        º
+*       º _6760JDX28           m.end VALID                        º
 *       º                                                         º
 *       º Function Origin:                                        º
 *       º                                                         º
 *       º From Platform:       MS-DOS                             º
-*       º From Screen:         ASBF_ASX,     Record Number:    5  º
+*       º From Screen:         GPIF_ASX,     Record Number:    4  º
 *       º Variable:            m.end                              º
 *       º Called By:           VALID Clause                       º
 *       º Object Type:         Push Button                        º
@@ -181,19 +181,19 @@ show gets
 *       º                                                         º
 *       ÓÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ½
 *
-FUNCTION _2lb0tm7e1     &&  m.end VALID
+FUNCTION _6760jdx28     &&  m.end VALID
 #REGION 1
 skip -1
 show gets
 
 *       ÖÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
 *       º                                                         º
-*       º _2LB0TM7E6           m.end VALID                        º
+*       º _6760JDX2T           m.end VALID                        º
 *       º                                                         º
 *       º Function Origin:                                        º
 *       º                                                         º
 *       º From Platform:       MS-DOS                             º
-*       º From Screen:         ASBF_ASX,     Record Number:    6  º
+*       º From Screen:         GPIF_ASX,     Record Number:    5  º
 *       º Variable:            m.end                              º
 *       º Called By:           VALID Clause                       º
 *       º Object Type:         Push Button                        º
@@ -201,19 +201,19 @@ show gets
 *       º                                                         º
 *       ÓÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ½
 *
-FUNCTION _2lb0tm7e6     &&  m.end VALID
+FUNCTION _6760jdx2t     &&  m.end VALID
 #REGION 1
 append
 show gets
 
 *       ÖÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
 *       º                                                         º
-*       º _2LB0TM7EB           m.end VALID                        º
+*       º _6760JDX3E           m.end VALID                        º
 *       º                                                         º
 *       º Function Origin:                                        º
 *       º                                                         º
 *       º From Platform:       MS-DOS                             º
-*       º From Screen:         ASBF_ASX,     Record Number:    7  º
+*       º From Screen:         GPIF_ASX,     Record Number:    6  º
 *       º Variable:            m.end                              º
 *       º Called By:           VALID Clause                       º
 *       º Object Type:         Push Button                        º
@@ -221,7 +221,7 @@ show gets
 *       º                                                         º
 *       ÓÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ½
 *
-FUNCTION _2lb0tm7eb     &&  m.end VALID
+FUNCTION _6760jdx3e     &&  m.end VALID
 #REGION 1
   define window browse_xx ;
 	from 0,1 to 24,79 ;
@@ -232,7 +232,7 @@ FUNCTION _2lb0tm7eb     &&  m.end VALID
   browse normal  ledit;
      noappend nomenu ;
      window browse_xx ;
-     title "asb  ª àâ®â¥ª  ª®¤ë  ­. ãçñâ  "
+     title "gpi  ª àâ®â¥ª  ª®¤ë  ­. ãçñâ  "
 
   release window browse_xx
 
@@ -241,12 +241,12 @@ FUNCTION _2lb0tm7eb     &&  m.end VALID
 
 *       ÖÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
 *       º                                                         º
-*       º _2LB0TM7EJ           m.end VALID                        º
+*       º _6760JDX4L           m.end VALID                        º
 *       º                                                         º
 *       º Function Origin:                                        º
 *       º                                                         º
 *       º From Platform:       MS-DOS                             º
-*       º From Screen:         ASBF_ASX,     Record Number:   11  º
+*       º From Screen:         GPIF_ASX,     Record Number:   10  º
 *       º Variable:            m.end                              º
 *       º Called By:           VALID Clause                       º
 *       º Object Type:         Push Button                        º
@@ -254,13 +254,13 @@ FUNCTION _2lb0tm7eb     &&  m.end VALID
 *       º                                                         º
 *       ÓÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ½
 *
-FUNCTION _2lb0tm7ej     &&  m.end VALID
+FUNCTION _6760jdx4l     &&  m.end VALID
 #REGION 1
- sele asbf_a
+ sele gpif_a
 scat memvar
 * ä¨«ìâà ­¥ ¡ã¤¥¬ ¤¥« âì
 
-sele asbf_v
+sele gpif_v
 
   define window browse_xx ;
 	from 0,1 to 24,79 ;
@@ -271,15 +271,15 @@ sele asbf_v
   browse normal  ledit;
      noappend nomenu ;
      window browse_xx ;
-     title "asb ¢ë¡¥à¨ ¢¨¤  ­ «¨â¨ª¨ "
+     title "gpi ¢ë¡¥à¨ ¢¨¤  ­ «¨â¨ª¨ "
 
   release window browse_xx
 
 scat memvar
 
-sele asbf_a
+sele gpif_a
 
-repl asbf_av    with  m.asbf_vk
+repl gpif_av    with  m.gpif_vk
 
 show gets
 
@@ -289,28 +289,28 @@ show gets
 
 *       ÖÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
 *       º                                                         º
-*       º _2LB0TM7EU           Read Level Show                    º
+*       º _6760JDX66           Read Level Show                    º
 *       º                                                         º
 *       º Function Origin:                                        º
 *       º                                                         º
 *       º                                                         º
 *       º From Platform:       MS-DOS                             º
-*       º From Screen:         ASBF_ASX                           º
+*       º From Screen:         GPIF_ASX                           º
 *       º Called By:           READ Statement                     º
 *       º Snippet Number:      7                                  º
 *       º                                                         º
 *       ÓÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ½
 *
-FUNCTION _2lb0tm7eu     && Read Level Show
+FUNCTION _6760jdx66     && Read Level Show
 PRIVATE currwind
 STORE WOUTPUT() TO currwind
 *
-* Show Code from screen: ASBF_ASX
+* Show Code from screen: GPIF_ASX
 *
 #REGION 1
 IF SYS(2016) = "" OR SYS(2016) = "*"
 	ACTIVATE SCREEN
-	@ 9,33 SAY asbf_av ;
+	@ 9,33 SAY gpif_av ;
 		SIZE 1,3, 0
 ENDIF
 IF NOT EMPTY(currwind)

@@ -1,12 +1,12 @@
 *       ЦДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД·
 *       є                                                         є
-*       є 04/22/09            ASBF_CST.SPR               14:02:37 є
+*       є 11/23/21            GPIF_CST.SPR               09:06:05 є
 *       є                                                         є
 *       ЗДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД¶
 *       є                                                         є
 *       є Author's Name                                           є
 *       є                                                         є
-*       є Copyright (c) 2009 Company Name                         є
+*       є Copyright (c) 2021 Company Name                         є
 *       є Address                                                 є
 *       є City,     Zip                                           є
 *       є                                                         є
@@ -41,7 +41,7 @@ m.currarea = SELECT()
 
 *       ЦДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД·
 *       є                                                         є
-*       є         ASBF_CST/MS-DOS Setup Code - SECTION 2          є
+*       є         GPIF_CST/MS-DOS Setup Code - SECTION 2          є
 *       є                                                         є
 *       УДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДЅ
 *
@@ -51,36 +51,36 @@ close all
 clear
 
 select 1
-use asbf_s
+use gpif_s
 
 select 2
-use asbf_c
+use gpif_c
 
 *       ЦДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД·
 *       є                                                         є
-*       є              ASBF_CST/MS-DOS Screen Layout              є
+*       є              GPIF_CST/MS-DOS Screen Layout              є
 *       є                                                         є
 *       УДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДЅ
 *
 
 #REGION 1
 @ 5,9 TO 17,74
-@ 4,8 SAY "=ЂЎ¤г«а е¬ ­ ‘.Ѓ.=" ;
-	SIZE 1,18, 0
 @ 18,65 GET m.end ;
 	PICTURE "@*HN ўле®¤" ;
 	SIZE 1,7,1 ;
 	DEFAULT 1 ;
-	VALID _2mv0u3mc8()
-@ 8,38 GET asbf_cdatt ;
+	VALID _6760ji9rb()
+@ 8,38 GET gpif_cdatt ;
 	SIZE 1,8 ;
 	DEFAULT {  /  /  }
 @ 4,31 SAY "ўў®¤ вҐЄгйҐ© ¤ вл" ;
 	SIZE 1,17, 0
-@ 4,60 SAY "=asbf_бst=" ;
+@ 4,60 SAY "=gpif_бst=" ;
 	SIZE 1,10, 0
-@ 8,15 SAY "asb_вҐЄгй п ¤ в " ;
+@ 8,15 SAY "gpi_вҐЄгй п ¤ в " ;
 	SIZE 1,16, 0
+@ 4,8 SAY "=ѓ « ­Ё­ Џ. €.=" ;
+	SIZE 1,15, 0
 
 
 
@@ -100,12 +100,12 @@ ENDIF
 
 *       ЦДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД·
 *       є                                                         є
-*       є _2MV0U3MC8           m.end VALID                        є
+*       є _6760JI9RB           m.end VALID                        є
 *       є                                                         є
 *       є Function Origin:                                        є
 *       є                                                         є
 *       є From Platform:       MS-DOS                             є
-*       є From Screen:         ASBF_CST,     Record Number:    4  є
+*       є From Screen:         GPIF_CST,     Record Number:    3  є
 *       є Variable:            m.end                              є
 *       є Called By:           VALID Clause                       є
 *       є Object Type:         Push Button                        є
@@ -113,7 +113,7 @@ ENDIF
 *       є                                                         є
 *       УДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДЅ
 *
-FUNCTION _2mv0u3mc8     &&  m.end VALID
+FUNCTION _6760ji9rb     &&  m.end VALID
 #REGION 1
 clear
 cancel

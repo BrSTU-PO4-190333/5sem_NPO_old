@@ -1,10 +1,10 @@
-SELECT asbf_C.*, asbf_K.*;
- FROM asbf_K, asbf_C;
- WHERE asbf_C.asbf_C0 = asbf_K.asbf_K0;
-   AND asbf_K.asbf_KS = asbf_C.asbf_CS;
-   AND asbf_K.asbf_KDATA >= asbf_C.asbf_CDATS;
-   AND asbf_K.asbf_KDATA < asbf_C.asbf_CDATD;
-   AND asbf_K.asbf_KKR = 0;
- ORDER BY asbf_K.asbf_KKS;
- INTO CURSOR asbf_KQV
-REPORT FORM asbf_KRV.FRX TO FILE asbf_kfV.TXT NOCONSOLE
+SELECT gpif_C.*, gpif_K.*;
+ FROM gpif_K, gpif_C;
+ WHERE gpif_C.gpif_C0 = gpif_K.gpif_K0;
+   AND gpif_K.gpif_KS = gpif_C.gpif_CS;
+   AND gpif_K.gpif_KDATA >= gpif_C.gpif_CDATS;
+   AND gpif_K.gpif_KDATA < gpif_C.gpif_CDATD;
+   AND gpif_K.gpif_KKR = 0;
+ ORDER BY gpif_K.gpif_KKS;
+ INTO CURSOR gpif_KQV
+REPORT FORM gpif_KRV.FRX TO FILE gpif_kfV.TXT NOCONSOLE

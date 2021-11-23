@@ -1,12 +1,12 @@
 *       ЦДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД·
 *       є                                                         є
-*       є 03/07/09            ASBF_CSI.SPR               10:43:39 є
+*       є 11/23/21            GPIF_CSI.SPR               09:04:58 є
 *       є                                                         є
 *       ЗДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД¶
 *       є                                                         є
 *       є Author's Name                                           є
 *       є                                                         є
-*       є Copyright (c) 2009 Company Name                         є
+*       є Copyright (c) 2021 Company Name                         є
 *       є Address                                                 є
 *       є City,     Zip                                           є
 *       є                                                         є
@@ -41,7 +41,7 @@ m.currarea = SELECT()
 
 *       ЦДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД·
 *       є                                                         є
-*       є         ASBF_CSI/MS-DOS Setup Code - SECTION 2          є
+*       є         GPIF_CSI/MS-DOS Setup Code - SECTION 2          є
 *       є                                                         є
 *       УДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДЅ
 *
@@ -51,55 +51,55 @@ close all
 clear
 
 select 1
-use asbf_s
+use gpif_s
 
 select 2
-use asbf_c
+use gpif_c
 
 *       ЦДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД·
 *       є                                                         є
-*       є              ASBF_CSI/MS-DOS Screen Layout              є
+*       є              GPIF_CSI/MS-DOS Screen Layout              є
 *       є                                                         є
 *       УДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДЅ
 *
 
 #REGION 1
 @ 5,9 TO 17,74
-@ 4,8 SAY "=ЂЎ¤г«а е¬ ­ ‘.Ѓ.=" ;
-	SIZE 1,18, 0
 @ 18,65 GET m.end ;
 	PICTURE "@*HN ўле®¤" ;
 	SIZE 1,7,1 ;
 	DEFAULT 1 ;
-	VALID _2ll0mzr2n()
+	VALID _6760jgul3()
 @ 4,31 SAY "ўў®¤ Ё­вҐаў «  Ё бзҐв " ;
 	SIZE 1,22, 0
-@ 8,22 SAY "asb_Ё­вҐаў « б" ;
+@ 8,22 SAY "gpi_Ё­вҐаў « б" ;
 	SIZE 1,14, 0
-@ 8,38 GET asbf_cdats ;
+@ 8,38 GET gpif_cdats ;
 	SIZE 1,8 ;
 	DEFAULT {  /  /  }
 @ 8,50 SAY "¤®" ;
 	SIZE 1,2, 0
-@ 8,53 GET asbf_cdatd ;
+@ 8,53 GET gpif_cdatd ;
 	SIZE 1,8 ;
 	DEFAULT {  /  /  }
-@ 11,41 SAY asbf_cs ;
+@ 11,41 SAY gpif_cs ;
 	SIZE 1,2
-@ 4,60 SAY "=asbf_бsi=" ;
+@ 4,60 SAY "=gpif_бsi=" ;
 	SIZE 1,10, 0
 @ 11,26 GET m.end ;
-	PICTURE "@*HN asb_бзсв" ;
+	PICTURE "@*HN gpi_бзсв" ;
 	SIZE 1,11,1 ;
 	DEFAULT 1 ;
-	VALID _2ll0mzr2v()
-@ 11,47 SAY asbf_csn ;
+	VALID _6760jgum0()
+@ 11,47 SAY gpif_csn ;
 	SIZE 1,10
+@ 4,8 SAY "=ѓ « ­Ё­ Џ. €.=" ;
+	SIZE 1,15, 0
 
 
 
 READ CYCLE ;
-	SHOW _2ll0mzr35()
+	SHOW _6760jgun5()
 
 SELECT (m.currarea)
 
@@ -115,12 +115,12 @@ ENDIF
 
 *       ЦДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД·
 *       є                                                         є
-*       є _2LL0MZR2N           m.end VALID                        є
+*       є _6760JGUL3           m.end VALID                        є
 *       є                                                         є
 *       є Function Origin:                                        є
 *       є                                                         є
 *       є From Platform:       MS-DOS                             є
-*       є From Screen:         ASBF_CSI,     Record Number:    4  є
+*       є From Screen:         GPIF_CSI,     Record Number:    3  є
 *       є Variable:            m.end                              є
 *       є Called By:           VALID Clause                       є
 *       є Object Type:         Push Button                        є
@@ -128,19 +128,19 @@ ENDIF
 *       є                                                         є
 *       УДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДЅ
 *
-FUNCTION _2ll0mzr2n     &&  m.end VALID
+FUNCTION _6760jgul3     &&  m.end VALID
 #REGION 1
 clear
 cancel
 
 *       ЦДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД·
 *       є                                                         є
-*       є _2LL0MZR2V           m.end VALID                        є
+*       є _6760JGUM0           m.end VALID                        є
 *       є                                                         є
 *       є Function Origin:                                        є
 *       є                                                         є
 *       є From Platform:       MS-DOS                             є
-*       є From Screen:         ASBF_CSI,     Record Number:   12  є
+*       є From Screen:         GPIF_CSI,     Record Number:   11  є
 *       є Variable:            m.end                              є
 *       є Called By:           VALID Clause                       є
 *       є Object Type:         Push Button                        є
@@ -148,13 +148,13 @@ cancel
 *       є                                                         є
 *       УДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДЅ
 *
-FUNCTION _2ll0mzr2v     &&  m.end VALID
+FUNCTION _6760jgum0     &&  m.end VALID
 #REGION 1
-sele asbf_c
+sele gpif_c
 scat memvar
 * дЁ«мва ­Ґ Ўг¤Ґ¬ ¤Ґ« вм
 
-sele asbf_s
+sele gpif_s
 
   define window browse_xx ;
 	from 0,1 to 24,79 ;
@@ -165,16 +165,16 @@ sele asbf_s
   browse normal  ledit;
      noappend nomenu ;
      window browse_xx ;
-     title "Asb ўлЎҐаЁ бзҐв "
+     title "Gpi ўлЎҐаЁ бзҐв "
 
   release window browse_xx
 
 scat memvar
 
-sele asbf_c
+sele gpif_c
 
-repl asbf_cs    with  m.asbf_sk
-repl asbf_csn    with  m.asbf_sn
+repl gpif_cs    with  m.gpif_sk
+repl gpif_csn    with  m.gpif_sn
 
 show gets
 
@@ -184,30 +184,30 @@ show gets
 
 *       ЦДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД·
 *       є                                                         є
-*       є _2LL0MZR35           Read Level Show                    є
+*       є _6760JGUN5           Read Level Show                    є
 *       є                                                         є
 *       є Function Origin:                                        є
 *       є                                                         є
 *       є                                                         є
 *       є From Platform:       MS-DOS                             є
-*       є From Screen:         ASBF_CSI                           є
+*       є From Screen:         GPIF_CSI                           є
 *       є Called By:           READ Statement                     є
 *       є Snippet Number:      3                                  є
 *       є                                                         є
 *       УДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДЅ
 *
-FUNCTION _2ll0mzr35     && Read Level Show
+FUNCTION _6760jgun5     && Read Level Show
 PRIVATE currwind
 STORE WOUTPUT() TO currwind
 *
-* Show Code from screen: ASBF_CSI
+* Show Code from screen: GPIF_CSI
 *
 #REGION 1
 IF SYS(2016) = "" OR SYS(2016) = "*"
 	ACTIVATE SCREEN
-	@ 11,41 SAY asbf_cs ;
+	@ 11,41 SAY gpif_cs ;
 		SIZE 1,2, 0
-	@ 11,47 SAY asbf_csn ;
+	@ 11,47 SAY gpif_csn ;
 		SIZE 1,10, 0
 ENDIF
 IF NOT EMPTY(currwind)
