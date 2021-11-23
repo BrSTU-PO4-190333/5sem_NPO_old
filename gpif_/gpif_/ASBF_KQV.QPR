@@ -1,0 +1,10 @@
+SELECT asbf_C.*, asbf_K.*;
+ FROM asbf_K, asbf_C;
+ WHERE asbf_C.asbf_C0 = asbf_K.asbf_K0;
+   AND asbf_K.asbf_KS = asbf_C.asbf_CS;
+   AND asbf_K.asbf_KDATA >= asbf_C.asbf_CDATS;
+   AND asbf_K.asbf_KDATA < asbf_C.asbf_CDATD;
+   AND asbf_K.asbf_KKR = 0;
+ ORDER BY asbf_K.asbf_KKS;
+ INTO CURSOR asbf_KQV
+REPORT FORM asbf_KRV.FRX TO FILE asbf_kfV.TXT NOCONSOLE
