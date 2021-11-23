@@ -7,30 +7,9 @@
 - [Убрать кракозябры в DOSBox](docs/gpi_rus_dosbox.md)
 - [Переключаться на русскую клавиатуру в DOSBox](docs/gpi_rus_keyboard_dosbox.md)
 - [Автостарт foxprox из DOSBox](docs/gpi_autostart_foxprox_in_dosbox.md)
+- [Переименовывам имена файлов ASBF_ на свой FIOF_ используя python](docs/gpi_rename_foxpro_project_on_python.md)
 
 ---
-
-## Переименование проекта `ASBF0422`
-
-### Переименовываем файлы
-1. Открываем DOSBox
-    ```
-    mount r: r:\
-    r:
-    cd gpif_\FIOF_
-    ```
-1. Разархивируем `ASBF0422.ARJ`
-    ```
-    ..\arm_f26\arj x ASBF0422 -v
-    ```
-1. Запускаем python скрипт,
-    который переменует `ASBF_*` файлы на `FIOF_*`
-    (поменять `FIOF_` можно в коде python)
-    ```
-    r:
-    cd r:\gpif_\FIOF_
-    python gpi_autorename.py
-    ```
 
 ### Переименование переменных в файлах через notepad++
 
