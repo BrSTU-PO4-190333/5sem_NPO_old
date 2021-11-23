@@ -1,8 +1,6 @@
 ## Установка программ
 
-### Установка DOSBox
-
-Устанавливаем [DOSBox](https://www.dosbox.com/).
+[Установка DOSBox](docs/gpi_install_dosbox.md)
 
 ### Установка foxprox
 1. Нам нужны `ARJ.EXE`, `F.ARJ`, `F.A01`, `F.A02`.
