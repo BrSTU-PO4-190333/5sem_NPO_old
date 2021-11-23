@@ -4,6 +4,8 @@
 - [Установка FoxProx](docs/gpi_install_foxprox.md)
 - [Читаем задание по foxprox](docs/gpi_read_task.md)
 - [Копирование проекта ASBF0422](docs/gpi_open_foxprox_project.md)
+- [Убрать кракозябры в DOSBox](docs/gpi_rus_dosbox.md)
+- [Переключаться на русскую клавиатуру в DOSBox](docs/gpi_rus_keyboard_dosbox.md)
 
 ---
 
