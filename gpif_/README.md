@@ -11,6 +11,23 @@
 
 ---
 
+## Tree
+
+```bash
+tree --charset ascii
+```
+
+```bash
+.
+`-- gpif_           #      
+    |-- README.md   # файл с информацией о модуле F
+    |-- arm_f26     # U:/VT&PM/EU_EI/PIN/arm_f26/
+    |-- bbd         # U:/VT&PM/EU_EI/PIN/bdd/
+    |-- docs        # Папка с информацией для README.md 
+    |-- fiof_       # шаблон, с которого начинать
+    `-- gpif_       # мой проект
+```
+
 ### Переименование переменных в файлах через notepad++
 
 1. Скачиваем и устанавливаем [notepad++](https://notepad-plus-plus.org/)
