@@ -6,37 +6,7 @@
 - [Копирование проекта ASBF0422](docs/gpi_open_foxprox_project.md)
 - [Убрать кракозябры в DOSBox](docs/gpi_rus_dosbox.md)
 - [Переключаться на русскую клавиатуру в DOSBox](docs/gpi_rus_keyboard_dosbox.md)
-
----
-
-## Руссификация DOSBOX на Windows
-
-1. Открываем пуск.
-1. Открываем папку `DOSBox@`, затем папку `DOSBox @ Options` (где значок `@` - это версия).
-1. Меняем строку в файле `dosbox@.conf` (где значок `@` - это версия):
-    ```conf
-    [dos]
-    #keyboardlayout=auto
-    keyboardlayout=ru
-    ```
-
-Теперь в проекте `ASBF0422` отображается русский текст вместо кракозябр.
-Но покачто русский ввод не доступен (не работает `Alt` + `Shift`), так как нужно установить драйвера.
-
----
-
-## Автоматический старт foxpro, когда открываем DOSBOX
-
-1. Открываем пуск.
-1. Открываем папку `DOSBox@`, затем папку `DOSBox @ Options` (где значок `@` - это версия).
-1. Меняем строку в файле `dosbox@.conf` (где значок `@` - это версия):
-    ```conf
-    [autoexec]
-    mount r: r:\
-    r:
-    cd gpif_\foxprox
-    foxprox
-    ```
+- [Автостарт foxprox из DOSBox](docs/gpi_autostart_foxprox_in_dosbox.md)
 
 ---
 
