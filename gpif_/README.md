@@ -1,32 +1,7 @@
-## Установка программ
+## Меню
 
-[Установка DOSBox](docs/gpi_install_dosbox.md)
-
-### Установка foxprox
-1. Нам нужны `ARJ.EXE`, `F.ARJ`, `F.A01`, `F.A02`.
-    Копируем `U:/VT&PM/EU_EI/PIN/arm_f26` в `r:/gpif_/arm_f26`.
-1. Создаю папку `r:/gpif_/foxprox`.
-1. Открываем DOSBox и разархивирую `F.ARJ`.
-    ```bash
-    mount r: r:\
-    r:
-    cd gpif_\foxpro
-
-    ..\arm_f26\arj x ..\arm_f26\F -v
-    # n # нужен был n, чтобы не заменять файлы
-    # n # нужен был n, чтобы не заменять файлы
-    y # OK to process next volume (1)? # Тут вводим `y`
-    y # OK to process next volume (2)? # Тут вводим `y`
-    ```
-1. Закрываем DOSBox и отрываем DOSBox
-    ```
-    mount r: r:\
-    r:
-    cd gpif_\foxprox
-
-    foxprox
-    ```
-1. Жмем `< Cancel >` - и работаем в foxprox.
+- [Установка DOSBox](docs/gpi_install_dosbox.md)
+- [Установка FoxProx](docs/gpi_install_foxprox.md)
 
 ---
 
