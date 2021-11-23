@@ -9,12 +9,10 @@
 1. Открываем `DOSBox`.
 1. Прописываем команды в `DOSBox`:
     ```bash
-    mount d: d:\
-    d:
-    cd GPI_NPO5     # лутше такую папку не иметь, а хранить fiof_ в корне диска
-    cd GPIF_        # лутше такую папку не иметь, а хранить fiof_ в корне диска
-    cd FIOF_        # вот та папка fiof_
-    arj x F -v      # где F - это наш архив F.ARJ, arj - это ARJ.EXE
+    mount r: r:\
+    r:
+    cd FIOF_            # Вот та папка fiof_
+    arj x F -v          # Тут мы разархировали, где F - это наш архив F.ARJ, arj - это ARJ.EXE
     n
     n
     y

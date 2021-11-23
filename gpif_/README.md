@@ -3,6 +3,7 @@
 - [Установка DOSBox](docs/gpi_install_dosbox.md)
 - [Установка FoxProx](docs/gpi_install_foxprox.md)
 - [Читаем задание по foxprox](docs/gpi_read_task.md)
+- [Копирование проекта ASBF0422](docs/gpi_open_foxprox_project.md)
 
 ---
 
