@@ -1,5 +1,7 @@
 ## Переименовываем переменные проекта ASBF_ на свои через notepad++
 
+[На главную](../README.md)
+
 1. Скачиваем и устанавливаем [notepad++](https://notepad-plus-plus.org/)
 1. Жмем `Search` > `Find in Files`
 1. Выбираем `Directory: \/ ...` нашу папку `r:/gpif_/`
