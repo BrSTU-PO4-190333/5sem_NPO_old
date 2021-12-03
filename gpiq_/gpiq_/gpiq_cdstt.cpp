@@ -7,7 +7,7 @@ gpiq_cdstt::gpiq_cdstt(QWidget *parent) :
 {
     ui->setupUi(this);
     connect(ui->gpiq_cdstt_exit_c, SIGNAL(clicked()), this, SLOT(gpiq_cdstt_exit_cClick()));
-    QSqlQuery query("SELECT Gpiq_cd_datat FROM gpiq_cd");
+    QSqlQuery query("SELECT gpiq_cd_datat FROM gpiq_cd");
     query.next();
     QString gpiq_cd_datat = query.value(0).toString();
     ui->gpiq_cdstt_datat_e->setText(gpiq_cd_datat);
@@ -19,9 +19,9 @@ void gpiq_cdstt::gpiq_cdstt_exit_cClick() {
 
 void gpiq_cdstt::reject() {
     QSqlQuery query;
-    query.prepare("UPDATE gpiq_cd SET Gpiq_cd_datat = :Gpiq_cd_datat");
+    query.prepare("UPDATE gpiq_cd SET gpiq_cd_datat = :gpiq_cd_datat");
     QString gpiq_cd_datat = ui->gpiq_cdstt_datat_e->text();
-    query.bindValue(":Gpiq_cd_datat", gpiq_cd_datat);
+    query.bindValue(":gpiq_cd_datat", gpiq_cd_datat);
     query.exec();
     QDialog::reject();
 }

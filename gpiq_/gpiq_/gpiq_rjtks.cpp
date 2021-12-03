@@ -70,32 +70,32 @@ void gpiq_rjtks::gpiq_rjtks_wk_cClick() {
     for (int i = 0; i < size_rj; i++) {
         query.prepare("INSERT INTO gpiq_ks VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
         query.addBindValue("0");
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_data").toString());
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_dokk").toString());
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_dokn").toString());
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_dokd").toString());
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_to").toString());
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_db").toString());
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_dbn").toString());
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_kr").toString());
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_krn").toString());
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_rub").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_data").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_dokk").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_dokn").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_dokd").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_to").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_db").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_dbn").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_kr").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_krn").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_rub").toString());
         query.addBindValue("0");
         query.exec();
 
         query.prepare("INSERT INTO gpiq_ks VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
         query.addBindValue("0");
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_data").toString());
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_dokk").toString());
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_dokn").toString());
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_dokd").toString());
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_to"));
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_kr").toString());
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_krn").toString());
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_db").toString());
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_dbn").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_data").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_dokk").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_dokn").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_dokd").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_to"));
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_kr").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_krn").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_db").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_dbn").toString());
         query.addBindValue("0");
-        query.addBindValue(model_rj.record(i).value("Gpiq_rj_rub").toString());
+        query.addBindValue(model_rj.record(i).value("gpiq_rj_rub").toString());
         query.exec();
     }
 

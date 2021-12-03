@@ -26,11 +26,11 @@ void gpiq_togxx::gpiq_togxx_exit_cClick() {
 
 void gpiq_togxx::reject() {
     currentIndex = ui->gpiq_togxx_g->currentIndex().row();
-    gpiq_to_k = model.record(currentIndex).value("Gpiq_to_k").toString();
-    gpiq_to_db = model.record(currentIndex).value("Gpiq_to_db").toString();
-    gpiq_to_dbn = model.record(currentIndex).value("Gpiq_to_dbn").toString();
-    gpiq_to_kr = model.record(currentIndex).value("Gpiq_to_kr").toString();
-    gpiq_to_krn = model.record(currentIndex).value("Gpiq_to_krn").toString();
+    gpiq_to_k = model.record(currentIndex).value("gpiq_to_k").toString();
+    gpiq_to_db = model.record(currentIndex).value("gpiq_to_db").toString();
+    gpiq_to_dbn = model.record(currentIndex).value("gpiq_to_dbn").toString();
+    gpiq_to_kr = model.record(currentIndex).value("gpiq_to_kr").toString();
+    gpiq_to_krn = model.record(currentIndex).value("gpiq_to_krn").toString();
     QDialog::reject();
 }
 

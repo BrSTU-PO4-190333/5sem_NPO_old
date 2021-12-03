@@ -14,7 +14,7 @@ gpiq_ksroo::gpiq_ksroo(QWidget *parent) :
 {
     ui->setupUi(this);
     connect(ui->gpiq_ksroo_exit_c, SIGNAL(clicked()), this, SLOT(gpiq_ksroo_exit_cClick()));
-    QSqlQuery query("SELECT Gpiq_cd_s, Gpiq_cd_datad, Gpiq_cd_datas FROM gpiq_cd");
+    QSqlQuery query("SELECT gpiq_cd_s, gpiq_cd_datad, gpiq_cd_datas FROM gpiq_cd");
     query.next();
     QString gpiq_cd_s = query.value(0).toString();
     QString gpiq_cd_datad = query.value(1).toString();
@@ -31,7 +31,7 @@ gpiq_ksroo::gpiq_ksroo(QWidget *parent) :
     fprintf(file, "   data      | dokument   | schet | korr schet | vx | oborot db kr | isx      \n");
     fprintf(file, "  %s  \n", "---------------------------------------------------------------------------------");
     fprintf(file, "%85s\n", "");
-    QSqlQuery query_ks("SELECT Gpiq_ks_data, Gpiq_ks_dokk, Gpiq_ks_s, Gpiq_ks_ks, Gpiq_ks_rubdb, Gpiq_ks_rubkr, Gpiq_ks_dokn, Gpiq_ks_dokd FROM gpiq_ks");
+    QSqlQuery query_ks("SELECT gpiq_ks_data, gpiq_ks_dokk, gpiq_ks_s, gpiq_ks_ks, gpiq_ks_rubdb, gpiq_ks_rubkr, gpiq_ks_dokn, gpiq_ks_dokd FROM gpiq_ks");
 
     int gpiq_sumkr = 0;
     int gpiq_sumdb = 0;
@@ -79,7 +79,7 @@ gpiq_ksroo::gpiq_ksroo(QWidget *parent) :
     fprintf(file, "%85s\n", "");
 
     //-
-    QSqlQuery query_sum("SELECT SUM(Gpiq_ks_rubdb), SUM(Gpiq_ks_rubkr) FROM gpiq_ks");
+    QSqlQuery query_sum("SELECT SUM(gpiq_ks_rubdb), SUM(gpiq_ks_rubkr) FROM gpiq_ks");
     query_sum.next();
     //-
 

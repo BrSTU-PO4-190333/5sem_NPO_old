@@ -8,7 +8,7 @@ gpiq_cdsff::gpiq_cdsff(QWidget *parent) :
     ui->setupUi(this);
     connect(ui->gpiq_cdsff_exit_c, SIGNAL(clicked()), this, SLOT(gpiq_cdsff_exit_cClick()));
 
-    QSqlQuery query("SELECT Gpiq_cd_datas, Gpiq_cd_datad, Gpiq_cd_s FROM gpiq_cd");
+    QSqlQuery query("SELECT gpiq_cd_datas, gpiq_cd_datad, gpiq_cd_s FROM gpiq_cd");
 
     query.next();
     QString gpiq_cd_datas = query.value(0).toString();
@@ -25,7 +25,7 @@ void gpiq_cdsff::gpiq_cdsff_exit_cClick() {
 
 void gpiq_cdsff::reject() {
     QSqlQuery query;
-    query.prepare("UPDATE gpiq_cd SET Gpiq_cd_datas = :datas, Gpiq_cd_datad = :datad, Gpiq_cd_s = :s");
+    query.prepare("UPDATE gpiq_cd SET gpiq_cd_datas = :datas, gpiq_cd_datad = :datad, gpiq_cd_s = :s");
     QString gpiq_cd_datas = ui->gpiq_cdsff_datas_e->text();
     QString gpiq_cd_datad = ui->gpiq_cdsff_datad_e->text();
     QString gpiq_cd_s = ui->gpiq_cdsff_s_e->text();

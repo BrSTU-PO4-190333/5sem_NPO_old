@@ -52,16 +52,16 @@ gpiq_rjsxx::~gpiq_rjsxx()
 void gpiq_rjsxx::changeEdits(int newIndex) {
     if (newIndex >=0 && newIndex < size) {
         currentIndex = newIndex;
-        QString gpiq_rj_db = model.record(currentIndex).value("Gpiq_rj_db").toString();
-        QString gpiq_rj_dbn = model.record(currentIndex).value("Gpiq_rj_dbn").toString();
-        QString gpiq_rj_dokk = model.record(currentIndex).value("Gpiq_rj_dokk").toString();
-        QString gpiq_rj_dokd = model.record(currentIndex).value("Gpiq_rj_dokd").toString();
-        QString gpiq_rj_dokn = model.record(currentIndex).value("Gpiq_rj_dokn").toString();
-        QString gpiq_rj_data = model.record(currentIndex).value("Gpiq_rj_data").toString();
-        QString gpiq_rj_to = model.record(currentIndex).value("Gpiq_rj_to").toString();
-        QString gpiq_rj_kr = model.record(currentIndex).value("Gpiq_rj_kr").toString();
-        QString gpiq_rj_krn = model.record(currentIndex).value("Gpiq_rj_krn").toString();
-        QString gpiq_rj_rub = model.record(currentIndex).value("Gpiq_rj_rub").toString();
+        QString gpiq_rj_db = model.record(currentIndex).value("gpiq_rj_db").toString();
+        QString gpiq_rj_dbn = model.record(currentIndex).value("gpiq_rj_dbn").toString();
+        QString gpiq_rj_dokk = model.record(currentIndex).value("gpiq_rj_dokk").toString();
+        QString gpiq_rj_dokd = model.record(currentIndex).value("gpiq_rj_dokd").toString();
+        QString gpiq_rj_dokn = model.record(currentIndex).value("gpiq_rj_dokn").toString();
+        QString gpiq_rj_data = model.record(currentIndex).value("gpiq_rj_data").toString();
+        QString gpiq_rj_to = model.record(currentIndex).value("gpiq_rj_to").toString();
+        QString gpiq_rj_kr = model.record(currentIndex).value("gpiq_rj_kr").toString();
+        QString gpiq_rj_krn = model.record(currentIndex).value("gpiq_rj_krn").toString();
+        QString gpiq_rj_rub = model.record(currentIndex).value("gpiq_rj_rub").toString();
         ui->gpiq_rjsxx_db_e->setText(gpiq_rj_db);
         ui->gpiq_rjsxx_dbn_e->setText(gpiq_rj_dbn);
         ui->gpiq_rjsxx_dokk_e->setText(gpiq_rj_dokk);
@@ -127,41 +127,41 @@ void gpiq_rjsxx::gpiq_rjsxx_del_cClick() {
 }
 
 void gpiq_rjsxx::gpiq_rjsxx_db_eTextChanged(QString text) {
-    model.setData(model.index(currentIndex, model.fieldIndex("Gpiq_rj_db")), text);
+    model.setData(model.index(currentIndex, model.fieldIndex("gpiq_rj_db")), text);
 }
 
 void gpiq_rjsxx::gpiq_rjsxx_dbn_eTextChanged(QString text) {
-    model.setData(model.index(currentIndex, model.fieldIndex("Gpiq_rj_dbn")), text);
+    model.setData(model.index(currentIndex, model.fieldIndex("gpiq_rj_dbn")), text);
 }
 
 void gpiq_rjsxx::gpiq_rjsxx_dokk_eTextChanged(QString text) {
-    model.setData(model.index(currentIndex, model.fieldIndex("Gpiq_rj_dokk")), text);
+    model.setData(model.index(currentIndex, model.fieldIndex("gpiq_rj_dokk")), text);
 }
 
 void gpiq_rjsxx::gpiq_rjsxx_kr_eTextChanged(QString text) {
-    model.setData(model.index(currentIndex, model.fieldIndex("Gpiq_rj_kr")), text);
+    model.setData(model.index(currentIndex, model.fieldIndex("gpiq_rj_kr")), text);
 }
 
 void gpiq_rjsxx::gpiq_rjsxx_krn_eTextChanged(QString text) {
-    model.setData(model.index(currentIndex, model.fieldIndex("Gpiq_rj_krn")), text);
+    model.setData(model.index(currentIndex, model.fieldIndex("gpiq_rj_krn")), text);
 }
 
 void gpiq_rjsxx::gpiq_rjsxx_data_eTextChanged(QString text) {
-    model.setData(model.index(currentIndex, model.fieldIndex("Gpiq_rj_data")), text);
+    model.setData(model.index(currentIndex, model.fieldIndex("gpiq_rj_data")), text);
 }
 
 void gpiq_rjsxx::gpiq_rjsxx_dokn_eTextChanged(QString text) {
-    model.setData(model.index(currentIndex, model.fieldIndex("Gpiq_rj_dokn")), text);
+    model.setData(model.index(currentIndex, model.fieldIndex("gpiq_rj_dokn")), text);
 }
 
 void gpiq_rjsxx::gpiq_rjsxx_dokd_eTextChanged(QString text) {
-    model.setData(model.index(currentIndex, model.fieldIndex("Gpiq_rj_dokd")), text);
+    model.setData(model.index(currentIndex, model.fieldIndex("gpiq_rj_dokd")), text);
 }
 
 void gpiq_rjsxx::gpiq_rjsxx_to_eTextChanged(QString text) {
-    model.setData(model.index(currentIndex, model.fieldIndex("Gpiq_rj_to")), text);
+    model.setData(model.index(currentIndex, model.fieldIndex("gpiq_rj_to")), text);
 }
 
 void gpiq_rjsxx::gpiq_rjsxx_rub_eTextChanged(QString text) {
-    model.setData(model.index(currentIndex, model.fieldIndex("Gpiq_rj_rub")), text);
+    model.setData(model.index(currentIndex, model.fieldIndex("gpiq_rj_rub")), text);
 }
