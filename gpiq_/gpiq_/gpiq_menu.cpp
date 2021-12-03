@@ -9,12 +9,17 @@ gpiq_menu::gpiq_menu(QWidget *parent) :
     db = QSqlDatabase::addDatabase("QSQLITE");
     qDebug() << QApplication::applicationDirPath();
     db.setDatabaseName("R:/gpi_npo5/gpiq_/gpiq_/gpiq_data.sqlite");
-    if (!db.open()) {
-        qDebug() << db.lastError().text();
-    } else {
-        qDebug() << "OK";
 
-    }
+    if (!db.open())
+        {
+        qDebug() << db.lastError().text();
+        }
+
+    if (db.open())
+        {
+        qDebug() << "OK";
+        }
+
     connect(ui->gpiq_menu_arch_xxsrest_c, SIGNAL(clicked()), this, SLOT(gpiq_menu_arch_xxsrest_cClick()));
     connect(ui->gpiq_menu_arch_xxssave_c, SIGNAL(clicked()), this, SLOT(gpiq_menu_arch_xxssave_cClick()));
     connect(ui->gpiq_menu_end_close_c, SIGNAL(clicked()), this, SLOT(gpiq_menu_end_close_cClick()));
