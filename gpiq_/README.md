@@ -25,7 +25,7 @@
     
     ![](_assets/gpi_mko3.png)
 
-6. Заменяем `D:/3-Kypc-ProgII/NPO` на `R:/gpi_npo5/gpiq_`.
+6. Заменяем `D:/3-Kypc-ProgII/NPO` (~на `R:/gpi_npo5/gpiq_`~) на `./`.
 
 ### Заменяем английские слова на русские
 1. Запускаем `notepad++`.

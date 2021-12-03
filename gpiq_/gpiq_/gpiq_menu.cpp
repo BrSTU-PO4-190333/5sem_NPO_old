@@ -8,7 +8,7 @@ gpiq_menu::gpiq_menu(QWidget *parent) :
     ui->setupUi(this);
     db = QSqlDatabase::addDatabase("QSQLITE");
     qDebug() << QApplication::applicationDirPath();
-    db.setDatabaseName("R:/gpi_npo5/gpiq_/gpiq_/gpiq_data.sqlite");
+    db.setDatabaseName("./gpiq_data.sqlite");
 
     if (!db.open())
         {
