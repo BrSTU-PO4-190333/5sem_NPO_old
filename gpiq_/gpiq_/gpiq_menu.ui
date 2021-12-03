@@ -395,7 +395,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>gpi_ балансовая ведомость </string>
+           <string>gpi_ !!!балансовая ведомость </string>
           </property>
          </widget>
         </item>
@@ -408,7 +408,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>gpi_ jurnal-order </string>
+           <string>gpi_ !!!jurnal-order </string>
           </property>
          </widget>
         </item>
@@ -588,7 +588,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>gpi_ сохранение системы </string>
+           <string>gpi_ !!!сохранение системы </string>
           </property>
          </widget>
         </item>
@@ -601,7 +601,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>gpi_ восстановление системы </string>
+           <string>gpi_ !!!восстановление системы </string>
           </property>
          </widget>
         </item>
