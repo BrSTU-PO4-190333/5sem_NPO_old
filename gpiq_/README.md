@@ -68,3 +68,102 @@
 
 1. Заменяем `сохранение системы` на `!!!сохранение системы`.
 1. Заменяем `восстановление системы` на `!!!восстановление системы`.
+---
+1. Заменяем `dokumenti` на `Документы`.
+1. Заменяем `vvod tekushej dati` на ` ввод текущей даты`.
+1. Заменяем `tekushaa data` на ` текущая дата`.
+1. Заменяем `vvod i raznoska pervisnix dokumentov` на ` ввод и разноска первичных документов`.
+---
+- Вынен путь к ДБ в define.
+- Сделал CREATE запросы
+
+```cpp
+QSqlQuery* gpi_query = new QSqlQuery (db);
+
+gpi_query->exec (""
+    "CREATE TABLE \"gpiq_cd\" ("
+        "gpiq_cd_0 VARCHAR (1), "
+        "gpiq_cd_firma VARCHAR (20), "
+        "gpiq_cd_datat DATE, "
+        "gpiq_cd_datas DATE, "
+        "gpiq_cd_datad DATE, "
+        "gpiq_cd_s INTEGER"
+    ");"
+    );
+
+gpi_query->exec (""
+    "CREATE TABLE \"gpiq_ks\" ("
+        "gpiq_ks_0 VARCHAR (1), "
+        "gpiq_ks_data DATE, "
+        "gpiq_ks_dokk VARCHAR (4), "
+        "gpiq_ks_dokn INTEGER, "
+        "gpiq_ks_dokd DATE, "
+        "gpiq_ks_to VARCHAR (50), "
+        "gpiq_ks_s INTEGER, "
+        "gpiq_ks_sn VARCHAR (10), "
+        "gpiq_ks_ks INTEGER, "
+        "gpiq_ks_ksn VARCHAR (10), "
+        "gpiq_ks_rubdb INTEGER, "
+        "gpiq_ks_rubkr INTEGER"
+    ");"
+    );
+
+gpi_query->exec (""
+    "CREATE TABLE \"gpiq_pd\" ("
+        "gpiq_pd_0 VARCHAR (1), "
+        "gpiq_pd_dokk VARCHAR (4), "
+        "gpiq_pd_dokn INTEGER, "
+        "gpiq_pd_dokd DATE, "
+        "gpiq_pd_to VARCHAR (10), "
+        "gpiq_pd_db INTEGER, "
+        "gpiq_pd_dbn VARCHAR (10), "
+        "gpiq_pd_kr INTEGER, "
+        "gpiq_pd_krn VARCHAR (10), "
+        "gpiq_pd_rub INTEGER"
+    ");"
+    );
+
+gpi_query->exec (""
+    "CREATE TABLE \"gpiq_pd\" ("
+        "gpiq_pd_0 VARCHAR (1), "
+        "gpiq_pd_dokk VARCHAR (4), "
+        "gpiq_pd_dokn INTEGER, "
+        "gpiq_pd_dokd DATE, "
+        "gpiq_pd_to VARCHAR (10), "
+        "gpiq_pd_db INTEGER, "
+        "gpiq_pd_dbn VARCHAR (10), "
+        "gpiq_pd_kr INTEGER, "
+        "gpiq_pd_krn VARCHAR (10), "
+        "gpiq_pd_rub INTEGER"
+    ");"
+    );
+
+gpi_query->exec (""
+    "CREATE TABLE \"gpiq_rj\" ("
+        "gpiq_rj_0 VARCHAR (1), "
+        "gpiq_rj_data DATE, "
+        "gpiq_rj_dokk VARCHAR (4), "
+        "gpiq_rj_dokn INTEGER, "
+        "gpiq_rj_dokd DATE, "
+        "gpiq_rj_to VARCHAR (50), "
+        "gpiq_rj_db INTEGER, "
+        "gpiq_rj_dbn VARCHAR (10),"
+        "gpiq_rj_kr INTEGER,"
+        "gpiq_rj_krn VARCHAR (10), "
+        "gpiq_rj_rub INTEGER"
+    ");"
+    );
+
+gpi_query->exec (""
+    "CREATE TABLE \"gpiq_to\" ("
+        "gpiq_to_0 VARCHAR (1), "
+        "gpiq_to_dokk VARCHAR (4), "
+        "gpiq_to_k VARCHAR (10), "
+        "gpiq_to_n VARCHAR (50), "
+        "gpiq_to_db INTEGER, "
+        "gpiq_to_dbn VARCHAR (10), "
+        "gpiq_to_kr INTEGER, "
+        "gpiq_to_krn VARCHAR (10)"
+    ");"
+    );
+```

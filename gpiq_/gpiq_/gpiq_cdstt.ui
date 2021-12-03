@@ -54,7 +54,7 @@
    <item>
     <widget class="QLabel" name="gpiq_cdstt_xxtitle_l">
      <property name="text">
-      <string>gpiq_vvod tekushej dati</string>
+      <string>gpiq_ ввод текущей даты</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -79,7 +79,7 @@
       <item row="0" column="0">
        <widget class="QLabel" name="gpiq_cdstt_datat_l">
         <property name="text">
-         <string>gpi_tekushaa data</string>
+         <string>gpi_ текущая дата</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>

@@ -1,6 +1,8 @@
 #ifndef gpiq_MENU_H
 #define gpiq_MENU_H
 
+#define GPI_DATABASE_PATH "./gpiq_database.sqlite"
+
 #include <QMainWindow>
 #include "gpiq_xxsrest.h"
 #include "gpiq_xxssave.h"

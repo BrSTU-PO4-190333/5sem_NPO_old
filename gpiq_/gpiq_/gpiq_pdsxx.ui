@@ -125,7 +125,7 @@
    <item row="3" column="0">
     <widget class="QLabel" name="gpiq_pdsxx_xxtitle_l">
      <property name="text">
-      <string>gpiq_vvod i raznoska pervisnix dokumentov</string>
+      <string>gpiq_ ввод и разноска первичных документов</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
