@@ -1,0 +1,8 @@
+version: '3'
+services:
+    latex:
+        image: mirisbowring/texlive_ctan_full:2019
+        container_name: texlive-full
+        volumes:
+            - ./../:/home/user/content
+        command: ['make', '-C', '/home/user/content/gpi_docs', 'gpi_build-pdf']
