@@ -1,0 +1,51 @@
+\documentclass[12pt, a4paper, simple]{eskdtext}
+
+\usepackage{env}
+\usepackage{_sty/gpi_lstlisting}
+\usepackage{hyperref}
+\usepackage{_sty/gpi_table_of_content}
+
+% Код
+\def \gpiDocTypeNum {81}
+\def \gpiDocVer {00}
+\def \gpiCode {\gpiLetterI\gpieLetterII\gpiLetterIII.\gpiStudentGroupName\gpiStudentGroupNum.\gpiStudentCard.0\gpiDocNum~\gpiDocTypeNum~\gpiDocVer}
+
+\def \gpiDocTopic {\gpiFIObig\/B}
+
+% Графа 1 (наименование изделия/документа)
+\ESKDcolumnI {\ESKDfontIII \gpiTopic \\ \gpiDocTopic}
+
+% Графа 2 (обозначение документа)
+\ESKDsignature {\gpiCode}
+
+% Графа 4 (литералы)
+\ESKDcolumnIVfI {\gpiLetterI}
+\ESKDcolumnIVfII {\gpieLetterII}
+\ESKDcolumnIVfIII {\gpiLetterIII}
+
+% Графа 9 (наименование или различительный индекс предприятия) задает команда
+\ESKDcolumnIX {\gpiDepartment}
+
+% Графа 11 (фамилии лиц, подписывающих документ) задают команды
+\ESKDcolumnXIfI {\gpiStudentSurname}
+\ESKDcolumnXIfII {\gpiTeacherSurname}
+\ESKDcolumnXIfV {\gpiTeacherSurname}
+
+\begin{document}
+    \begin{ESKDtitlePage}
+        \hspace{0pt}\\
+        \vfill
+        \begin{center}
+            \textbf{\ESKDfontV \gpiTopic \\ \gpiDocTopic}
+        \end{center}
+        \vfill
+        \hspace{0pt}\\
+    \end{ESKDtitlePage}
+    
+    \tableofcontents                                
+    \thispagestyle{empty} % удаляет нумерацию страниц, которую создает библиотека
+    \newpage
+
+    \input{_tex/gpib_part1.tex}
+    \input{_tex/gpib_part2.tex}
+\end{document}

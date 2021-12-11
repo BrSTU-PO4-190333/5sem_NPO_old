@@ -1,0 +1,285 @@
+\section{Материалы предварительного проектирования системы}
+\subsection{Функциональная схема обработки данных}
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[height=16cm]
+        {_assets/gpiq_part2.png}
+    \caption{Функциональная схема обработки данных}
+\end{figure}
+
+\subsection{Описание картотек}
+
+Картотеки:
+
+\begin{itemize}
+    \item Первичные документы \gpiFIO\/q\_ps\_s;
+    \item[] \hspace{0pt}
+    \item Регистрационный журнал (РЖ) \gpiFIO\/q\_rj\_s;
+    \item Книга счетов (КС) \gpiFIO\/q\_ks;
+    \item[] \hspace{0pt}  
+    \item Типовые хозяйственные операции (ТХО) \gpiFIO\/q\_txo\_s;
+    \item[] \hspace{0pt}     
+    \item Настройки системы \gpiFIO\/q\_nst\_s:
+    \item Настройки интервалов счетов;
+    \item Настройки текущей даты.
+\end{itemize}
+
+\begin{table}[h!p]
+    \centering
+    \scriptsize
+    \caption{Первичные документы \gpiFIO\/q\_pd}
+    \begin{tabular}{|l|l|l|} 
+
+\hline
+\textbf{Реквизит}                   &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
+код документа                       &\gpiFIO\/q\_pd\_dokk         &varchar(4)                 \\ \hline
+номер документа                     &\gpiFIO\/q\_pd\_dokn         &int                        \\ \hline
+дата документа                      &\gpiFIO\/q\_pd\_dokd         &date                       \\ \hline
+операции                            &\gpiFIO\/q\_pd\_to           &varchar(10)                \\ \hline
+дебет счет *txo                     &\gpiFIO\/q\_pd\_db           &int                        \\ \hline
+дебет счет субсчет наименование *txo&\gpiFIO\/q\_pd\_dbn          &varchar(10)                \\ \hline
+кредит  *txo                        &\gpiFIO\/q\_pd\_kr           &int                        \\ \hline
+кредит название*txo                 &\gpiFIO\/q\_pd\_krn          &varchar(10)                \\ \hline
+сумма                               &\gpiFIO\/q\_pd\_rub          &int                        \\ \hline
+
+    \end{tabular}
+\end{table}
+
+% \begin{table}[h!p]
+%     \centering
+%     \scriptsize
+%     \caption{Виды аналитики gpia\_va}
+%     \begin{tabular}{|l|l|l|} 
+
+%                                                                                \hline
+% \textbf{Реквизит}       &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
+% поле связи  	  =0    &gpia\_va\_0            &c1                         \\ \hline
+% вид аналитики           &gpia\_va\_k            &c3                         \\ \hline
+% название вида аналитики &gpia\_va\_n            &c15                        \\ \hline
+
+%     \end{tabular}
+% \end{table}
+
+\begin{table}[h!p]
+    \centering
+    \scriptsize
+    \caption{Регистрационный журнал (РЖ) \gpiFIO\/q\_rj}
+    \begin{tabular}{|l|l|l|} 
+
+                                                                                       \hline
+\textbf{Реквизит}               &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
+дата операции                   &\gpiFIO\/q\_rj\_data         &date                       \\ \hline
+код оправдательного документа   &\gpiFIO\/q\_rj\_dokk         &varchar(7)                 \\ \hline
+номер документа                 &\gpiFIO\/q\_rj\_dokn         &int                        \\ \hline
+дата документа                  &\gpiFIO\/q\_rj\_dokd         &date                       \\ \hline
+содержание операции             &\gpiFIO\/q\_rj\_to           &varchar(50)                \\ \hline
+дебет, счет                     &\gpiFIO\/q\_rj\_db           &int                        \\ \hline
+дебет, название                 &\gpiFIO\/q\_rj\_dbn          &varchar(10)                \\ \hline
+кредит, счет                    &\gpiFIO\/q\_rj\_kr           &int                        \\ \hline
+кредит название                 &\gpiFIO\/q\_rj\_krn          &varchar(10)                \\ \hline
+Сумма                           &\gpiFIO\/q\_rj\_rub          &int                        \\ \hline
+
+    \end{tabular}
+\end{table}
+
+\begin{table}[h!p]
+    \centering
+    \scriptsize
+    \caption{Книга счетов(КС) \gpiFIO\/q\_ks}
+    \begin{tabular}{|l|l|l|} 
+
+                                                                                   \hline
+\textbf{Реквизит}               &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
+дата операции                   &\gpiFIO\/q\_ks\_data         &date                       \\ \hline
+код оправдательного документа   &\gpiFIO\/q\_ks\_dokk         &varchar(4)                 \\ \hline
+номер документа                 &\gpiFIO\/q\_ks\_dokn         &int                        \\ \hline
+дата документа                  &\gpiFIO\/q\_ks\_dokd         &date                       \\ \hline
+операции                        &\gpiFIO\/q\_ks\_to           &varchar(50)                \\ \hline
+счет                            &\gpiFIO\/q\_ks\_s            &int                        \\ \hline
+счёт название                   &\gpiFIO\/q\_ks\_sn           &varchar(10)                \\ \hline
+кор. счёт                       &\gpiFIO\/q\_ks\_ks           &int                        \\ \hline
+кор. счет наименование          &\gpiFIO\/q\_ks\_ksn          &varchar(10)                \\ \hline
+сумма дб                        &\gpiFIO\/q\_ks\_rubdb        &int                        \\ \hline
+сумма кр                        &\gpiFIO\/q\_ks\_rubkr        &int                        \\ \hline
+
+    \end{tabular}
+\end{table}
+
+% \begin{table}[h!p]
+%     \centering
+%     \scriptsize
+%     \caption{Определение первичных документов gpia\_opd}
+%     \begin{tabular}{|l|l|l|} 
+
+%                                                                                    \hline
+% \textbf{Реквизит}           &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
+% поле связи       =0         &gpia\_opd\_0           &c1                         \\ \hline
+% код документа               &gpia\_opd\_k           &c3                         \\ \hline
+% наименование документа      &gpia\_opd\_n           &c10                        \\ \hline
+% вид аналитики 1  < ---  va  &gpia\_opd\_av1         &c3                         \\ \hline
+% тип аналитики 1    =д, к, x &gpia\_opd\_avt1        &c1                         \\ \hline
+% виды аналитики 2            &gpia\_opd\_av2         &c3                         \\ \hline
+% тип аналитики 2             &gpia\_opd\_avt2        &c1                         \\ \hline
+% вид аналитики 3             &gpia\_opd\_av3         &c3                         \\ \hline
+% тип аналитики 2             &gpia\_opd\_avt3        &c1                         \\ \hline
+
+%     \end{tabular}
+% \end{table}
+
+\begin{table}[h!p]
+    \centering
+    \scriptsize
+    \caption{Типовые хозяйственные операции(ТХО) \gpiFIO\/q\_txo}
+    \begin{tabular}{|l|l|l|} 
+
+                                                                                           \hline
+\textbf{Реквизит}                   &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
+код документа                       &\gpiFIO\/q\_txo\_dokk        &varchar(4)                 \\ \hline
+операции                            &\gpiFIO\/q\_txo\_k           &varchar(10)                \\ \hline
+дебет, счёт                         &\gpiFIO\/q\_txo\_db          &int                        \\ \hline
+дебет, название                     &\gpiFIO\/q\_txo\_dbn         &varchar(10)                \\ \hline
+кредит                              &\gpiFIO\/q\_txo\_kr          &int                        \\ \hline
+кредит, название                    &\gpiFIO\/q\_txo\_krn         &varchar(10)                \\ \hline
+
+    \end{tabular}
+\end{table}
+
+% \begin{table}[h!p]
+%     \centering
+%     \scriptsize
+%     \caption{План счетов(ПС) gpia\_ps}
+%     \begin{tabular}{|l|l|l|} 
+
+%                                                                                            \hline
+% \textbf{Реквизит}                   &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
+% поле связи        =0                &gpia\_ps\_0            &c1                         \\ \hline
+% счет                                &gpia\_ps\_s            &n2                         \\ \hline
+% название счета                      &gpia\_ps\_n            &c10                        \\ \hline
+% тип счета          = а, п, x        &gpia\_ps\_typ          &c1                         \\ \hline
+% вид аналитики 1 из VA               &gpia\_ps\_av1          &c3                         \\ \hline
+% вид аналитики 2 из VA               &gpia\_ps\_av2          &c3                         \\ \hline
+
+%     \end{tabular}
+% \end{table}
+
+% \begin{table}[h!p]
+%     \centering
+%     \scriptsize
+%     \caption{Коды аналитического учёта(КАУ) gpia\_kau}
+%     \begin{tabular}{|l|l|l|} 
+
+%                                                                                \hline
+% \textbf{Реквизит}       &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
+% поле связи          =0  &gpia\_kau\_0           &c1                         \\ \hline
+% вид аналитики           &gpia\_kau\_k           &c5                         \\ \hline
+% вид аналитики           &gpia\_kau\_n           &c15                        \\ \hline
+
+%     \end{tabular}
+% \end{table}
+
+\begin{table}[h!p]
+    \centering
+    \scriptsize
+    \caption{Настройки системы \gpiFIO\/q\_nst}
+    \begin{tabular}{|l|l|l|} 
+
+                                                                               \hline
+\textbf{Реквизит}       &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
+дата текущая            &\gpiFIO\/q\_nst\_datat       &date                       \\ \hline
+интервал с              &\gpiFIO\/q\_nst\_datas       &date                       \\ \hline
+интервал до             &\gpiFIO\/q\_nst\_datado      &date                       \\ \hline
+cчёт                    &\gpiFIO\/q\_nst\_s           &int                        \\ \hline
+название счёта          &\gpiFIO\/q\_nst\_sn          &varchar(10)                \\ \hline
+название фирмы          &\gpiFIO\/q\_nst\_firma       &varchar(10)                \\ \hline
+
+    \end{tabular}
+\end{table}
+
+\subsection{Описание работ}
+
+\begin{table}[h!p]
+    \centering
+    \scriptsize
+    \caption{Описание работ}
+    \begin{tabular}{|p{8cm}|p{8cm}|} 
+
+% = = = = = = = = = =
+
+\hline
+
+% = = = = = = = = = =
+
+\textbf{Группа работ}
+&
+\textbf{Работы}
+\\ \hline
+
+% = = = = = = = = = =
+
+Формирование и разноска первичных документов \par
+\hspace{0pt} \par
+\textbf{\gpiFIO\/q\_Документы}
+&
+- \gpiFIO\/q\_Ввод текущей даты \par
+- \gpiFIO\/q\_Ввод и разноска первичных документов (ПД)
+\\ \hline
+
+% = = = = = = = = = =
+
+Работа с регистрационным журналом \par
+\hspace{0pt} \par
+\textbf{\gpiFIO\/q\_РЖ}
+&
+- \gpiFIO\/q\_Просмотр РЖ \par
+- \gpiFIO\/q\_Формирование книги счетов из рег. журнала \par
+- \gpiFIO\/q\_Просмотр КС
+\\ \hline
+
+% = = = = = = = = = =
+
+Формирование балансовой отчетности \par
+\hspace{0pt} \par
+\textbf{\gpiFIO\/q\_БО}
+&
+- \gpiFIO\/q\_Опеделение отчетных форм \par
+- \gpiFIO\/q\_Оборотно-сальдовая ведомость  \par
+- \gpiFIO\/q\_Балансовая ведомость (заглушка) \par
+- \gpiFIO\/q\_Журнал-ордер (заглушка)
+\\ \hline
+
+% = = = = = = = = = =
+
+Сопровождение картотек-справочников \par
+\hspace{0pt} \par
+\textbf{\gpiFIO\/q\_Картотеки}
+&
+- \gpiFIO\/q\_Типовые хозяйственные операции (ТХО) \par
+- \gpiFIO\/q\_Настройка АРМа
+\\ \hline
+
+% = = = = = = = = = =
+
+Ведение архивов \par
+\hspace{0pt} \par
+\textbf{\gpiFIO\/q\_Архивы}
+&
+- \gpiFIO\/q\_Копирование системы (заглушка) \par
+- \gpiFIO\/q\_Восстановление системы (заглушка) \par
+\\ \hline
+
+% = = = = = = = = = =
+
+Выход из системы \par
+\hspace{0pt} \par
+\textbf{\gpiFIO\/q\_Выход}
+&
+- \gpiFIO\/q\_Выход из системы
+\\ \hline
+
+% = = = = = = = = = =
+
+    \end{tabular}
+\end{table}
+
+\newpage
