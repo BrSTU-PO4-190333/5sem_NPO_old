@@ -6,7 +6,6 @@
     \includegraphics[height=11cm]
         {_assets/gpib_part2.png}
     \caption{Функциональная схема обработки данных}
-    \label{fig:gpib_part2}
 \end{figure}
 
 \subsection{Описание картотек}
@@ -14,30 +13,30 @@
 Картотеки:
 
 \begin{itemize}
-    \item Первичные документы gpib\_pd;
-    \item Регистрационный журнал (РЖ) gpib\_rj;
-    \item Книга счетов(КС) gpib\_ks;
-    \item Типовые хозяйственные операции (ТХО) gpib\_to.
+    \item Первичные документы \gpiFIO\/b\_pd;
+    \item Регистрационный журнал (РЖ) \gpiFIO\/b\_rj;
+    \item Книга счетов(КС) \gpiFIO\/b\_ks;
+    \item Типовые хозяйственные операции (ТХО) \gpiFIO\/b\_to.
 \end{itemize}
 
 \begin{table}[!htbp]
     \centering
     \scriptsize
-    \caption{Первичные документы gpib\_pd}
+    \caption{Первичные документы \gpiFIO\/b\_pd}
     \begin{tabular}{|l|l|l|} 
 
                                                                                    \hline
 \textbf{Реквизит}           &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-поле связи =0               &gpib\_pd\_0            &n1                         \\ \hline
-код документа < --- opd     &gpib\_pd\_dokk         &c3                         \\ \hline
-номер документа             &gpib\_pd\_dokn         &n5                         \\ \hline
-дата документа              &gpib\_pd\_dokd         &d8                         \\ \hline
-типовая операция < --- txo  &gpib\_pd\_to           &c10                        \\ \hline
-дебет *txo                  &gpib\_pd\_db           &n2                         \\ \hline
-дебет наименование *txo     &gpib\_pd\_dbn          &c10                        \\ \hline
-кредит *txo                 &gpib\_pd\_kr           &n2                         \\ \hline
-кредит наименование *txo    &gpib\_pd\_krn          &c10                        \\ \hline
-сумма                       &gpib\_pd\_rub          &n10                        \\ \hline
+поле связи =0               &\gpiFIO\/b\_pd\_0            &n1                         \\ \hline
+код документа < --- opd     &\gpiFIO\/b\_pd\_dokk         &c3                         \\ \hline
+номер документа             &\gpiFIO\/b\_pd\_dokn         &n5                         \\ \hline
+дата документа              &\gpiFIO\/b\_pd\_dokd         &d8                         \\ \hline
+типовая операция < --- txo  &\gpiFIO\/b\_pd\_to           &c10                        \\ \hline
+дебет *txo                  &\gpiFIO\/b\_pd\_db           &n2                         \\ \hline
+дебет наименование *txo     &\gpiFIO\/b\_pd\_dbn          &c10                        \\ \hline
+кредит *txo                 &\gpiFIO\/b\_pd\_kr           &n2                         \\ \hline
+кредит наименование *txo    &\gpiFIO\/b\_pd\_krn          &c10                        \\ \hline
+сумма                       &\gpiFIO\/b\_pd\_rub          &n10                        \\ \hline
 
     \end{tabular}
 \end{table}
@@ -60,22 +59,22 @@
 \begin{table}[!htbp]
     \centering
     \scriptsize
-    \caption{Регистрационный журнал (РЖ) gpib\_rj}
+    \caption{Регистрационный журнал (РЖ) \gpiFIO\/b\_rj}
     \begin{tabular}{|l|l|l|} 
 
                                                                                        \hline
 \textbf{Реквизит}               &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-поле связи =0                   &gpib\_rj\_0            &n1                         \\ \hline
-дата операции                   &gpib\_rj\_data         &d8                         \\ \hline
-код оправдательного документа   &gpib\_rj\_dokk         &c3                         \\ \hline
-номер документа                 &gpib\_rj\_dokn         &n10                        \\ \hline
-дата документа                  &gpib\_rj\_dokd         &d8                         \\ \hline
-содержание операции             &gpib\_rj\_to           &c10                        \\ \hline
-дебет, счет                     &gpib\_rj\_db           &n2                         \\ \hline
-дебет, наименование             &gpib\_rj\_dbn          &c10                        \\ \hline
-кредит, счет                    &gpib\_rj\_kr           &n2                         \\ \hline
-кредит наименование             &gpib\_rj\_krn          &c10                        \\ \hline
-сумма                           &gpib\_rj\_rub          &n10                        \\ \hline
+поле связи =0                   &\gpiFIO\/b\_rj\_0            &n1                         \\ \hline
+дата операции                   &\gpiFIO\/b\_rj\_data         &d8                         \\ \hline
+код оправдательного документа   &\gpiFIO\/b\_rj\_dokk         &c3                         \\ \hline
+номер документа                 &\gpiFIO\/b\_rj\_dokn         &n10                        \\ \hline
+дата документа                  &\gpiFIO\/b\_rj\_dokd         &d8                         \\ \hline
+содержание операции             &\gpiFIO\/b\_rj\_to           &c10                        \\ \hline
+дебет, счет                     &\gpiFIO\/b\_rj\_db           &n2                         \\ \hline
+дебет, наименование             &\gpiFIO\/b\_rj\_dbn          &c10                        \\ \hline
+кредит, счет                    &\gpiFIO\/b\_rj\_kr           &n2                         \\ \hline
+кредит наименование             &\gpiFIO\/b\_rj\_krn          &c10                        \\ \hline
+сумма                           &\gpiFIO\/b\_rj\_rub          &n10                        \\ \hline
 
     \end{tabular}
 \end{table}
@@ -83,23 +82,23 @@
 \begin{table}[!htbp]
     \centering
     \scriptsize
-    \caption{Книга счетов(КС) gpib\_ks}
+    \caption{Книга счетов(КС) \gpiFIO\/b\_ks}
     \begin{tabular}{|l|l|l|} 
 
                                                                                        \hline
 \textbf{Реквизит}               &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-поле связи =0                   &gpib\_ks\_0            &n1                         \\ \hline
-дата операции                   &gpib\_ks\_data         &d8                         \\ \hline
-код оправдательного документа   &gpib\_ks\_dokk         &c3                         \\ \hline
-номер документа                 &gpib\_ks\_dokn         &n10                        \\ \hline
-дата документа                  &gpib\_ks\_dokd         &d8                         \\ \hline
-операции                        &gpib\_ks\_to           &c10                        \\ \hline
-счет                            &gpib\_ks\_s            &n2                         \\ \hline
-счёт наименование               &gpib\_ks\_sn           &c10                        \\ \hline
-кор. счёт                       &gpib\_ks\_ks           &n2                         \\ \hline
-кор. счет наименование          &gpib\_ks\_ksn          &c10                        \\ \hline
-сумма дб                        &gpib\_ks\_rubdb        &n10                        \\ \hline
-сумма кр                        &gpib\_ks\_rubkr        &n10                        \\ \hline
+поле связи =0                   &\gpiFIO\/b\_ks\_0            &n1                         \\ \hline
+дата операции                   &\gpiFIO\/b\_ks\_data         &d8                         \\ \hline
+код оправдательного документа   &\gpiFIO\/b\_ks\_dokk         &c3                         \\ \hline
+номер документа                 &\gpiFIO\/b\_ks\_dokn         &n10                        \\ \hline
+дата документа                  &\gpiFIO\/b\_ks\_dokd         &d8                         \\ \hline
+операции                        &\gpiFIO\/b\_ks\_to           &c10                        \\ \hline
+счет                            &\gpiFIO\/b\_ks\_s            &n2                         \\ \hline
+счёт наименование               &\gpiFIO\/b\_ks\_sn           &c10                        \\ \hline
+кор. счёт                       &\gpiFIO\/b\_ks\_ks           &n2                         \\ \hline
+кор. счет наименование          &\gpiFIO\/b\_ks\_ksn          &c10                        \\ \hline
+сумма дб                        &\gpiFIO\/b\_ks\_rubdb        &n10                        \\ \hline
+сумма кр                        &\gpiFIO\/b\_ks\_rubkr        &n10                        \\ \hline
 
     \end{tabular}
 \end{table}
@@ -128,7 +127,7 @@
 \begin{table}[!htbp]
     \centering
     \scriptsize
-    \caption{Типовые хозяйственные операции(ТХО) gpib\_txo}
+    \caption{Типовые хозяйственные операции(ТХО) \gpiFIO\/b\_txo}
     \begin{tabular}{|l|l|l|} 
 
                                                                                        \hline
@@ -221,70 +220,70 @@
 
 Формирование и разноска первичных документов \par
 \hspace{0pt} \par
-\textbf{gpib\_Документы}
+\textbf{\gpiFIO\/b\_Документы}
 &
-- gpib\_Ввод текущей даты \par
-- gpib\_Ввод и разноска первичных документов(ПД)
+- \gpiFIO\/b\_Ввод текущей даты \par
+- \gpiFIO\/b\_Ввод и разноска первичных документов(ПД)
 \\ \hline
 
 % = = = = = = = = = =
 
 Работа с регистрационным журналом \par
 \hspace{0pt} \par
-\textbf{gpib\_РЖ}
+\textbf{\gpiFIO\/b\_РЖ}
 &
-- gpib\_Просмотр РЖ \par
-- gpib\_Формирование КС и РЖ \par
-- gpib\_Просмотр КС \par
-- gpib\_Сформировать КС на печать \par
-- gpib\_Просмотр КС для печати
+- \gpiFIO\/b\_Просмотр РЖ \par
+- \gpiFIO\/b\_Формирование КС и РЖ \par
+- \gpiFIO\/b\_Просмотр КС \par
+- \gpiFIO\/b\_Сформировать КС на печать \par
+- \gpiFIO\/b\_Просмотр КС для печати
 \\ \hline
 
 % = = = = = = = = = =
 
 Формирование балансовой отчетности \par
 \hspace{0pt} \par
-\textbf{gpib\_БО}
+\textbf{\gpiFIO\/b\_БО}
 &
-- gpib\_Опеделение отчетных форм \par
-- gpib\_сформировать КС на печать \par
-- gpib\_ Просмотр КС для печати \par
-- gpib\_Сформировать ОСВ \par
-- gpib\_Просмотр ОСВ \par
-- gpib\_Сформировать Ж-О \par
-- gpib\_ Просмотр Ж-О \par
-- gpib\_Сформировать БВ \par
-- gpib\_ Просмотр БВ
+- \gpiFIO\/b\_Опеделение отчетных форм \par
+- \gpiFIO\/b\_сформировать КС на печать \par
+- \gpiFIO\/b\_ Просмотр КС для печати \par
+- \gpiFIO\/b\_Сформировать ОСВ \par
+- \gpiFIO\/b\_Просмотр ОСВ \par
+- \gpiFIO\/b\_Сформировать Ж-О \par
+- \gpiFIO\/b\_ Просмотр Ж-О \par
+- \gpiFIO\/b\_Сформировать БВ \par
+- \gpiFIO\/b\_ Просмотр БВ
 \\ \hline
 
 % = = = = = = = = = =
 
 Сопровождение картотек-справочников \par
 \hspace{0pt} \par
-\textbf{gpib\_Картотеки}
+\textbf{\gpiFIO\/b\_Картотеки}
 &
-- gpib\_Определение первичных документов \par
-- gpib\_Типовые хозяйственные операции(ТХО) \par
-- gpib\_Настройка АРМа
+- \gpiFIO\/b\_Определение первичных документов \par
+- \gpiFIO\/b\_Типовые хозяйственные операции(ТХО) \par
+- \gpiFIO\/b\_Настройка АРМа
 \\ \hline
 
 % = = = = = = = = = =
 
 Ведение архивов \par
 \hspace{0pt} \par
-\textbf{gpib\_Архивы}
+\textbf{\gpiFIO\/b\_Архивы}
 &
-- gpib\_Копия АРМ \par
-- gpib\_Восстановление АРМ
+- \gpiFIO\/b\_Копия АРМ \par
+- \gpiFIO\/b\_Восстановление АРМ
 \\ \hline
 
 % = = = = = = = = = =
 
 Выход из системы \par
 \hspace{0pt} \par
-\textbf{gpib\_Выход}
+\textbf{\gpiFIO\/b\_Выход}
 &
-- gpib\_Выход из системы
+- \gpiFIO\/b\_Выход из системы
 \\ \hline
 
 % = = = = = = = = = =

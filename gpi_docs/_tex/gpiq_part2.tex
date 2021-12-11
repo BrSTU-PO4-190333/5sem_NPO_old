@@ -6,7 +6,6 @@
     \includegraphics[height=16cm]
         {_assets/gpiq_part2.png}
     \caption{Функциональная схема обработки данных}
-    \label{fig:gpiq_part2}
 \end{figure}
 
 \subsection{Описание картотек}
@@ -14,14 +13,14 @@
 Картотеки:
 
 \begin{itemize}
-    \item Первичные документы gpiq\_ps\_s;
+    \item Первичные документы \gpiFIO\/q\_ps\_s;
     \item[] \hspace{0pt}
-    \item Регистрационный журнал (РЖ) gpiq\_rj\_s;
-    \item Книга счетов (КС) gpiq\_ks;
+    \item Регистрационный журнал (РЖ) \gpiFIO\/q\_rj\_s;
+    \item Книга счетов (КС) \gpiFIO\/q\_ks;
     \item[] \hspace{0pt}  
-    \item Типовые хозяйственные операции (ТХО) gpiq\_txo\_s;
+    \item Типовые хозяйственные операции (ТХО) \gpiFIO\/q\_txo\_s;
     \item[] \hspace{0pt}     
-    \item Настройки системы gpiq\_nst\_s:
+    \item Настройки системы \gpiFIO\/q\_nst\_s:
     \item Настройки интервалов счетов;
     \item Настройки текущей даты.
 \end{itemize}
@@ -29,20 +28,20 @@
 \begin{table}[h!p]
     \centering
     \scriptsize
-    \caption{Первичные документы gpiq\_pd}
+    \caption{Первичные документы \gpiFIO\/q\_pd}
     \begin{tabular}{|l|l|l|} 
 
 \hline
 \textbf{Реквизит}                   &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-код документа                       &gpiq\_pd\_dokk         &varchar(4)                 \\ \hline
-номер документа                     &gpiq\_pd\_dokn         &int                        \\ \hline
-дата документа                      &gpiq\_pd\_dokd         &date                       \\ \hline
-операции                            &gpiq\_pd\_to           &varchar(10)                \\ \hline
-дебет счет *txo                     &gpiq\_pd\_db           &int                        \\ \hline
-дебет счет субсчет наименование *txo&gpiq\_pd\_dbn          &varchar(10)                \\ \hline
-кредит  *txo                        &gpiq\_pd\_kr           &int                        \\ \hline
-кредит название*txo                 &gpiq\_pd\_krn          &varchar(10)                \\ \hline
-сумма                               &gpiq\_pd\_rub          &int                        \\ \hline
+код документа                       &\gpiFIO\/q\_pd\_dokk         &varchar(4)                 \\ \hline
+номер документа                     &\gpiFIO\/q\_pd\_dokn         &int                        \\ \hline
+дата документа                      &\gpiFIO\/q\_pd\_dokd         &date                       \\ \hline
+операции                            &\gpiFIO\/q\_pd\_to           &varchar(10)                \\ \hline
+дебет счет *txo                     &\gpiFIO\/q\_pd\_db           &int                        \\ \hline
+дебет счет субсчет наименование *txo&\gpiFIO\/q\_pd\_dbn          &varchar(10)                \\ \hline
+кредит  *txo                        &\gpiFIO\/q\_pd\_kr           &int                        \\ \hline
+кредит название*txo                 &\gpiFIO\/q\_pd\_krn          &varchar(10)                \\ \hline
+сумма                               &\gpiFIO\/q\_pd\_rub          &int                        \\ \hline
 
     \end{tabular}
 \end{table}
@@ -65,21 +64,21 @@
 \begin{table}[h!p]
     \centering
     \scriptsize
-    \caption{Регистрационный журнал (РЖ) gpiq\_rj}
+    \caption{Регистрационный журнал (РЖ) \gpiFIO\/q\_rj}
     \begin{tabular}{|l|l|l|} 
 
                                                                                        \hline
 \textbf{Реквизит}               &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-дата операции                   &gpiq\_rj\_data         &date                       \\ \hline
-код оправдательного документа   &gpiq\_rj\_dokk         &varchar(7)                 \\ \hline
-номер документа                 &gpiq\_rj\_dokn         &int                        \\ \hline
-дата документа                  &gpiq\_rj\_dokd         &date                       \\ \hline
-содержание операции             &gpiq\_rj\_to           &varchar(50)                \\ \hline
-дебет, счет                     &gpiq\_rj\_db           &int                        \\ \hline
-дебет, название                 &gpiq\_rj\_dbn          &varchar(10)                \\ \hline
-кредит, счет                    &gpiq\_rj\_kr           &int                        \\ \hline
-кредит название                 &gpiq\_rj\_krn          &varchar(10)                \\ \hline
-Сумма                           &gpiq\_rj\_rub          &int                        \\ \hline
+дата операции                   &\gpiFIO\/q\_rj\_data         &date                       \\ \hline
+код оправдательного документа   &\gpiFIO\/q\_rj\_dokk         &varchar(7)                 \\ \hline
+номер документа                 &\gpiFIO\/q\_rj\_dokn         &int                        \\ \hline
+дата документа                  &\gpiFIO\/q\_rj\_dokd         &date                       \\ \hline
+содержание операции             &\gpiFIO\/q\_rj\_to           &varchar(50)                \\ \hline
+дебет, счет                     &\gpiFIO\/q\_rj\_db           &int                        \\ \hline
+дебет, название                 &\gpiFIO\/q\_rj\_dbn          &varchar(10)                \\ \hline
+кредит, счет                    &\gpiFIO\/q\_rj\_kr           &int                        \\ \hline
+кредит название                 &\gpiFIO\/q\_rj\_krn          &varchar(10)                \\ \hline
+Сумма                           &\gpiFIO\/q\_rj\_rub          &int                        \\ \hline
 
     \end{tabular}
 \end{table}
@@ -87,22 +86,22 @@
 \begin{table}[h!p]
     \centering
     \scriptsize
-    \caption{Книга счетов(КС) gpiq\_ks}
+    \caption{Книга счетов(КС) \gpiFIO\/q\_ks}
     \begin{tabular}{|l|l|l|} 
 
                                                                                    \hline
 \textbf{Реквизит}               &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-дата операции                   &gpiq\_ks\_data         &date                       \\ \hline
-код оправдательного документа   &gpiq\_ks\_dokk         &varchar(4)                 \\ \hline
-номер документа                 &gpiq\_ks\_dokn         &int                        \\ \hline
-дата документа                  &gpiq\_ks\_dokd         &date                       \\ \hline
-операции                        &gpiq\_ks\_to           &varchar(50)                \\ \hline
-счет                            &gpiq\_ks\_s            &int                        \\ \hline
-счёт название                   &gpiq\_ks\_sn           &varchar(10)                \\ \hline
-кор. счёт                       &gpiq\_ks\_ks           &int                        \\ \hline
-кор. счет наименование          &gpiq\_ks\_ksn          &varchar(10)                \\ \hline
-сумма дб                        &gpiq\_ks\_rubdb        &int                        \\ \hline
-сумма кр                        &gpiq\_ks\_rubkr        &int                        \\ \hline
+дата операции                   &\gpiFIO\/q\_ks\_data         &date                       \\ \hline
+код оправдательного документа   &\gpiFIO\/q\_ks\_dokk         &varchar(4)                 \\ \hline
+номер документа                 &\gpiFIO\/q\_ks\_dokn         &int                        \\ \hline
+дата документа                  &\gpiFIO\/q\_ks\_dokd         &date                       \\ \hline
+операции                        &\gpiFIO\/q\_ks\_to           &varchar(50)                \\ \hline
+счет                            &\gpiFIO\/q\_ks\_s            &int                        \\ \hline
+счёт название                   &\gpiFIO\/q\_ks\_sn           &varchar(10)                \\ \hline
+кор. счёт                       &\gpiFIO\/q\_ks\_ks           &int                        \\ \hline
+кор. счет наименование          &\gpiFIO\/q\_ks\_ksn          &varchar(10)                \\ \hline
+сумма дб                        &\gpiFIO\/q\_ks\_rubdb        &int                        \\ \hline
+сумма кр                        &\gpiFIO\/q\_ks\_rubkr        &int                        \\ \hline
 
     \end{tabular}
 \end{table}
@@ -131,17 +130,17 @@
 \begin{table}[h!p]
     \centering
     \scriptsize
-    \caption{Типовые хозяйственные операции(ТХО) gpiq\_txo}
+    \caption{Типовые хозяйственные операции(ТХО) \gpiFIO\/q\_txo}
     \begin{tabular}{|l|l|l|} 
 
                                                                                            \hline
 \textbf{Реквизит}                   &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-код документа                       &gpiq\_txo\_dokk        &varchar(4)                 \\ \hline
-операции                            &gpiq\_txo\_k           &varchar(10)                \\ \hline
-дебет, счёт                         &gpiq\_txo\_db          &int                        \\ \hline
-дебет, название                     &gpiq\_txo\_dbn         &varchar(10)                \\ \hline
-кредит                              &gpiq\_txo\_kr          &int                        \\ \hline
-кредит, название                    &gpiq\_txo\_krn         &varchar(10)                \\ \hline
+код документа                       &\gpiFIO\/q\_txo\_dokk        &varchar(4)                 \\ \hline
+операции                            &\gpiFIO\/q\_txo\_k           &varchar(10)                \\ \hline
+дебет, счёт                         &\gpiFIO\/q\_txo\_db          &int                        \\ \hline
+дебет, название                     &\gpiFIO\/q\_txo\_dbn         &varchar(10)                \\ \hline
+кредит                              &\gpiFIO\/q\_txo\_kr          &int                        \\ \hline
+кредит, название                    &\gpiFIO\/q\_txo\_krn         &varchar(10)                \\ \hline
 
     \end{tabular}
 \end{table}
@@ -182,17 +181,17 @@
 \begin{table}[h!p]
     \centering
     \scriptsize
-    \caption{Настройки системы gpiq\_nst}
+    \caption{Настройки системы \gpiFIO\/q\_nst}
     \begin{tabular}{|l|l|l|} 
 
                                                                                \hline
 \textbf{Реквизит}       &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-дата текущая            &gpiq\_nst\_datat       &date                       \\ \hline
-интервал с              &gpiq\_nst\_datas       &date                       \\ \hline
-интервал до             &gpiq\_nst\_datado      &date                       \\ \hline
-cчёт                    &gpiq\_nst\_s           &int                        \\ \hline
-название счёта          &gpiq\_nst\_sn          &varchar(10)                \\ \hline
-название фирмы          &gpiq\_nst\_firma       &varchar(10)                \\ \hline
+дата текущая            &\gpiFIO\/q\_nst\_datat       &date                       \\ \hline
+интервал с              &\gpiFIO\/q\_nst\_datas       &date                       \\ \hline
+интервал до             &\gpiFIO\/q\_nst\_datado      &date                       \\ \hline
+cчёт                    &\gpiFIO\/q\_nst\_s           &int                        \\ \hline
+название счёта          &\gpiFIO\/q\_nst\_sn          &varchar(10)                \\ \hline
+название фирмы          &\gpiFIO\/q\_nst\_firma       &varchar(10)                \\ \hline
 
     \end{tabular}
 \end{table}
@@ -220,62 +219,62 @@ cчёт                    &gpiq\_nst\_s           &int                        \
 
 Формирование и разноска первичных документов \par
 \hspace{0pt} \par
-\textbf{gpiq\_Документы}
+\textbf{\gpiFIO\/q\_Документы}
 &
-- gpiq\_Ввод текущей даты \par
-- gpiq\_Ввод и разноска первичных документов (ПД)
+- \gpiFIO\/q\_Ввод текущей даты \par
+- \gpiFIO\/q\_Ввод и разноска первичных документов (ПД)
 \\ \hline
 
 % = = = = = = = = = =
 
 Работа с регистрационным журналом \par
 \hspace{0pt} \par
-\textbf{gpiq\_РЖ}
+\textbf{\gpiFIO\/q\_РЖ}
 &
-- gpiq\_Просмотр РЖ \par
-- gpiq\_Формирование книги счетов из рег. журнала \par
-- gpiq\_Просмотр КС
+- \gpiFIO\/q\_Просмотр РЖ \par
+- \gpiFIO\/q\_Формирование книги счетов из рег. журнала \par
+- \gpiFIO\/q\_Просмотр КС
 \\ \hline
 
 % = = = = = = = = = =
 
 Формирование балансовой отчетности \par
 \hspace{0pt} \par
-\textbf{gpiq\_БО}
+\textbf{\gpiFIO\/q\_БО}
 &
-- gpiq\_Опеделение отчетных форм \par
-- gpiq\_Оборотно-сальдовая ведомость  \par
-- gpiq\_Балансовая ведомость (заглушка) \par
-- gpiq\_Журнал-ордер (заглушка)
+- \gpiFIO\/q\_Опеделение отчетных форм \par
+- \gpiFIO\/q\_Оборотно-сальдовая ведомость  \par
+- \gpiFIO\/q\_Балансовая ведомость (заглушка) \par
+- \gpiFIO\/q\_Журнал-ордер (заглушка)
 \\ \hline
 
 % = = = = = = = = = =
 
 Сопровождение картотек-справочников \par
 \hspace{0pt} \par
-\textbf{gpiq\_Картотеки}
+\textbf{\gpiFIO\/q\_Картотеки}
 &
-- gpiq\_Типовые хозяйственные операции (ТХО) \par
-- gpiq\_Настройка АРМа
+- \gpiFIO\/q\_Типовые хозяйственные операции (ТХО) \par
+- \gpiFIO\/q\_Настройка АРМа
 \\ \hline
 
 % = = = = = = = = = =
 
 Ведение архивов \par
 \hspace{0pt} \par
-\textbf{gpiq\_Архивы}
+\textbf{\gpiFIO\/q\_Архивы}
 &
-- gpiq\_Копирование системы (заглушка) \par
-- gpiq\_Восстановление системы (заглушка) \par
+- \gpiFIO\/q\_Копирование системы (заглушка) \par
+- \gpiFIO\/q\_Восстановление системы (заглушка) \par
 \\ \hline
 
 % = = = = = = = = = =
 
 Выход из системы \par
 \hspace{0pt} \par
-\textbf{gpiq\_Выход}
+\textbf{\gpiFIO\/q\_Выход}
 &
-- gpiq\_Выход из системы
+- \gpiFIO\/q\_Выход из системы
 \\ \hline
 
 % = = = = = = = = = =
