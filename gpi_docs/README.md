@@ -1,3 +1,12 @@
+# PDF
+
+- ~~gpih - HTML, Word~~
+- [gpia_doc.pdf - Acess](https://github.com/Pavel-Innokentevich-Galanin/gpi_npo5/blob/pdf/gpia_doc.pdf)
+- [gpib_doc.pdf - C++ Builder](https://github.com/Pavel-Innokentevich-Galanin/gpi_npo5/blob/pdf/gpib_doc.pdf)
+- [gpic_doc.pdf - C, Makefile, Geany](https://github.com/Pavel-Innokentevich-Galanin/gpi_npo5/blob/pdf/gpic_doc.pdf)
+- [gpif_doc.pdf - FoxProX](https://github.com/Pavel-Innokentevich-Galanin/gpi_npo5/blob/pdf/gpif_doc.pdf)
+- [gpiq_doc.pdf - QtCreator](https://github.com/Pavel-Innokentevich-Galanin/gpi_npo5/blob/pdf/gpiq_doc.pdf)
+
 ## Скомпилировать PDF
 
 ```bash
