@@ -3,10 +3,12 @@
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=15cm]
+    \includegraphics[width=18cm]
         {_assets/gpic_part2.png}
     \caption{Функциональная схема обработки данных}
 \end{figure}
+
+\newpage
 
 \subsection{Описание картотек}
 
@@ -23,19 +25,23 @@
     \centering
     \scriptsize
     \caption{Первичные документы \gpiFIO\/c\_pd}
-    \begin{tabular}{|l|l|l|} 
+    \begin{tabular}{|p{7cm}|p{7cm}|c|}
 
 \hline
-\textbf{Реквизит}           &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-код документа < --- opd     &\gpiFIO\/c\_pd\_dokk         &c7                         \\ \hline
-номер документа             &\gpiFIO\/c\_pd\_dokn         &n4                         \\ \hline
-дата документа              &\gpiFIO\/c\_pd\_dokd         &n12                        \\ \hline
-типовая операция < --- txo  &\gpiFIO\/c\_pd\_to           &c10                        \\ \hline
-дебет *txo                  &\gpiFIO\/c\_pd\_db           &n4                         \\ \hline
-дебет наименование *txo     &\gpiFIO\/c\_pd\_dbn          &c10                        \\ \hline
-кредит *txo                 &\gpiFIO\/c\_pd\_kr           &n4                         \\ \hline
-кредит наименование *txo    &\gpiFIO\/c\_pd\_krn          &c10                        \\ \hline
-сумма                       &\gpiFIO\/c\_pd\_rub          &n4                         \\ \hline
+\multicolumn{1}{|c}{\textbf{Реквизит}}
+&\multicolumn{1}{|c}{\textbf{Обозначение}}  
+&\multicolumn{1}{|p{1.6cm}|}{\textbf{Тип и значность}} 
+\\ \hline
+
+код документа < --- opd             &\gpiFIO\/c\_pd\_dokk   &c7     \\ \hline
+номер документа                     &\gpiFIO\/c\_pd\_dokn   &n4     \\ \hline
+дата документа                      &\gpiFIO\/c\_pd\_dokd   &n12    \\ \hline
+типовая операция < --- txo          &\gpiFIO\/c\_pd\_to     &c10    \\ \hline
+дебет *txo                          &\gpiFIO\/c\_pd\_db     &n4     \\ \hline
+дебет наименование *txo             &\gpiFIO\/c\_pd\_dbn    &c10    \\ \hline
+кредит *txo                         &\gpiFIO\/c\_pd\_kr     &n4     \\ \hline
+кредит наименование *txo            &\gpiFIO\/c\_pd\_krn    &c10    \\ \hline
+сумма                               &\gpiFIO\/c\_pd\_rub    &n4     \\ \hline
 
     \end{tabular}
 \end{table}
@@ -44,20 +50,24 @@
     \centering
     \scriptsize
     \caption{Регистрационный журнал (РЖ) \gpiFIO\/c\_rj}
-    \begin{tabular}{|l|l|l|} 
+    \begin{tabular}{|p{7cm}|p{7cm}|c|}
 
 \hline
-\textbf{Реквизит}               &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-дата операции                   &\gpiFIO\/c\_rj\_data         &n12                        \\ \hline
-код оправдательного документа   &\gpiFIO\/c\_rj\_dokk         &c7                         \\ \hline
-номер документа                 &\gpiFIO\/c\_rj\_dokn         &n14                        \\ \hline
-дата документа                  &\gpiFIO\/c\_rj\_dokd         &n12                        \\ \hline
-содержание операции             &\gpiFIO\/c\_rj\_to           &c10                        \\ \hline
-дебет, счет                     &\gpiFIO\/c\_rj\_db           &n4                         \\ \hline
-дебет, наименование             &\gpiFIO\/c\_rj\_dbn          &c10                        \\ \hline
-кредит, счет                    &\gpiFIO\/c\_rj\_kr           &n4                         \\ \hline
-кредит наименование             &\gpiFIO\/c\_rj\_krn          &c10                        \\ \hline
-сумма                           &\gpiFIO\/c\_rj\_rub          &n4                         \\ \hline
+\multicolumn{1}{|c}{\textbf{Реквизит}}
+&\multicolumn{1}{|c}{\textbf{Обозначение}}  
+&\multicolumn{1}{|p{1.6cm}|}{\textbf{Тип и значность}} 
+\\ \hline
+
+дата операции                       &\gpiFIO\/c\_rj\_data   &n12    \\ \hline
+код оправдательного документа       &\gpiFIO\/c\_rj\_dokk   &c7     \\ \hline
+номер документа                     &\gpiFIO\/c\_rj\_dokn   &n14    \\ \hline
+дата документа                      &\gpiFIO\/c\_rj\_dokd   &n12    \\ \hline
+содержание операции                 &\gpiFIO\/c\_rj\_to     &c10    \\ \hline
+дебет, счет                         &\gpiFIO\/c\_rj\_db     &n4     \\ \hline
+дебет, наименование                 &\gpiFIO\/c\_rj\_dbn    &c10    \\ \hline
+кредит, счет                        &\gpiFIO\/c\_rj\_kr     &n4     \\ \hline
+кредит наименование                 &\gpiFIO\/c\_rj\_krn    &c10    \\ \hline
+сумма                               &\gpiFIO\/c\_rj\_rub    &n4     \\ \hline
 
     \end{tabular}
 \end{table}
@@ -66,21 +76,25 @@
     \centering
     \scriptsize
     \caption{Книга счетов(КС) \gpiFIO\/c\_ks}
-    \begin{tabular}{|l|l|l|} 
+    \begin{tabular}{|p{7cm}|p{7cm}|c|}
 
 \hline
-\textbf{Реквизит}               &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-дата операции                   &\gpiFIO\/c\_ks\_data         &n12                        \\ \hline
-код оправдательного документа   &\gpiFIO\/c\_ks\_dokk         &c7                         \\ \hline
-номер документа                 &\gpiFIO\/c\_ks\_dokn         &n4                         \\ \hline
-дата документа                  &\gpiFIO\/c\_ks\_dokd         &n12                        \\ \hline
-операции                        &\gpiFIO\/c\_ks\_to           &c10                        \\ \hline
-счет                            &\gpiFIO\/c\_ks\_s            &n4                         \\ \hline
-счёт наименование               &\gpiFIO\/c\_ks\_sn           &c10                        \\ \hline
-кор. счёт                       &\gpiFIO\/c\_ks\_ks           &n4                         \\ \hline
-кор. счет наименование          &\gpiFIO\/c\_ks\_ksn          &c10                        \\ \hline
-сумма дб                        &\gpiFIO\/c\_ks\_rubdb        &n4                         \\ \hline
-сумма кр                        &\gpiFIO\/c\_ks\_rubkr        &n4                         \\ \hline
+\multicolumn{1}{|c}{\textbf{Реквизит}}
+&\multicolumn{1}{|c}{\textbf{Обозначение}}  
+&\multicolumn{1}{|p{1.6cm}|}{\textbf{Тип и значность}} 
+\\ \hline
+
+дата операции                       &\gpiFIO\/c\_ks\_data   &n12    \\ \hline
+код оправдательного документа       &\gpiFIO\/c\_ks\_dokk   &c7     \\ \hline
+номер документа                     &\gpiFIO\/c\_ks\_dokn   &n4     \\ \hline
+дата документа                      &\gpiFIO\/c\_ks\_dokd   &n12    \\ \hline
+операции                            &\gpiFIO\/c\_ks\_to     &c10    \\ \hline
+счет                                &\gpiFIO\/c\_ks\_s      &n4     \\ \hline
+счёт наименование                   &\gpiFIO\/c\_ks\_sn     &c10    \\ \hline
+кор. счёт                           &\gpiFIO\/c\_ks\_ks     &n4     \\ \hline
+кор. счет наименование              &\gpiFIO\/c\_ks\_ksn    &c10    \\ \hline
+сумма дб                            &\gpiFIO\/c\_ks\_rubdb  &n4     \\ \hline
+сумма кр                            &\gpiFIO\/c\_ks\_rubkr  &n4     \\ \hline
 
     \end{tabular}
 \end{table}
@@ -89,16 +103,20 @@
     \centering
     \scriptsize
     \caption{Книга счетов(КС) \gpiFIO\/c\_txo}
-    \begin{tabular}{|l|l|l|} 
+    \begin{tabular}{|p{7cm}|p{7cm}|c|}
 
 \hline
-\textbf{Реквизит}               &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-код документа < --- opd         &\gpiFIO\/c\_txo\_dokk        &c7                         \\ \hline
-код типовой операции            &\gpiFIO\/c\_txo\_k           &c10                        \\ \hline
-дебет, счёт < --- ps\_1         &\gpiFIO\/c\_txo\_db          &n4                         \\ \hline
-дебет, наименование * ps\_1     &\gpiFIO\/c\_txo\_dbn         &c10                        \\ \hline
-кредит < --- ps\_2              &\gpiFIO\/c\_txo\_kr          &n4                         \\ \hline
-кредит, наименование * ps\_2    &\gpiFIO\/c\_txo\_krn         &c10                        \\ \hline
+\multicolumn{1}{|c}{\textbf{Реквизит}}
+&\multicolumn{1}{|c}{\textbf{Обозначение}}  
+&\multicolumn{1}{|p{1.6cm}|}{\textbf{Тип и значность}} 
+\\ \hline
+
+код документа < --- opd             &\gpiFIO\/c\_txo\_dokk  &c7     \\ \hline
+код типовой операции                &\gpiFIO\/c\_txo\_k     &c10    \\ \hline
+дебет, счёт < --- ps\_1             &\gpiFIO\/c\_txo\_db    &n4     \\ \hline
+дебет, наименование * ps\_1         &\gpiFIO\/c\_txo\_dbn   &c10    \\ \hline
+кредит < --- ps\_2                  &\gpiFIO\/c\_txo\_kr    &n4     \\ \hline
+кредит, наименование * ps\_2        &\gpiFIO\/c\_txo\_krn   &c10    \\ \hline
 
     \end{tabular}
 \end{table}
@@ -111,22 +129,19 @@
     \centering
     \scriptsize
     \caption{Описание работ}
-    \begin{tabular}{|p{8cm}|p{8cm}|} 
+    \begin{tabular}{|p{6cm}|p{11cm}|} 
 
 % = = = = = = = = = =
 
 \hline
-
-% = = = = = = = = = =
-
-\textbf{Группа работ}
-&
-\textbf{Работы}
+\multicolumn{1}{|c}{\textbf{Группа работ}}
+&\multicolumn{1}{|c|}{\textbf{Работы}}
 \\ \hline
 
 % = = = = = = = = = =
 
-Формирование и разноска первичных документов \par
+Формирование и разноска первичных \par
+документов \par
 \hspace{0pt} \par
 \textbf{\gpiFIO\/c\_Документы}
 &
