@@ -3,7 +3,7 @@
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[height=19cm]
+    \includegraphics[height=19cm, width=14cm]
         {_assets/gpif_part2.png}
     \caption{Функциональная схема обработки данных}
 \end{figure}
@@ -31,29 +31,33 @@
     \centering
     \scriptsize
     \caption{Первичные документы \gpiFIO\/f\_p}
-    \begin{tabular}{|l|l|l|} 
+    \begin{tabular}{|p{7cm}|p{7cm}|c|}
 
-                                                                                          \hline
-\textbf{Реквизит}                   &\textbf{Обозначение}   &\textbf{Тип и значность}  \\ \hline
-поле связи               =0         &\gpiFIO\/f\_p0               &n1                        \\ \hline
-код документа    < --- d            &\gpiFIO\/f\_pdokk            &c3                        \\ \hline
-номер документа                     &\gpiFIO\/f\_pdokn            &n5                        \\ \hline
-дата документа                      &\gpiFIO\/f\_pdokd            &d8                        \\ \hline
-вид аналитики 1    *d               &\gpiFIO\/f\_pav1             &c3                        \\ \hline
-тип аналитики 1      =д, к, x       &\gpiFIO\/f\_pavt1            &c1                        \\ \hline
-аналитика код 1   < --- a           &\gpiFIO\/f\_pak1             &c10                       \\ \hline
-вид аналитики2                      &\gpiFIO\/f\_pav2             &c3                        \\ \hline
-тип аналитики2                      &\gpiFIO\/f\_pavt2            &c1                        \\ \hline
-аналитика код2                      &\gpiFIO\/f\_pak2             &c10                       \\ \hline
-вид аналитики3                      &\gpiFIO\/f\_pav3             &c3                        \\ \hline
-тип аналитики3                      &\gpiFIO\/f\_pavt3            &c1                        \\ \hline
-аналитика код3                      &\gpiFIO\/f\_pak3             &c10                       \\ \hline
-сумма                               &\gpiFIO\/f\_prub             &n10                       \\ \hline
-операции                            &\gpiFIO\/f\_pto              &c10                       \\ \hline
-дебет счет *o                       &\gpiFIO\/f\_pdb              &n2                        \\ \hline
-дебет счет субсчет наименование *o  &\gpiFIO\/f\_pdbn             &c10                       \\ \hline
-кредит  *o                          &\gpiFIO\/f\_pkr              &n2                        \\ \hline
-кредит название*o                   &\gpiFIO\/f\_pkrn             &c10                       \\ \hline
+\hline
+\multicolumn{1}{|c}{\textbf{Реквизит}}
+&\multicolumn{1}{|c}{\textbf{Обозначение}}  
+&\multicolumn{1}{|p{1.6cm}|}{\textbf{Тип и значность}} 
+\\ \hline
+
+поле связи =0                       &\gpiFIO\/f\_p0     &n1     \\ \hline
+код документа < --- d               &\gpiFIO\/f\_pdokk  &c3     \\ \hline
+номер документа                     &\gpiFIO\/f\_pdokn  &n5     \\ \hline
+дата документа                      &\gpiFIO\/f\_pdokd  &d8     \\ \hline
+вид аналитики 1 *d                  &\gpiFIO\/f\_pav1   &c3     \\ \hline
+тип аналитики 1 =д, к, x            &\gpiFIO\/f\_pavt1  &c1     \\ \hline
+аналитика код 1 < --- a             &\gpiFIO\/f\_pak1   &c10    \\ \hline
+вид аналитики2                      &\gpiFIO\/f\_pav2   &c3     \\ \hline
+тип аналитики2                      &\gpiFIO\/f\_pavt2  &c1     \\ \hline
+аналитика код2                      &\gpiFIO\/f\_pak2   &c10    \\ \hline
+вид аналитики3                      &\gpiFIO\/f\_pav3   &c3     \\ \hline
+тип аналитики3                      &\gpiFIO\/f\_pavt3  &c1     \\ \hline
+аналитика код3                      &\gpiFIO\/f\_pak3   &c10    \\ \hline
+сумма                               &\gpiFIO\/f\_prub   &n10    \\ \hline
+операции                            &\gpiFIO\/f\_pto    &c10    \\ \hline
+дебет счет *o                       &\gpiFIO\/f\_pdb    &n2     \\ \hline
+дебет счет субсчет наименование *o  &\gpiFIO\/f\_pdbn   &c10    \\ \hline
+кредит *o                           &\gpiFIO\/f\_pkr    &n2     \\ \hline
+кредит название *o                  &\gpiFIO\/f\_pkrn   &c10    \\ \hline
 
     \end{tabular}
 \end{table}
@@ -62,21 +66,25 @@
     \centering
     \scriptsize
     \caption{Регистрационный журнал (РЖ) \gpiFIO\/f\_j}
-    \begin{tabular}{|l|l|l|} 
+    \begin{tabular}{|p{7cm}|p{7cm}|c|}
 
-                                                                                       \hline
-\textbf{Реквизит}               &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-поле связи	=0                  &\gpiFIO\/f\_j0               &n1                         \\ \hline
-дата операции                   &\gpiFIO\/f\_jdata            &d8                         \\ \hline
-код оправдательного документа   &\gpiFIO\/f\_jdokk            &c3                         \\ \hline
-номер документа                 &\gpiFIO\/f\_jdokn            &n10                        \\ \hline
-дата документа                  &\gpiFIO\/f\_jdokd            &d8                         \\ \hline
-содержание операции             &\gpiFIO\/f\_jto              &c10                        \\ \hline
-дебет, счет                     &\gpiFIO\/f\_jdb              &n2                         \\ \hline
-дебет, название                 &\gpiFIO\/f\_jdbn             &c10                        \\ \hline
-кредит, счет                    &\gpiFIO\/f\_jkr              &n2                         \\ \hline
-кредит название                 &\gpiFIO\/f\_jkrn             &c10                        \\ \hline
-Сумма                           &\gpiFIO\/f\_jrub             &n10                        \\ \hline
+\hline
+\multicolumn{1}{|c}{\textbf{Реквизит}}
+&\multicolumn{1}{|c}{\textbf{Обозначение}}  
+&\multicolumn{1}{|p{1.6cm}|}{\textbf{Тип и значность}} 
+\\ \hline
+
+поле связи	=0                      &\gpiFIO\/f\_j0     &n1     \\ \hline
+дата операции                       &\gpiFIO\/f\_jdata  &d8     \\ \hline
+код оправдательного документа       &\gpiFIO\/f\_jdokk  &c3     \\ \hline
+номер документа                     &\gpiFIO\/f\_jdokn  &n10    \\ \hline
+дата документа                      &\gpiFIO\/f\_jdokd  &d8     \\ \hline
+содержание операции                 &\gpiFIO\/f\_jto    &c10    \\ \hline
+дебет, счет                         &\gpiFIO\/f\_jdb    &n2     \\ \hline
+дебет, название                     &\gpiFIO\/f\_jdbn   &c10    \\ \hline
+кредит, счет                        &\gpiFIO\/f\_jkr    &n2     \\ \hline
+кредит название                     &\gpiFIO\/f\_jkrn   &c10    \\ \hline
+Сумма                               &\gpiFIO\/f\_jrub   &n10    \\ \hline
 
     \end{tabular}
 \end{table}
@@ -85,22 +93,26 @@
     \centering
     \scriptsize
     \caption{Книга счетов(КС) \gpiFIO\/f\_k}
-    \begin{tabular}{|l|l|l|} 
+    \begin{tabular}{|p{7cm}|p{7cm}|c|} 
 
-                                                                                       \hline
-\textbf{Реквизит}               &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-поле связи  =0                  &\gpiFIO\/f\_k0                &n1                         \\ \hline
-дата операции                   &\gpiFIO\/f\_kdata             &d8                         \\ \hline
-код оправдательного документа   &\gpiFIO\/f\_kdokk             &c3                         \\ \hline
-номер документа                 &\gpiFIO\/f\_kdokn             &n10                        \\ \hline
-дата документа                  &\gpiFIO\/f\_kdokd             &d8                         \\ \hline
-операции                        &\gpiFIO\/f\_kto               &c10                        \\ \hline
-счет                            &\gpiFIO\/f\_ks                &n2                         \\ \hline
-счёт название                   &\gpiFIO\/f\_ksn               &c10                        \\ \hline
-кор. счёт                       &\gpiFIO\/f\_kks               &n2                         \\ \hline
-кор. счет наименование          &\gpiFIO\/f\_kksn              &c10                        \\ \hline
-сумма дб                        &\gpiFIO\/f\_kdb               &n10                        \\ \hline
-сумма кр                        &\gpiFIO\/f\_kkr               &n10                        \\ \hline
+\hline
+\multicolumn{1}{|c}{\textbf{Реквизит}}
+&\multicolumn{1}{|c}{\textbf{Обозначение}}  
+&\multicolumn{1}{|p{1.6cm}|}{\textbf{Тип и значность}} 
+\\ \hline
+
+поле связи  =0                      &\gpiFIO\/f\_k0     &n1     \\ \hline
+дата операции                       &\gpiFIO\/f\_kdata  &d8     \\ \hline
+код оправдательного документа       &\gpiFIO\/f\_kdokk  &c3     \\ \hline
+номер документа                     &\gpiFIO\/f\_kdokn  &n10    \\ \hline
+дата документа                      &\gpiFIO\/f\_kdokd  &d8     \\ \hline
+операции                            &\gpiFIO\/f\_kto    &c10    \\ \hline
+счет                                &\gpiFIO\/f\_ks     &n2     \\ \hline
+счёт название                       &\gpiFIO\/f\_ksn    &c10    \\ \hline
+кор. счёт                           &\gpiFIO\/f\_kks    &n2     \\ \hline
+кор. счет наименование              &\gpiFIO\/f\_kksn   &c10    \\ \hline
+сумма дб                            &\gpiFIO\/f\_kdb    &n10    \\ \hline
+сумма кр                            &\gpiFIO\/f\_kkr    &n10    \\ \hline
 
     \end{tabular}
 \end{table}
@@ -109,19 +121,23 @@
     \centering
     \scriptsize
     \caption{Определение первичных документов \gpiFIO\/f\_d}
-    \begin{tabular}{|l|l|l|} 
+    \begin{tabular}{|p{7cm}|p{7cm}|c|}
 
-                                                                                   \hline
-\textbf{Реквизит}           &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-поле связи       =0         &\gpiFIO\/f\_d0               &n1                         \\ \hline
-код документа               &\gpiFIO\/f\_dk               &c3                         \\ \hline
-наименование документа      &\gpiFIO\/f\_dn               &c10                        \\ \hline
-вид аналитики 1  < ---  v   &\gpiFIO\/f\_dav1             &c3                         \\ \hline
-тип аналитики 1    =д, к, x &\gpiFIO\/f\_davt1            &c1                         \\ \hline
-виды аналитики 2            &\gpiFIO\/f\_dav2             &c3                         \\ \hline
-тип аналитики 2             &\gpiFIO\/f\_davt2            &c1                         \\ \hline
-вид аналитики 3             &\gpiFIO\/f\_dav3             &c3                         \\ \hline
-тип аналитики 2             &\gpiFIO\/f\_davt3            &c1                         \\ \hline
+\hline
+\multicolumn{1}{|c}{\textbf{Реквизит}}
+&\multicolumn{1}{|c}{\textbf{Обозначение}}  
+&\multicolumn{1}{|p{1.6cm}|}{\textbf{Тип и значность}} 
+\\ \hline
+
+поле связи =0                       &\gpiFIO\/f\_d0     &n1     \\ \hline
+код документа                       &\gpiFIO\/f\_dk     &c3     \\ \hline
+наименование документа              &\gpiFIO\/f\_dn     &c10    \\ \hline
+вид аналитики 1 < --- v             &\gpiFIO\/f\_dav1   &c3     \\ \hline
+тип аналитики 1 =д, к, x            &\gpiFIO\/f\_davt1  &c1     \\ \hline
+виды аналитики 2                    &\gpiFIO\/f\_dav2   &c3     \\ \hline
+тип аналитики 2                     &\gpiFIO\/f\_davt2  &c1     \\ \hline
+вид аналитики 3                     &\gpiFIO\/f\_dav3   &c3     \\ \hline
+тип аналитики 2                     &\gpiFIO\/f\_davt3  &c1     \\ \hline
 
     \end{tabular}
 \end{table}
@@ -130,17 +146,21 @@
     \centering
     \scriptsize
     \caption{Типовые хозяйственные операции(ТХО) \gpiFIO\/f\_o}
-    \begin{tabular}{|l|l|l|} 
+    \begin{tabular}{|p{7cm}|p{7cm}|c|}
 
-                                                                                           \hline
-\textbf{Реквизит}                   &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-поле связи    =0                    &\gpiFIO\/f\_o0               &n1                         \\ \hline
-код документа        < ---  d       &\gpiFIO\/f\_odok             &c3                         \\ \hline
-Операции                            &\gpiFIO\/f\_ok               &c10                        \\ \hline
-дебет, счёт              < --- s\_1 &\gpiFIO\/f\_odb              &n2                         \\ \hline
-дебет, название        * s\_1       &\gpiFIO\/f\_odbn             &c10                        \\ \hline
-кредит                    < --- s\_2&\gpiFIO\/f\_okr              &n2                         \\ \hline
-кредит, название     * s\_2         &\gpiFIO\/f\_okrn             &c10                        \\ \hline
+\hline
+\multicolumn{1}{|c}{\textbf{Реквизит}}
+&\multicolumn{1}{|c}{\textbf{Обозначение}}  
+&\multicolumn{1}{|p{1.6cm}|}{\textbf{Тип и значность}} 
+\\ \hline
+
+поле связи =0                       &\gpiFIO\/f\_o0     &n1     \\ \hline
+код документа < --- d               &\gpiFIO\/f\_odok   &c3     \\ \hline
+Операции                            &\gpiFIO\/f\_ok     &c10    \\ \hline
+дебет, счёт < --- s\_1              &\gpiFIO\/f\_odb    &n2     \\ \hline
+дебет, название * s\_1              &\gpiFIO\/f\_odbn   &c10    \\ \hline
+кредит < --- s\_2                   &\gpiFIO\/f\_okr    &n2     \\ \hline
+кредит, название * s\_2             &\gpiFIO\/f\_okrn   &c10    \\ \hline
 
     \end{tabular}
 \end{table}
@@ -149,16 +169,20 @@
     \centering
     \scriptsize
     \caption{План счетов(ПС) \gpiFIO\/f\_s}
-    \begin{tabular}{|l|l|l|} 
+    \begin{tabular}{|p{7cm}|p{7cm}|c|}
 
-                                                                                   \hline
-\textbf{Реквизит}           &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-поле связи        =0        &\gpiFIO\/f\_s0               &n1                         \\ \hline
-счет                        &\gpiFIO\/f\_sk               &n2                         \\ \hline
-название счета              &\gpiFIO\/f\_sn               &c10                        \\ \hline
-тип счета          = а, п, x&\gpiFIO\/f\_styp             &c1                         \\ \hline
-вид аналитики 1 из V        &\gpiFIO\/f\_sav1             &c3                         \\ \hline
-вид аналитики 2 из V        &\gpiFIO\/f\_sav2             &c3                         \\ \hline
+\hline
+\multicolumn{1}{|c}{\textbf{Реквизит}}
+&\multicolumn{1}{|c}{\textbf{Обозначение}}  
+&\multicolumn{1}{|p{1.6cm}|}{\textbf{Тип и значность}} 
+\\ \hline
+
+поле связи =0                       &\gpiFIO\/f\_s0     &n1     \\ \hline
+счет                                &\gpiFIO\/f\_sk     &n2     \\ \hline
+название счета                      &\gpiFIO\/f\_sn     &c10    \\ \hline
+тип счета = а, п, x                 &\gpiFIO\/f\_styp   &c1     \\ \hline
+вид аналитики 1 из V                &\gpiFIO\/f\_sav1   &c3     \\ \hline
+вид аналитики 2 из V                &\gpiFIO\/f\_sav2   &c3     \\ \hline
 
     \end{tabular}
 \end{table}
@@ -167,13 +191,17 @@
     \centering
     \scriptsize
     \caption{Коды аналитического учёта(КАУ) gpia\_a}
-    \begin{tabular}{|l|l|l|} 
+    \begin{tabular}{|p{7cm}|p{7cm}|c|}
 
-                                                                               \hline
-\textbf{Реквизит}       &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-поле связи          =0  &\gpiFIO\/f\_a0               &n1                         \\ \hline
-вид аналитики           &\gpiFIO\/f\_av               &c3                         \\ \hline
-вид аналитики           &\gpiFIO\/f\_ak               &c10                        \\ \hline
+\hline
+\multicolumn{1}{|c}{\textbf{Реквизит}}
+&\multicolumn{1}{|c}{\textbf{Обозначение}}  
+&\multicolumn{1}{|p{1.6cm}|}{\textbf{Тип и значность}} 
+\\ \hline
+
+поле связи =0                       &\gpiFIO\/f\_a0     &n1     \\ \hline
+вид аналитики                       &\gpiFIO\/f\_av     &c3     \\ \hline
+вид аналитики                       &\gpiFIO\/f\_ak     &c10    \\ \hline
 
     \end{tabular}
 \end{table}
@@ -182,13 +210,17 @@
     \centering
     \scriptsize
     \caption{Виды аналитики \gpiFIO\/f\_v}
-    \begin{tabular}{|l|l|l|} 
+    \begin{tabular}{|p{7cm}|p{7cm}|c|}
 
-                                                                                   \hline
-\textbf{Реквизит}           &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-поле связи  	  =0        &\gpiFIO\/f\_v0               &n1                         \\ \hline
-вид аналитики               &\gpiFIO\/f\_vk               &c3                         \\ \hline
-название вида аналитики     &\gpiFIO\/f\_vn               &c10                        \\ \hline
+\hline
+\multicolumn{1}{|c}{\textbf{Реквизит}}
+&\multicolumn{1}{|c}{\textbf{Обозначение}}  
+&\multicolumn{1}{|p{1.6cm}|}{\textbf{Тип и значность}} 
+\\ \hline
+
+поле связи =0                       &\gpiFIO\/f\_v0     &n1     \\ \hline
+вид аналитики                       &\gpiFIO\/f\_vk     &c3     \\ \hline
+название вида аналитики             &\gpiFIO\/f\_vn     &c10    \\ \hline
 
     \end{tabular}
 \end{table}
@@ -197,17 +229,21 @@
     \centering
     \scriptsize
     \caption{Настройки системы gpia\_c}
-    \begin{tabular}{|l|l|l|} 
+    \begin{tabular}{|p{7cm}|p{7cm}|c|}
 
-                                                                               \hline
-\textbf{Реквизит}       &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-поле связи          =0  &\gpiFIO\/f\_c0               &n1                         \\ \hline
-дата текущая            &\gpiFIO\/f\_cdatt            &d8                         \\ \hline
-интервал с              &\gpiFIO\/f\_cdats            &d8                         \\ \hline
-интервал до             &\gpiFIO\/f\_cdatd            &d8                         \\ \hline
-cчёт                    &\gpiFIO\/f\_cs               &n2                         \\ \hline
-название счёта          &\gpiFIO\/f\_csn              &c10                        \\ \hline
-название фирмы          &\gpiFIO\/f\_cfirm            &c10                        \\ \hline
+\hline
+\multicolumn{1}{|c}{\textbf{Реквизит}}
+&\multicolumn{1}{|c}{\textbf{Обозначение}}  
+&\multicolumn{1}{|p{1.6cm}|}{\textbf{Тип и значность}} 
+\\ \hline
+
+поле связи =0                       &\gpiFIO\/f\_c0     &n1     \\ \hline
+дата текущая                        &\gpiFIO\/f\_cdatt  &d8     \\ \hline
+интервал с                          &\gpiFIO\/f\_cdats  &d8     \\ \hline
+интервал до                         &\gpiFIO\/f\_cdatd  &d8     \\ \hline
+cчёт                                &\gpiFIO\/f\_cs     &n2     \\ \hline
+название счёта                      &\gpiFIO\/f\_csn    &c10    \\ \hline
+название фирмы                      &\gpiFIO\/f\_cfirm  &c10    \\ \hline
 
     \end{tabular}
 \end{table}
@@ -220,22 +256,19 @@ cчёт                    &\gpiFIO\/f\_cs               &n2                    
     \centering
     \scriptsize
     \caption{Описание работ}
-    \begin{tabular}{|p{8cm}|p{8cm}|} 
+    \begin{tabular}{|p{6cm}|p{11cm}|} 
 
 % = = = = = = = = = =
 
 \hline
-
-% = = = = = = = = = =
-
-\textbf{Группа работ}
-&
-\textbf{Работы}
+\multicolumn{1}{|c}{\textbf{Группа работ}}
+&\multicolumn{1}{|c|}{\textbf{Работы}}
 \\ \hline
 
 % = = = = = = = = = =
 
-Формирование и разноска первичных документов \par
+Формирование и разноска первичных \par
+документов \par
 \hspace{0pt} \par
 \textbf{\gpiFIO\/f\_документы}
 &
