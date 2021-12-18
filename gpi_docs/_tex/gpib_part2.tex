@@ -3,10 +3,12 @@
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[height=11cm]
+    \includegraphics[width=18cm]
         {_assets/gpib_part2.png}
     \caption{Функциональная схема обработки данных}
 \end{figure}
+
+\newpage
 
 \subsection{Описание картотек}
 
@@ -19,14 +21,18 @@
     \item Типовые хозяйственные операции (ТХО) \gpiFIO\/b\_to.
 \end{itemize}
 
-\begin{table}[!htbp]
+\begin{table}[!htb]
     \centering
     \scriptsize
     \caption{Первичные документы \gpiFIO\/b\_pd}
-    \begin{tabular}{|l|l|l|} 
+    \begin{tabular}{|p{7cm}|p{7cm}|c|}
 
-                                                                                   \hline
-\textbf{Реквизит}           &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
+\hline
+\multicolumn{1}{|c}{\textbf{Реквизит}}
+&\multicolumn{1}{|c}{\textbf{Обозначение}}  
+&\multicolumn{1}{|p{1.6cm}|}{\textbf{Тип и значность}} 
+\\ \hline
+
 поле связи =0               &\gpiFIO\/b\_pd\_0            &n1                         \\ \hline
 код документа < --- opd     &\gpiFIO\/b\_pd\_dokk         &c3                         \\ \hline
 номер документа             &\gpiFIO\/b\_pd\_dokn         &n5                         \\ \hline
@@ -41,29 +47,20 @@
     \end{tabular}
 \end{table}
 
-% \begin{table}[h!p]
-%     \centering
-%     \scriptsize
-%     \caption{Виды аналитики gpia\_va}
-%     \begin{tabular}{|l|l|l|} 
+\newpage
 
-%                                                                                \hline
-% \textbf{Реквизит}       &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-% поле связи  	  =0    &gpia\_va\_0            &c1                         \\ \hline
-% вид аналитики           &gpia\_va\_k            &c3                         \\ \hline
-% название вида аналитики &gpia\_va\_n            &c15                        \\ \hline
-
-%     \end{tabular}
-% \end{table}
-
-\begin{table}[!htbp]
+\begin{table}[!h]
     \centering
     \scriptsize
     \caption{Регистрационный журнал (РЖ) \gpiFIO\/b\_rj}
-    \begin{tabular}{|l|l|l|} 
+    \begin{tabular}{|p{7cm}|p{7cm}|c|} 
 
-                                                                                       \hline
-\textbf{Реквизит}               &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
+\hline
+\multicolumn{1}{|c}{\textbf{Реквизит}}
+&\multicolumn{1}{|c}{\textbf{Обозначение}}  
+&\multicolumn{1}{|p{1.6cm}|}{\textbf{Тип и значность}} 
+\\ \hline
+
 поле связи =0                   &\gpiFIO\/b\_rj\_0            &n1                         \\ \hline
 дата операции                   &\gpiFIO\/b\_rj\_data         &d8                         \\ \hline
 код оправдательного документа   &\gpiFIO\/b\_rj\_dokk         &c3                         \\ \hline
@@ -79,14 +76,18 @@
     \end{tabular}
 \end{table}
 
-\begin{table}[!htbp]
+\begin{table}[!htb]
     \centering
     \scriptsize
     \caption{Книга счетов(КС) \gpiFIO\/b\_ks}
-    \begin{tabular}{|l|l|l|} 
+    \begin{tabular}{|p{7cm}|p{7cm}|c|} 
 
-                                                                                       \hline
-\textbf{Реквизит}               &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
+\hline
+\multicolumn{1}{|c}{\textbf{Реквизит}}
+&\multicolumn{1}{|c}{\textbf{Обозначение}}  
+&\multicolumn{1}{|p{1.6cm}|}{\textbf{Тип и значность}} 
+\\ \hline
+
 поле связи =0                   &\gpiFIO\/b\_ks\_0            &n1                         \\ \hline
 дата операции                   &\gpiFIO\/b\_ks\_data         &d8                         \\ \hline
 код оправдательного документа   &\gpiFIO\/b\_ks\_dokk         &c3                         \\ \hline
@@ -103,35 +104,18 @@
     \end{tabular}
 \end{table}
 
-% \begin{table}[h!p]
-%     \centering
-%     \scriptsize
-%     \caption{Определение первичных документов gpia\_opd}
-%     \begin{tabular}{|l|l|l|} 
-
-%                                                                                    \hline
-% \textbf{Реквизит}           &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-% поле связи       =0         &gpia\_opd\_0           &c1                         \\ \hline
-% код документа               &gpia\_opd\_k           &c3                         \\ \hline
-% наименование документа      &gpia\_opd\_n           &c10                        \\ \hline
-% вид аналитики 1  < ---  va  &gpia\_opd\_av1         &c3                         \\ \hline
-% тип аналитики 1    =д, к, x &gpia\_opd\_avt1        &c1                         \\ \hline
-% виды аналитики 2            &gpia\_opd\_av2         &c3                         \\ \hline
-% тип аналитики 2             &gpia\_opd\_avt2        &c1                         \\ \hline
-% вид аналитики 3             &gpia\_opd\_av3         &c3                         \\ \hline
-% тип аналитики 2             &gpia\_opd\_avt3        &c1                         \\ \hline
-
-%     \end{tabular}
-% \end{table}
-
-\begin{table}[!htbp]
+\begin{table}[!htb]
     \centering
     \scriptsize
     \caption{Типовые хозяйственные операции(ТХО) \gpiFIO\/b\_txo}
-    \begin{tabular}{|l|l|l|} 
+    \begin{tabular}{|p{7cm}|p{7cm}|c|}
 
-                                                                                       \hline
-\textbf{Реквизит}               &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
+\hline
+\multicolumn{1}{|c}{\textbf{Реквизит}}
+&\multicolumn{1}{|c}{\textbf{Обозначение}}  
+&\multicolumn{1}{|p{1.6cm}|}{\textbf{Тип и значность}} 
+\\ \hline
+
 поле связи =0                   &gpi\_to\_0             &n1                         \\ \hline
 код документа < --- opd         &gpi\_to\_dokk          &c3                         \\ \hline
 код типовой операции            &gpi\_to\_k             &c10                        \\ \hline
@@ -143,58 +127,6 @@
     \end{tabular}
 \end{table}
 
-% \begin{table}[h!p]
-%     \centering
-%     \scriptsize
-%     \caption{План счетов(ПС) gpia\_ps}
-%     \begin{tabular}{|l|l|l|} 
-
-%                                                                                            \hline
-% \textbf{Реквизит}                   &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-% поле связи        =0                &gpia\_ps\_0            &c1                         \\ \hline
-% счет                                &gpia\_ps\_s            &n2                         \\ \hline
-% название счета                      &gpia\_ps\_n            &c10                        \\ \hline
-% тип счета          = а, п, x        &gpia\_ps\_typ          &c1                         \\ \hline
-% вид аналитики 1 из VA               &gpia\_ps\_av1          &c3                         \\ \hline
-% вид аналитики 2 из VA               &gpia\_ps\_av2          &c3                         \\ \hline
-
-%     \end{tabular}
-% \end{table}
-
-% \begin{table}[h!p]
-%     \centering
-%     \scriptsize
-%     \caption{Коды аналитического учёта(КАУ) gpia\_kau}
-%     \begin{tabular}{|l|l|l|} 
-
-%                                                                                \hline
-% \textbf{Реквизит}       &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-% поле связи          =0  &gpia\_kau\_0           &c1                         \\ \hline
-% вид аналитики           &gpia\_kau\_k           &c5                         \\ \hline
-% вид аналитики           &gpia\_kau\_n           &c15                        \\ \hline
-
-%     \end{tabular}
-% \end{table}
-
-% \begin{table}[h!p]
-%     \centering
-%     \scriptsize
-%     \caption{Настройки системы gpia\_nst}
-%     \begin{tabular}{|l|l|l|} 
-
-%                                                                                \hline
-% \textbf{Реквизит}       &\textbf{Обозначение}   &\textbf{Тип и значность}   \\ \hline
-% поле связи          =0  &gpia\_nst\_0           &c1                         \\ \hline
-% дата текущая            &gpia\_nst\_datat       &D                          \\ \hline
-% интервал с              &gpia\_nst\_datas       &D                          \\ \hline
-% интервал до             &gpia\_nst\_datado      &D                          \\ \hline
-% cчёт                    &gpia\_nst\_s           &n2                         \\ \hline
-% название счёта          &gpia\_nst\_sn          &c10                        \\ \hline
-% название фирмы          &gpia\_nst\_firma       &c10                        \\ \hline
-
-%     \end{tabular}
-% \end{table}
-
 \newpage
 
 \subsection{Описание работ}
@@ -203,22 +135,19 @@
     \centering
     \scriptsize
     \caption{Описание работ}
-    \begin{tabular}{|p{8cm}|p{8cm}|} 
+    \begin{tabular}{|p{6cm}|p{11cm}|} 
 
 % = = = = = = = = = =
 
 \hline
-
-% = = = = = = = = = =
-
-\textbf{Группа работ}
-&
-\textbf{Работы}
+\multicolumn{1}{|c}{\textbf{Группа работ}}
+&\multicolumn{1}{|c|}{\textbf{Работы}}
 \\ \hline
 
 % = = = = = = = = = =
 
-Формирование и разноска первичных документов \par
+Формирование и разноска первичных \par
+документов \par
 \hspace{0pt} \par
 \textbf{\gpiFIO\/b\_Документы}
 &
